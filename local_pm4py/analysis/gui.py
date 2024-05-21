@@ -7,9 +7,10 @@ def input():
                     [sg.Text('ratio      ', font='Any 14') , sg.Slider(range=(0,1), resolution=0.1, orientation='h', border_width =2,s=(100,20), key='-r-')],
                     [sg.Text('Desirable Log(.xes)    ', font='Any 14'), sg.FileBrowse(key="-Desirable Log-", font='Any 14')],
                     [sg.Text('Undesirable Log(.xes)', font='Any 14'), sg.FileBrowse(key="-Undesirable Log-", font='Any 14')],
+                    [sg.Text('User Rules (.txt)', font='Any 14'), sg.FileBrowse(key="-User Rules-", font='Any 14')],
                     [sg.Button('Run IMbi', font='Any 14')]]
 
-    window = sg.Window('Inputs', layout, size=(600, 300))
+    window = sg.Window('Inputs', layout, size=(600, 400))
 
     while True:
         event, values = window.read()
@@ -17,7 +18,7 @@ def input():
             break
 
     window.close()
-    return float(values["-sup-"]), float(values["-r-"]), values["-Desirable Log-"], values["-Undesirable Log-"]
+    return float(values["-sup-"]), float(values["-r-"]), values["-Desirable Log-"], values["-Undesirable Log-"], values["-User Rules-"]
 
 
 def output(acc,F1,acc_s,F1_s,fitp,prc,time):

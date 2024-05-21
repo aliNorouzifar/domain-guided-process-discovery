@@ -7,9 +7,10 @@ import pm4py
 from pm4py.objects.log import obj as log_instance
 from local_pm4py import discovery
 from local_pm4py.declare.discovery import discover_declare
+from local_pm4py.functions import parse_rules
 
 
-support, ratio, LPlus_LogFile, LMinus_LogFile= gui.input()
+support, ratio, LPlus_LogFile, LMinus_LogFile, text= gui.input()
 logP = xes_importer.apply(LPlus_LogFile)
 
 if LMinus_LogFile != '':
@@ -32,12 +33,15 @@ ATMOST_ONE = "atmost1"
 
 allowed_templates = {RESPONDED_EXISTENCE, RESPONSE,COEXISTENCE, PRECEDENCE, NONCOEXISTENCE,EXISTENCE,INIT,END,NONSUCCESSION,ATMOST_ONE}
 
-conf = 1
-print(f'conf: {conf}')
-rules = discover_declare(logP, min_support_ratio=1 - conf, min_confidence_ratio=conf,allowed_templates=allowed_templates)
-for r in allowed_templates:
-    if r not in rules.keys():
-        rules[r] = []
+# conf = 1
+# print(f'conf: {conf}')
+# rules = discover_declare(logP, min_support_ratio=1 - conf, min_confidence_ratio=conf,allowed_templates=allowed_templates)
+# for r in allowed_templates:
+#     if r not in rules.keys():
+#         rules[r] = []
+
+
+rules = parse_rules.parse_constraints(text)
 
 
 start = time.time()
