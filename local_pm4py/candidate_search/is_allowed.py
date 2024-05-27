@@ -17,17 +17,17 @@ def is_allowed(S1,S2,rules,st_net,en_net):
     block = False
 
     for r in rules[ATMOST_ONE]:
-        if r in S1:
+        if r[0] in S1:
             exclude.append('loop')
             exclude.append('loop_tau')
-        elif r in S2:
+        elif r[0] in S2:
             exclude.append('loop')
             exclude.append('loop_tau')
 
     for r in rules[EXISTENCE]:
-        if r in S1:
+        if r[0] in S1:
             exclude.append('exc')
-        elif r in S2:
+        elif r[0] in S2:
             exclude.append('exc')
             exclude.append('loop')
 
