@@ -33,21 +33,22 @@ ATMOST_ONE = "atmost1"
 
 allowed_templates = {RESPONDED_EXISTENCE, RESPONSE,COEXISTENCE, PRECEDENCE, NONCOEXISTENCE,EXISTENCE,INIT,END,NONSUCCESSION,ATMOST_ONE}
 
+## rules from Declare Miner:
 # conf = 1
 # print(f'conf: {conf}')
 # rules = discover_declare(logP, min_support_ratio=1 - conf, min_confidence_ratio=conf,allowed_templates=allowed_templates)
-# for r in allowed_templates:
-#     if r not in rules.keys():
-#         rules[r] = []
 
-
+# rules from LLM:
 rules = parse_rules.parse_constraints(text)
 
+
+for r in allowed_templates:
+    if r not in rules.keys():
+        rules[r] = []
 
 start = time.time()
 net, initial_marking, final_marking = discovery.apply_bi(logP,logM, sup=support, ratio=ratio, size_par=len(logP)/max(1,len(logM)),rules = rules)
 end = time.time()
-
 print("run time:")
 print(end-start)
 
