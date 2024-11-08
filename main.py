@@ -10,14 +10,12 @@ from local_pm4py.declare.discovery import discover_declare
 from local_pm4py.functions import parse_rules
 
 
-support, ratio, LPlus_LogFile, LMinus_LogFile, text= gui.input()
+support, LPlus_LogFile, text= gui.input()
 logP = xes_importer.apply(LPlus_LogFile)
 
-if LMinus_LogFile != '':
-    logM = xes_importer.apply(LMinus_LogFile)
-else:
-    logM = log_instance.EventLog()
-    logM.append(log_instance.Trace())
+
+logM = log_instance.EventLog()
+logM.append(log_instance.Trace())
 
 
 EXISTENCE = "existence"
@@ -47,7 +45,7 @@ for r in allowed_templates:
         rules[r] = []
 
 start = time.time()
-net, initial_marking, final_marking = discovery.apply_bi(logP,logM, sup=support, ratio=ratio, size_par=len(logP)/max(1,len(logM)),rules = rules)
+net, initial_marking, final_marking = discovery.apply_bi(logP,logM, sup=support, ratio=0, size_par=len(logP)/max(1,len(logM)),rules = rules)
 end = time.time()
 print("run time:")
 print(end-start)
