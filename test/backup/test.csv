@@ -1,0 +1,3 @@
+log,template,act1,act2,User,text
+BPIC17,AtLeast1,O_Create Offer,,user1,"In all applications, the bank is required to create at least one offer."
+BPIC17,AtMost1,A_Submitted,,user1,An application cannot be submitted more than once.

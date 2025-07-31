@@ -1,0 +1,329 @@
+'Constraint';'Template';'Activation';'Target';'Confidence';'Coverage';'Support';'Trace confidence';'Trace coverage';'Trace support';'Marked for exclusion';'Below thresholds';'Redudant';'Conflicting'
+'AtMost2(abort payment)';'AtMost2';'';'[abort payment]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(abort payment, begin editing)';'NotSuccession';'[abort payment]';'[begin editing]';1.000;0.162;0.162;0.608;1.000;0.608;FALSE;FALSE;FALSE;FALSE
+'ChainResponse(abort payment, begin payment)';'ChainResponse';'[abort payment]';'[begin payment]';0.998;0.035;0.035;0.998;0.608;0.606;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(abort payment, calculate)';'NotSuccession';'[abort payment]';'[calculate]';1.000;0.312;0.312;0.608;1.000;0.608;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(abort payment, decide)';'NotSuccession';'[abort payment]';'[decide]';0.999;0.106;0.106;0.608;1.000;0.608;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(abort payment, finish editing)';'NotSuccession';'[abort payment]';'[finish editing]';0.999;0.185;0.184;0.608;1.000;0.608;FALSE;FALSE;FALSE;FALSE
+'Response(abort payment, finish payment)';'Response';'[abort payment]';'[finish payment]';1.000;0.035;0.035;1.000;0.608;0.608;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(abort payment, finish payment)';'NotChainSuccession';'[abort payment]';'[finish payment]';1.000;0.083;0.083;0.609;0.998;0.608;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(abort payment, initialize)';'NotSuccession';'[abort payment]';'[initialize]';1.000;0.083;0.083;0.608;1.000;0.608;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(abort payment, insert document)';'NotChainSuccession';'[abort payment]';'[insert document]';1.000;0.083;0.083;0.608;0.999;0.608;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(abort payment, mail income)';'NotSuccession';'[abort payment]';'[mail income]';1.000;0.083;0.083;0.608;1.000;0.608;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(abort payment, mail valid)';'NotSuccession';'[abort payment]';'[mail valid]';1.000;0.083;0.083;0.608;1.000;0.608;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(abort payment, remove document)';'NotCoExistence';'[abort payment]';'[remove document]';0.991;0.036;0.035;0.995;0.608;0.605;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(abort payment, revoke decision)';'NotSuccession';'[abort payment]';'[revoke decision]';0.997;0.059;0.058;0.852;0.714;0.608;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(abort payment, revoke withdrawal)';'NotCoExistence';'[abort payment]';'[revoke withdrawal]';0.998;0.036;0.035;0.999;0.608;0.607;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(abort payment, withdraw)';'NotCoExistence';'[abort payment]';'[withdraw]';0.998;0.036;0.035;0.998;0.608;0.607;FALSE;FALSE;FALSE;FALSE
+'Precedence(begin editing, abort payment)';'Precedence';'[abort payment]';'[begin editing]';1.000;0.035;0.035;1.000;0.608;0.608;FALSE;FALSE;FALSE;FALSE
+'AlternatePrecedence(begin payment, abort payment)';'AlternatePrecedence';'[abort payment]';'[begin payment]';1.000;0.035;0.035;1.000;0.608;0.608;FALSE;FALSE;FALSE;FALSE
+'Precedence(calculate, abort payment)';'Precedence';'[abort payment]';'[calculate]';1.000;0.035;0.035;1.000;0.608;0.608;FALSE;FALSE;FALSE;FALSE
+'Precedence(decide, abort payment)';'Precedence';'[abort payment]';'[decide]';1.000;0.035;0.035;1.000;0.608;0.608;FALSE;FALSE;FALSE;FALSE
+'Precedence(finish editing, abort payment)';'Precedence';'[abort payment]';'[finish editing]';1.000;0.035;0.035;1.000;0.608;0.608;FALSE;FALSE;FALSE;FALSE
+'Precedence(initialize, abort payment)';'Precedence';'[abort payment]';'[initialize]';1.000;0.035;0.035;1.000;0.608;0.608;FALSE;FALSE;FALSE;FALSE
+'Precedence(mail income, abort payment)';'Precedence';'[abort payment]';'[mail income]';1.000;0.035;0.035;1.000;0.608;0.608;FALSE;FALSE;FALSE;FALSE
+'Precedence(mail valid, abort payment)';'Precedence';'[abort payment]';'[mail valid]';1.000;0.035;0.035;1.000;0.608;0.608;FALSE;FALSE;FALSE;FALSE
+'AtLeast1(begin editing)';'AtLeast1';'';'[begin editing]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(begin editing, abort payment)';'NotChainSuccession';'[begin editing]';'[abort payment]';1.000;0.162;0.162;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(begin editing, begin payment)';'Succession';'[begin editing]';'[begin payment]';1.000;0.209;0.209;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(begin editing, begin payment)';'NotChainSuccession';'[begin editing]';'[begin payment]';1.000;0.209;0.209;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'ChainResponse(begin editing, calculate)';'ChainResponse';'[begin editing]';'[calculate]';1.000;0.127;0.127;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'Succession(begin editing, calculate)';'Succession';'[begin editing]';'[calculate]';1.000;0.403;0.403;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(begin editing, decide)';'Succession';'[begin editing]';'[decide]';1.000;0.197;0.197;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(begin editing, decide)';'NotChainSuccession';'[begin editing]';'[decide]';1.000;0.197;0.197;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(begin editing, finish editing)';'AlternateResponse';'[begin editing]';'[finish editing]';1.000;0.127;0.127;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(begin editing, finish editing)';'Succession';'[begin editing]';'[finish editing]';1.000;0.276;0.276;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(begin editing, finish editing)';'NotChainSuccession';'[begin editing]';'[finish editing]';1.000;0.276;0.276;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(begin editing, finish payment)';'AlternateSuccession';'[begin editing]';'[finish payment]';0.999;0.174;0.174;0.380;1.000;0.380;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(begin editing, finish payment)';'NotChainSuccession';'[begin editing]';'[finish payment]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(begin editing, initialize)';'CoExistence';'[begin editing]';'[initialize]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin editing, initialize)';'NotSuccession';'[begin editing]';'[initialize]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(begin editing, insert document)';'NotChainSuccession';'[begin editing]';'[insert document]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(begin editing, mail income)';'CoExistence';'[begin editing]';'[mail income]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin editing, mail income)';'NotSuccession';'[begin editing]';'[mail income]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(begin editing, mail valid)';'CoExistence';'[begin editing]';'[mail valid]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin editing, mail valid)';'NotSuccession';'[begin editing]';'[mail valid]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(begin editing, remove document)';'NotCoExistence';'[begin editing]';'[remove document]';0.997;0.127;0.126;0.997;1.000;0.997;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(begin editing, revoke decision)';'NotChainSuccession';'[begin editing]';'[revoke decision]';1.000;0.150;0.150;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(begin editing, revoke withdrawal)';'NotCoExistence';'[begin editing]';'[revoke withdrawal]';0.998;0.127;0.126;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(begin editing, withdraw)';'NotCoExistence';'[begin editing]';'[withdraw]';0.998;0.127;0.126;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'AtLeast1(begin payment)';'AtLeast1';'';'[begin payment]';0.998;0.047;0.047;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'AtMost3(begin payment)';'AtMost3';'';'[begin payment]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(begin payment, begin editing)';'CoExistence';'[begin payment]';'[begin editing]';1.000;0.209;0.209;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin payment, begin editing)';'NotSuccession';'[begin payment]';'[begin editing]';1.000;0.209;0.209;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(begin payment, calculate)';'CoExistence';'[begin payment]';'[calculate]';0.999;0.359;0.359;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin payment, calculate)';'NotSuccession';'[begin payment]';'[calculate]';1.000;0.359;0.359;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(begin payment, decide)';'CoExistence';'[begin payment]';'[decide]';0.999;0.153;0.153;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin payment, decide)';'NotSuccession';'[begin payment]';'[decide]';0.999;0.153;0.153;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(begin payment, finish editing)';'CoExistence';'[begin payment]';'[finish editing]';1.000;0.232;0.232;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin payment, finish editing)';'NotSuccession';'[begin payment]';'[finish editing]';1.000;0.232;0.232;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(begin payment, finish payment)';'AlternateSuccession';'[begin payment]';'[finish payment]';1.000;0.130;0.130;0.391;0.998;0.390;FALSE;FALSE;FALSE;FALSE
+'CoExistence(begin payment, initialize)';'CoExistence';'[begin payment]';'[initialize]';0.999;0.130;0.130;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin payment, initialize)';'NotSuccession';'[begin payment]';'[initialize]';1.000;0.130;0.130;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(begin payment, mail income)';'CoExistence';'[begin payment]';'[mail income]';0.999;0.130;0.130;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin payment, mail income)';'NotSuccession';'[begin payment]';'[mail income]';1.000;0.130;0.130;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(begin payment, mail valid)';'CoExistence';'[begin payment]';'[mail valid]';0.999;0.130;0.130;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin payment, mail valid)';'NotSuccession';'[begin payment]';'[mail valid]';1.000;0.130;0.130;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(begin payment, remove document)';'NotCoExistence';'[begin payment]';'[remove document]';0.994;0.083;0.082;0.997;0.998;0.995;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(begin payment, revoke decision)';'NotSuccession';'[begin payment]';'[revoke decision]';0.998;0.106;0.105;1.000;0.998;0.998;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(begin payment, revoke withdrawal)';'NotCoExistence';'[begin payment]';'[revoke withdrawal]';0.999;0.083;0.083;0.999;0.998;0.997;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(begin payment, withdraw)';'NotCoExistence';'[begin payment]';'[withdraw]';0.999;0.083;0.083;0.999;0.998;0.997;FALSE;FALSE;FALSE;FALSE
+'AtLeast3(calculate)';'AtLeast3';'';'[calculate]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(calculate, abort payment)';'NotChainSuccession';'[calculate]';'[abort payment]';1.000;0.312;0.312;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(calculate, begin editing)';'CoExistence';'[calculate]';'[begin editing]';1.000;0.403;0.403;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(calculate, begin editing)';'NotChainSuccession';'[calculate]';'[begin editing]';1.000;0.403;0.403;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(calculate, begin payment)';'Succession';'[calculate]';'[begin payment]';0.999;0.359;0.359;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(calculate, begin payment)';'NotChainSuccession';'[calculate]';'[begin payment]';1.000;0.359;0.359;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(calculate, decide)';'AlternateSuccession';'[calculate]';'[decide]';0.998;0.347;0.346;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(calculate, decide)';'NotChainSuccession';'[calculate]';'[decide]';1.000;0.347;0.347;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(calculate, finish editing)';'AlternateSuccession';'[calculate]';'[finish editing]';1.000;0.426;0.425;0.213;1.000;0.213;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(calculate, finish payment)';'AlternateSuccession';'[calculate]';'[finish payment]';0.998;0.324;0.323;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(calculate, finish payment)';'NotChainSuccession';'[calculate]';'[finish payment]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(calculate, initialize)';'CoExistence';'[calculate]';'[initialize]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(calculate, initialize)';'NotSuccession';'[calculate]';'[initialize]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(calculate, insert document)';'NotChainSuccession';'[calculate]';'[insert document]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(calculate, mail income)';'CoExistence';'[calculate]';'[mail income]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(calculate, mail income)';'NotSuccession';'[calculate]';'[mail income]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(calculate, mail valid)';'CoExistence';'[calculate]';'[mail valid]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(calculate, mail valid)';'NotSuccession';'[calculate]';'[mail valid]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(calculate, remove document)';'NotCoExistence';'[calculate]';'[remove document]';0.997;0.277;0.276;0.997;1.000;0.997;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(calculate, revoke decision)';'NotChainSuccession';'[calculate]';'[revoke decision]';1.000;0.300;0.300;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(calculate, revoke withdrawal)';'NotCoExistence';'[calculate]';'[revoke withdrawal]';0.998;0.277;0.276;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(calculate, withdraw)';'NotCoExistence';'[calculate]';'[withdraw]';0.998;0.277;0.276;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'AtLeast1(decide)';'AtLeast1';'';'[decide]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AtMost3(decide)';'AtMost3';'';'[decide]';0.998;0.047;0.047;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(decide, abort payment)';'NotChainSuccession';'[decide]';'[abort payment]';1.000;0.106;0.106;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(decide, begin editing)';'CoExistence';'[decide]';'[begin editing]';1.000;0.197;0.197;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(decide, begin editing)';'NotSuccession';'[decide]';'[begin editing]';0.994;0.197;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(decide, begin payment)';'Succession';'[decide]';'[begin payment]';0.999;0.153;0.153;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(decide, calculate)';'CoExistence';'[decide]';'[calculate]';1.000;0.347;0.347;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(decide, calculate)';'NotChainSuccession';'[decide]';'[calculate]';0.991;0.347;0.344;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(decide, finish editing)';'CoExistence';'[decide]';'[finish editing]';1.000;0.220;0.220;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(decide, finish editing)';'NotChainSuccession';'[decide]';'[finish editing]';1.000;0.220;0.220;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(decide, finish payment)';'AlternateSuccession';'[decide]';'[finish payment]';0.999;0.118;0.118;0.520;1.000;0.520;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(decide, finish payment)';'NotChainSuccession';'[decide]';'[finish payment]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(decide, initialize)';'CoExistence';'[decide]';'[initialize]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(decide, initialize)';'NotSuccession';'[decide]';'[initialize]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(decide, insert document)';'NotChainSuccession';'[decide]';'[insert document]';0.991;0.118;0.117;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(decide, mail income)';'CoExistence';'[decide]';'[mail income]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(decide, mail income)';'NotSuccession';'[decide]';'[mail income]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(decide, mail valid)';'CoExistence';'[decide]';'[mail valid]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(decide, mail valid)';'NotSuccession';'[decide]';'[mail valid]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(decide, remove document)';'NotCoExistence';'[decide]';'[remove document]';0.993;0.071;0.070;0.997;1.000;0.997;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(decide, revoke withdrawal)';'NotCoExistence';'[decide]';'[revoke withdrawal]';0.998;0.071;0.070;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(decide, withdraw)';'NotCoExistence';'[decide]';'[withdraw]';0.998;0.071;0.070;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'AtLeast1(finish editing)';'AtLeast1';'';'[finish editing]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'ChainPrecedence(calculate, finish editing)';'ChainPrecedence';'[finish editing]';'[calculate]';1.000;0.149;0.149;0.999;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(finish editing, abort payment)';'NotChainSuccession';'[finish editing]';'[abort payment]';1.000;0.185;0.185;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish editing, begin editing)';'CoExistence';'[finish editing]';'[begin editing]';1.000;0.276;0.276;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(finish editing, begin payment)';'Succession';'[finish editing]';'[begin payment]';1.000;0.232;0.232;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(finish editing, begin payment)';'NotChainSuccession';'[finish editing]';'[begin payment]';1.000;0.232;0.232;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish editing, calculate)';'CoExistence';'[finish editing]';'[calculate]';1.000;0.426;0.425;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(finish editing, calculate)';'NotChainSuccession';'[finish editing]';'[calculate]';1.000;0.426;0.425;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(finish editing, decide)';'AlternateSuccession';'[finish editing]';'[decide]';0.997;0.220;0.219;0.382;1.000;0.381;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(finish editing, finish payment)';'AlternateSuccession';'[finish editing]';'[finish payment]';0.999;0.196;0.196;0.219;1.000;0.219;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(finish editing, finish payment)';'NotChainSuccession';'[finish editing]';'[finish payment]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish editing, initialize)';'CoExistence';'[finish editing]';'[initialize]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish editing, initialize)';'NotSuccession';'[finish editing]';'[initialize]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(finish editing, insert document)';'NotChainSuccession';'[finish editing]';'[insert document]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish editing, mail income)';'CoExistence';'[finish editing]';'[mail income]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish editing, mail income)';'NotSuccession';'[finish editing]';'[mail income]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish editing, mail valid)';'CoExistence';'[finish editing]';'[mail valid]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish editing, mail valid)';'NotSuccession';'[finish editing]';'[mail valid]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(finish editing, remove document)';'NotCoExistence';'[finish editing]';'[remove document]';0.996;0.149;0.149;0.997;1.000;0.997;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(finish editing, revoke withdrawal)';'NotCoExistence';'[finish editing]';'[revoke withdrawal]';0.998;0.149;0.149;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(finish editing, withdraw)';'NotCoExistence';'[finish editing]';'[withdraw]';0.998;0.149;0.149;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'AtMost1(finish payment)';'AtMost1';'';'[finish payment]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'End(finish payment)';'End';'';'[finish payment]';0.997;0.047;0.047;0.997;1.000;0.997;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, abort payment)';'NotSuccession';'[finish payment]';'[abort payment]';1.000;0.083;0.083;1.000;0.998;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish payment, begin editing)';'CoExistence';'[finish payment]';'[begin editing]';0.999;0.174;0.174;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, begin editing)';'NotSuccession';'[finish payment]';'[begin editing]';1.000;0.174;0.174;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish payment, begin payment)';'CoExistence';'[finish payment]';'[begin payment]';1.000;0.130;0.130;1.000;0.998;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, begin payment)';'NotSuccession';'[finish payment]';'[begin payment]';1.000;0.130;0.130;1.000;0.998;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish payment, calculate)';'CoExistence';'[finish payment]';'[calculate]';0.998;0.324;0.323;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, calculate)';'NotSuccession';'[finish payment]';'[calculate]';1.000;0.324;0.324;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish payment, decide)';'CoExistence';'[finish payment]';'[decide]';0.999;0.118;0.118;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, decide)';'NotSuccession';'[finish payment]';'[decide]';1.000;0.118;0.118;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish payment, finish editing)';'CoExistence';'[finish payment]';'[finish editing]';0.999;0.196;0.196;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, finish editing)';'NotSuccession';'[finish payment]';'[finish editing]';1.000;0.196;0.196;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish payment, initialize)';'CoExistence';'[finish payment]';'[initialize]';0.999;0.094;0.094;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, initialize)';'NotSuccession';'[finish payment]';'[initialize]';1.000;0.094;0.094;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, insert document)';'NotSuccession';'[finish payment]';'[insert document]';0.999;0.094;0.094;0.998;1.000;0.997;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish payment, mail income)';'CoExistence';'[finish payment]';'[mail income]';0.999;0.094;0.094;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, mail income)';'NotSuccession';'[finish payment]';'[mail income]';1.000;0.094;0.094;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'CoExistence(finish payment, mail valid)';'CoExistence';'[finish payment]';'[mail valid]';0.999;0.094;0.094;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, mail valid)';'NotSuccession';'[finish payment]';'[mail valid]';1.000;0.094;0.094;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(finish payment, remove document)';'NotCoExistence';'[finish payment]';'[remove document]';0.994;0.047;0.047;0.997;0.998;0.995;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(finish payment, revoke decision)';'NotSuccession';'[finish payment]';'[revoke decision]';1.000;0.070;0.070;1.000;0.998;0.998;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(finish payment, revoke withdrawal)';'NotCoExistence';'[finish payment]';'[revoke withdrawal]';0.998;0.047;0.047;0.999;0.998;0.997;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(finish payment, withdraw)';'NotCoExistence';'[finish payment]';'[withdraw]';0.998;0.047;0.047;0.999;0.998;0.997;FALSE;FALSE;FALSE;FALSE
+'AtLeast1(initialize)';'AtLeast1';'';'[initialize]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AtMost1(initialize)';'AtMost1';'';'[initialize]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(initialize, abort payment)';'NotChainSuccession';'[initialize]';'[abort payment]';1.000;0.083;0.083;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'ChainResponse(initialize, begin editing)';'ChainResponse';'[initialize]';'[begin editing]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(initialize, begin editing)';'Succession';'[initialize]';'[begin editing]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(initialize, begin payment)';'AlternateResponse';'[initialize]';'[begin payment]';0.998;0.047;0.047;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'Succession(initialize, begin payment)';'Succession';'[initialize]';'[begin payment]';0.999;0.130;0.130;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(initialize, begin payment)';'NotChainSuccession';'[initialize]';'[begin payment]';1.000;0.130;0.130;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(initialize, calculate)';'AlternateResponse';'[initialize]';'[calculate]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(initialize, calculate)';'Succession';'[initialize]';'[calculate]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(initialize, calculate)';'NotChainSuccession';'[initialize]';'[calculate]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(initialize, decide)';'AlternateResponse';'[initialize]';'[decide]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(initialize, decide)';'Succession';'[initialize]';'[decide]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(initialize, decide)';'NotChainSuccession';'[initialize]';'[decide]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(initialize, finish editing)';'AlternateResponse';'[initialize]';'[finish editing]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(initialize, finish editing)';'Succession';'[initialize]';'[finish editing]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(initialize, finish editing)';'NotChainSuccession';'[initialize]';'[finish editing]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(initialize, finish payment)';'AlternateSuccession';'[initialize]';'[finish payment]';0.999;0.094;0.094;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(initialize, finish payment)';'NotChainSuccession';'[initialize]';'[finish payment]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(initialize, insert document)';'NotChainSuccession';'[initialize]';'[insert document]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(initialize, mail income)';'CoExistence';'[initialize]';'[mail income]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(initialize, mail income)';'NotSuccession';'[initialize]';'[mail income]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(initialize, mail valid)';'CoExistence';'[initialize]';'[mail valid]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(initialize, mail valid)';'NotSuccession';'[initialize]';'[mail valid]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(initialize, remove document)';'NotCoExistence';'[initialize]';'[remove document]';0.994;0.047;0.047;0.997;1.000;0.997;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(initialize, revoke decision)';'NotChainSuccession';'[initialize]';'[revoke decision]';1.000;0.070;0.070;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(initialize, revoke withdrawal)';'NotCoExistence';'[initialize]';'[revoke withdrawal]';0.998;0.047;0.047;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(initialize, withdraw)';'NotCoExistence';'[initialize]';'[withdraw]';0.998;0.047;0.047;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'AtMost2(insert document)';'AtMost2';'';'[insert document]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Precedence(begin editing, insert document)';'Precedence';'[insert document]';'[begin editing]';1.000;0.047;0.047;1.000;0.668;0.668;FALSE;FALSE;FALSE;FALSE
+'Precedence(calculate, insert document)';'Precedence';'[insert document]';'[calculate]';1.000;0.047;0.047;1.000;0.668;0.668;FALSE;FALSE;FALSE;FALSE
+'Precedence(decide, insert document)';'Precedence';'[insert document]';'[decide]';1.000;0.047;0.047;0.999;0.668;0.668;FALSE;FALSE;FALSE;FALSE
+'Precedence(finish editing, insert document)';'Precedence';'[insert document]';'[finish editing]';1.000;0.047;0.047;1.000;0.668;0.668;FALSE;FALSE;FALSE;FALSE
+'Precedence(initialize, insert document)';'Precedence';'[insert document]';'[initialize]';1.000;0.047;0.047;1.000;0.668;0.668;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(insert document, begin editing)';'NotSuccession';'[insert document]';'[begin editing]';1.000;0.174;0.174;0.668;1.000;0.668;FALSE;FALSE;FALSE;FALSE
+'RespondedExistence(insert document, begin payment)';'RespondedExistence';'[insert document]';'[begin payment]';0.998;0.047;0.047;0.998;0.668;0.667;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(insert document, begin payment)';'NotChainSuccession';'[insert document]';'[begin payment]';0.994;0.130;0.129;0.665;1.000;0.665;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(insert document, calculate)';'NotSuccession';'[insert document]';'[calculate]';0.999;0.324;0.323;0.668;1.000;0.668;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(insert document, decide)';'NotSuccession';'[insert document]';'[decide]';0.998;0.118;0.118;0.668;1.000;0.668;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(insert document, finish editing)';'NotSuccession';'[insert document]';'[finish editing]';0.999;0.196;0.196;0.668;1.000;0.668;FALSE;FALSE;FALSE;FALSE
+'Response(insert document, finish payment)';'Response';'[insert document]';'[finish payment]';0.996;0.047;0.047;0.996;0.668;0.666;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(insert document, initialize)';'NotSuccession';'[insert document]';'[initialize]';1.000;0.094;0.094;0.668;1.000;0.668;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(insert document, mail income)';'NotSuccession';'[insert document]';'[mail income]';1.000;0.094;0.094;0.668;1.000;0.668;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(insert document, mail valid)';'NotSuccession';'[insert document]';'[mail valid]';1.000;0.094;0.094;0.668;1.000;0.668;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(insert document, remove document)';'NotCoExistence';'[insert document]';'[remove document]';0.995;0.047;0.047;0.996;0.670;0.667;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(insert document, revoke decision)';'NotSuccession';'[insert document]';'[revoke decision]';0.998;0.070;0.070;0.835;0.800;0.668;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(insert document, revoke withdrawal)';'NotCoExistence';'[insert document]';'[revoke withdrawal]';0.998;0.047;0.047;0.999;0.668;0.667;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(insert document, withdraw)';'NotCoExistence';'[insert document]';'[withdraw]';0.998;0.047;0.047;0.998;0.668;0.667;FALSE;FALSE;FALSE;FALSE
+'Precedence(mail income, insert document)';'Precedence';'[insert document]';'[mail income]';1.000;0.047;0.047;1.000;0.668;0.668;FALSE;FALSE;FALSE;FALSE
+'Precedence(mail valid, insert document)';'Precedence';'[insert document]';'[mail valid]';1.000;0.047;0.047;1.000;0.668;0.668;FALSE;FALSE;FALSE;FALSE
+'AtLeast1(mail income)';'AtLeast1';'';'[mail income]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AtMost1(mail income)';'AtMost1';'';'[mail income]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail income, abort payment)';'NotChainSuccession';'[mail income]';'[abort payment]';1.000;0.083;0.083;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(mail income, begin editing)';'AlternateResponse';'[mail income]';'[begin editing]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(mail income, begin editing)';'Succession';'[mail income]';'[begin editing]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail income, begin editing)';'NotChainSuccession';'[mail income]';'[begin editing]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(mail income, begin payment)';'AlternateResponse';'[mail income]';'[begin payment]';0.998;0.047;0.047;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'Succession(mail income, begin payment)';'Succession';'[mail income]';'[begin payment]';0.999;0.130;0.130;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail income, begin payment)';'NotChainSuccession';'[mail income]';'[begin payment]';1.000;0.130;0.130;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(mail income, calculate)';'AlternateResponse';'[mail income]';'[calculate]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(mail income, calculate)';'Succession';'[mail income]';'[calculate]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail income, calculate)';'NotChainSuccession';'[mail income]';'[calculate]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(mail income, decide)';'AlternateResponse';'[mail income]';'[decide]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(mail income, decide)';'Succession';'[mail income]';'[decide]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail income, decide)';'NotChainSuccession';'[mail income]';'[decide]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(mail income, finish editing)';'AlternateResponse';'[mail income]';'[finish editing]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(mail income, finish editing)';'Succession';'[mail income]';'[finish editing]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail income, finish editing)';'NotChainSuccession';'[mail income]';'[finish editing]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(mail income, finish payment)';'AlternateSuccession';'[mail income]';'[finish payment]';0.999;0.094;0.094;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail income, finish payment)';'NotChainSuccession';'[mail income]';'[finish payment]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(mail income, initialize)';'AlternateSuccession';'[mail income]';'[initialize]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail income, insert document)';'NotChainSuccession';'[mail income]';'[insert document]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(mail income, mail valid)';'CoExistence';'[mail income]';'[mail valid]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(mail income, remove document)';'NotCoExistence';'[mail income]';'[remove document]';0.994;0.047;0.047;0.997;1.000;0.997;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail income, revoke decision)';'NotChainSuccession';'[mail income]';'[revoke decision]';1.000;0.070;0.070;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(mail income, revoke withdrawal)';'NotCoExistence';'[mail income]';'[revoke withdrawal]';0.998;0.047;0.047;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(mail income, withdraw)';'NotCoExistence';'[mail income]';'[withdraw]';0.998;0.047;0.047;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'AtLeast1(mail valid)';'AtLeast1';'';'[mail valid]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AtMost1(mail valid)';'AtMost1';'';'[mail valid]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail valid, abort payment)';'NotChainSuccession';'[mail valid]';'[abort payment]';1.000;0.083;0.083;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(mail valid, begin editing)';'AlternateResponse';'[mail valid]';'[begin editing]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(mail valid, begin editing)';'Succession';'[mail valid]';'[begin editing]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail valid, begin editing)';'NotChainSuccession';'[mail valid]';'[begin editing]';1.000;0.174;0.174;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(mail valid, begin payment)';'AlternateResponse';'[mail valid]';'[begin payment]';0.998;0.047;0.047;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'Succession(mail valid, begin payment)';'Succession';'[mail valid]';'[begin payment]';0.999;0.130;0.130;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail valid, begin payment)';'NotChainSuccession';'[mail valid]';'[begin payment]';1.000;0.130;0.130;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(mail valid, calculate)';'AlternateResponse';'[mail valid]';'[calculate]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(mail valid, calculate)';'Succession';'[mail valid]';'[calculate]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail valid, calculate)';'NotChainSuccession';'[mail valid]';'[calculate]';1.000;0.324;0.324;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(mail valid, decide)';'AlternateResponse';'[mail valid]';'[decide]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(mail valid, decide)';'Succession';'[mail valid]';'[decide]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail valid, decide)';'NotChainSuccession';'[mail valid]';'[decide]';1.000;0.118;0.118;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateResponse(mail valid, finish editing)';'AlternateResponse';'[mail valid]';'[finish editing]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'Succession(mail valid, finish editing)';'Succession';'[mail valid]';'[finish editing]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail valid, finish editing)';'NotChainSuccession';'[mail valid]';'[finish editing]';1.000;0.196;0.196;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(mail valid, finish payment)';'AlternateSuccession';'[mail valid]';'[finish payment]';0.999;0.094;0.094;0.998;1.000;0.998;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail valid, finish payment)';'NotChainSuccession';'[mail valid]';'[finish payment]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'AlternateSuccession(mail valid, initialize)';'AlternateSuccession';'[mail valid]';'[initialize]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail valid, insert document)';'NotChainSuccession';'[mail valid]';'[insert document]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'CoExistence(mail valid, mail income)';'CoExistence';'[mail valid]';'[mail income]';1.000;0.094;0.094;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(mail valid, remove document)';'NotCoExistence';'[mail valid]';'[remove document]';0.994;0.047;0.047;0.997;1.000;0.997;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(mail valid, revoke decision)';'NotChainSuccession';'[mail valid]';'[revoke decision]';1.000;0.070;0.070;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(mail valid, revoke withdrawal)';'NotCoExistence';'[mail valid]';'[revoke withdrawal]';0.998;0.047;0.047;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(mail valid, withdraw)';'NotCoExistence';'[mail valid]';'[withdraw]';0.998;0.047;0.047;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'Absence(remove document)';'Absence';'';'[remove document]';0.997;0.047;0.047;0.997;1.000;0.997;FALSE;FALSE;FALSE;FALSE
+'AtMost1(remove document)';'AtMost1';'';'[remove document]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, abort payment)';'NotCoExistence';'[remove document]';'[abort payment]';0.991;0.036;0.035;0.000;0.608;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, begin editing)';'NotCoExistence';'[remove document]';'[begin editing]';0.997;0.127;0.126;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, begin payment)';'NotCoExistence';'[remove document]';'[begin payment]';0.994;0.083;0.082;0.000;0.998;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, calculate)';'NotCoExistence';'[remove document]';'[calculate]';0.997;0.277;0.276;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, decide)';'NotCoExistence';'[remove document]';'[decide]';0.993;0.071;0.070;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, finish editing)';'NotCoExistence';'[remove document]';'[finish editing]';0.996;0.149;0.149;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, finish payment)';'NotCoExistence';'[remove document]';'[finish payment]';0.994;0.047;0.047;0.000;0.998;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, initialize)';'NotCoExistence';'[remove document]';'[initialize]';0.994;0.047;0.047;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, insert document)';'NotCoExistence';'[remove document]';'[insert document]';0.995;0.047;0.047;0.002;0.670;0.001;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, mail income)';'NotCoExistence';'[remove document]';'[mail income]';0.994;0.047;0.047;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(remove document, mail valid)';'NotCoExistence';'[remove document]';'[mail valid]';0.994;0.047;0.047;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(remove document, revoke decision)';'NotChainSuccession';'[remove document]';'[revoke decision]';0.991;0.023;0.023;0.004;0.471;0.002;FALSE;FALSE;FALSE;FALSE
+'AtMost1(revoke decision)';'AtMost1';'';'[revoke decision]';0.991;0.047;0.047;0.991;1.000;0.991;FALSE;FALSE;FALSE;FALSE
+'Precedence(begin editing, revoke decision)';'Precedence';'[revoke decision]';'[begin editing]';1.000;0.023;0.023;1.000;0.471;0.471;FALSE;FALSE;FALSE;FALSE
+'Precedence(calculate, revoke decision)';'Precedence';'[revoke decision]';'[calculate]';1.000;0.023;0.023;1.000;0.471;0.471;FALSE;FALSE;FALSE;FALSE
+'Precedence(decide, revoke decision)';'Precedence';'[revoke decision]';'[decide]';1.000;0.023;0.023;1.000;0.471;0.471;FALSE;FALSE;FALSE;FALSE
+'Precedence(finish editing, revoke decision)';'Precedence';'[revoke decision]';'[finish editing]';1.000;0.023;0.023;1.000;0.471;0.471;FALSE;FALSE;FALSE;FALSE
+'Precedence(initialize, revoke decision)';'Precedence';'[revoke decision]';'[initialize]';1.000;0.023;0.023;1.000;0.471;0.471;FALSE;FALSE;FALSE;FALSE
+'Precedence(mail income, revoke decision)';'Precedence';'[revoke decision]';'[mail income]';1.000;0.023;0.023;1.000;0.471;0.471;FALSE;FALSE;FALSE;FALSE
+'Precedence(mail valid, revoke decision)';'Precedence';'[revoke decision]';'[mail valid]';1.000;0.023;0.023;1.000;0.471;0.471;FALSE;FALSE;FALSE;FALSE
+'NotPrecedence(remove document, revoke decision)';'NotPrecedence';'[revoke decision]';'[remove document]';0.993;0.023;0.023;0.995;0.471;0.468;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(revoke decision, abort payment)';'NotChainSuccession';'[revoke decision]';'[abort payment]';1.000;0.059;0.059;0.660;0.714;0.471;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(revoke decision, begin editing)';'NotSuccession';'[revoke decision]';'[begin editing]';0.995;0.150;0.149;0.471;1.000;0.471;FALSE;FALSE;FALSE;FALSE
+'Response(revoke decision, begin payment)';'Response';'[revoke decision]';'[begin payment]';1.000;0.023;0.023;1.000;0.471;0.471;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(revoke decision, begin payment)';'NotChainSuccession';'[revoke decision]';'[begin payment]';1.000;0.106;0.106;0.472;0.998;0.471;FALSE;FALSE;FALSE;FALSE
+'Response(revoke decision, decide)';'Response';'[revoke decision]';'[decide]';0.999;0.023;0.023;0.999;0.471;0.470;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(revoke decision, finish editing)';'NotChainSuccession';'[revoke decision]';'[finish editing]';1.000;0.172;0.172;0.471;1.000;0.471;FALSE;FALSE;FALSE;FALSE
+'Response(revoke decision, finish payment)';'Response';'[revoke decision]';'[finish payment]';1.000;0.023;0.023;1.000;0.471;0.471;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(revoke decision, finish payment)';'NotChainSuccession';'[revoke decision]';'[finish payment]';1.000;0.070;0.070;0.472;0.998;0.471;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(revoke decision, initialize)';'NotSuccession';'[revoke decision]';'[initialize]';1.000;0.070;0.070;0.471;1.000;0.471;FALSE;FALSE;FALSE;FALSE
+'NotChainSuccession(revoke decision, insert document)';'NotChainSuccession';'[revoke decision]';'[insert document]';0.998;0.070;0.070;0.588;0.800;0.470;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(revoke decision, mail income)';'NotSuccession';'[revoke decision]';'[mail income]';1.000;0.070;0.070;0.471;1.000;0.471;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(revoke decision, mail valid)';'NotSuccession';'[revoke decision]';'[mail valid]';1.000;0.070;0.070;0.471;1.000;0.471;FALSE;FALSE;FALSE;FALSE
+'NotSuccession(revoke decision, remove document)';'NotSuccession';'[revoke decision]';'[remove document]';0.992;0.023;0.023;0.999;0.471;0.470;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke decision, revoke withdrawal)';'NotCoExistence';'[revoke decision]';'[revoke withdrawal]';0.994;0.023;0.023;0.998;0.471;0.470;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke decision, withdraw)';'NotCoExistence';'[revoke decision]';'[withdraw]';0.994;0.023;0.023;0.998;0.471;0.470;FALSE;FALSE;FALSE;FALSE
+'Absence(revoke withdrawal)';'Absence';'';'[revoke withdrawal]';0.999;0.047;0.047;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'AtMost1(revoke withdrawal)';'AtMost1';'';'[revoke withdrawal]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, abort payment)';'NotCoExistence';'[revoke withdrawal]';'[abort payment]';0.998;0.036;0.035;0.000;0.608;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, begin editing)';'NotCoExistence';'[revoke withdrawal]';'[begin editing]';0.998;0.127;0.126;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, begin payment)';'NotCoExistence';'[revoke withdrawal]';'[begin payment]';0.999;0.083;0.083;0.000;0.998;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, calculate)';'NotCoExistence';'[revoke withdrawal]';'[calculate]';0.998;0.277;0.276;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, decide)';'NotCoExistence';'[revoke withdrawal]';'[decide]';0.998;0.071;0.070;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, finish editing)';'NotCoExistence';'[revoke withdrawal]';'[finish editing]';0.998;0.149;0.149;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, finish payment)';'NotCoExistence';'[revoke withdrawal]';'[finish payment]';0.998;0.047;0.047;0.000;0.998;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, initialize)';'NotCoExistence';'[revoke withdrawal]';'[initialize]';0.998;0.047;0.047;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, insert document)';'NotCoExistence';'[revoke withdrawal]';'[insert document]';0.998;0.047;0.047;0.000;0.668;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, mail income)';'NotCoExistence';'[revoke withdrawal]';'[mail income]';0.998;0.047;0.047;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, mail valid)';'NotCoExistence';'[revoke withdrawal]';'[mail valid]';0.998;0.047;0.047;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(revoke withdrawal, revoke decision)';'NotCoExistence';'[revoke withdrawal]';'[revoke decision]';0.994;0.023;0.023;0.000;0.471;0.000;FALSE;FALSE;FALSE;FALSE
+'Absence(withdraw)';'Absence';'';'[withdraw]';0.999;0.047;0.047;0.999;1.000;0.999;FALSE;FALSE;FALSE;FALSE
+'AtMost1(withdraw)';'AtMost1';'';'[withdraw]';1.000;0.047;0.047;1.000;1.000;1.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, abort payment)';'NotCoExistence';'[withdraw]';'[abort payment]';0.998;0.036;0.035;0.001;0.608;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, begin editing)';'NotCoExistence';'[withdraw]';'[begin editing]';0.998;0.127;0.126;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, begin payment)';'NotCoExistence';'[withdraw]';'[begin payment]';0.999;0.083;0.083;0.000;0.998;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, calculate)';'NotCoExistence';'[withdraw]';'[calculate]';0.998;0.277;0.276;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, decide)';'NotCoExistence';'[withdraw]';'[decide]';0.998;0.071;0.070;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, finish editing)';'NotCoExistence';'[withdraw]';'[finish editing]';0.998;0.149;0.149;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, finish payment)';'NotCoExistence';'[withdraw]';'[finish payment]';0.998;0.047;0.047;0.000;0.998;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, initialize)';'NotCoExistence';'[withdraw]';'[initialize]';0.998;0.047;0.047;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, insert document)';'NotCoExistence';'[withdraw]';'[insert document]';0.998;0.047;0.047;0.000;0.668;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, mail income)';'NotCoExistence';'[withdraw]';'[mail income]';0.998;0.047;0.047;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, mail valid)';'NotCoExistence';'[withdraw]';'[mail valid]';0.998;0.047;0.047;0.000;1.000;0.000;FALSE;FALSE;FALSE;FALSE
+'NotCoExistence(withdraw, revoke decision)';'NotCoExistence';'[withdraw]';'[revoke decision]';0.994;0.023;0.023;0.000;0.471;0.000;FALSE;FALSE;FALSE;FALSE

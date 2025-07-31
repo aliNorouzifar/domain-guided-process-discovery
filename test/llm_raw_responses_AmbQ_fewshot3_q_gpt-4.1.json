@@ -1,0 +1,457 @@
+[
+  {
+    "model": "gpt-4.1",
+    "user_text": "Validating an application occurs at most two times.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": []
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:18"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "Each time an offer is created, it is sent via mail only.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "Response",
+          "parameters": [
+            [
+              "O_Create Offer"
+            ],
+            [
+              "O_Sent (mail and online)"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:19"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "The loan application process has three possible outcomes that cannot coexist for a specific application.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "NotCoExistence",
+          "parameters": [
+            [
+              "A_Accepted"
+            ],
+            [
+              "A_Denied"
+            ]
+          ]
+        },
+        {
+          "template": "NotCoExistence",
+          "parameters": [
+            [
+              "A_Accepted"
+            ],
+            [
+              "A_Cancelled"
+            ]
+          ]
+        },
+        {
+          "template": "NotCoExistence",
+          "parameters": [
+            [
+              "A_Denied"
+            ],
+            [
+              "A_Cancelled"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:23"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "In certain rare situations, it has been observed that the cancellation of an application may be followed by the creation of another offer.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": []
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:24"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "One of the blocking mechanisms of the claims only occurs for the accepted claims.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "Precedence",
+          "parameters": [
+            [
+              "Accept Claim"
+            ],
+            [
+              "Block Claim 3"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:25"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "A claim should not be subject to two conflicting actions.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "NotCoExistence",
+          "parameters": [
+            [
+              "Accept Claim"
+            ],
+            [
+              "Reject Claim"
+            ]
+          ]
+        },
+        {
+          "template": "NotCoExistence",
+          "parameters": [
+            [
+              "Accept Claim"
+            ],
+            [
+              "Withdraw Claim"
+            ]
+          ]
+        },
+        {
+          "template": "NotCoExistence",
+          "parameters": [
+            [
+              "Withdraw Claim"
+            ],
+            [
+              "Reject Claim"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:26"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "Receiving an objection can occur a maximum of once.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "AtMost1",
+          "parameters": [
+            [
+              "Receive Objection 1"
+            ]
+          ]
+        },
+        {
+          "template": "AtMost1",
+          "parameters": [
+            [
+              "Receive Objection 2"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:29"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "In some cases, once an application is rejected, further actions may not be expected.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Unblock Claim 1"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Block Claim 3"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Execute Payment"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Withdraw Claim"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Payment Order"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Receive Objection 2"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Repayment"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Receive Objection 1"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Correct Claim"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Start Claim"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Block Claim 2"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Accept Claim"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Receive Claim"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Block Claim 1"
+            ]
+          ]
+        },
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "Reject Claim"
+            ],
+            [
+              "Unblock Claim 3"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:32"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "Abort editing cannot occur after finishing the editing.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "NotSuccession",
+          "parameters": [
+            [
+              "abort payment"
+            ],
+            [
+              "finish editing"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:33"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "All payments may eventually be finished.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "Response",
+          "parameters": [
+            [
+              "begin payment"
+            ],
+            [
+              "finish payment"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:34"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "Calculations must occur after editing.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "Precedence",
+          "parameters": [
+            [
+              "begin editing"
+            ],
+            [
+              "calculate"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:36"
+  },
+  {
+    "model": "gpt-4.1",
+    "user_text": "Making a decision and revoking a decision can sometimes coexist.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": []
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:26:37"
+  }
+]

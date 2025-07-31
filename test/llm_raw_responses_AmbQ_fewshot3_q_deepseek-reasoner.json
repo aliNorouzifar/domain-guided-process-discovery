@@ -1,0 +1,205 @@
+[
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "Validating an application occurs at most two times.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": []
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:36:19"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "Each time an offer is created, it is sent via mail only.",
+    "questioning_triggered": "yes",
+    "parsed_response": "Based on the input and available activities, I need clarification before generating constraints:\n\nThe constraint states: \"Each time an offer is created, it is sent via mail only.\" However, the activity list contains two relevant activities:\n- O_Sent (mail and online)\n- O_Sent (online only)\n\nThere is no activity explicitly labeled for \"mail only\" sending. To map this correctly:\n1. Should \"sent via mail only\" correspond to the existing \"O_Sent (mail and online)\" activity?\n2. Or is \"mail only\" sending represented differently?\n\nPlease clarify which activity represents the \"mail only\" sending event. Without this, I cannot accurately map the constraint to the available activities.",
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:40:17"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "The loan application process has three possible outcomes that cannot coexist for a specific application.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "NotCoExistence",
+          "parameters": [
+            [
+              "O_Refused"
+            ],
+            [
+              "O_Cancelled"
+            ]
+          ]
+        },
+        {
+          "template": "NotCoExistence",
+          "parameters": [
+            [
+              "O_Refused"
+            ],
+            [
+              "O_Accepted"
+            ]
+          ]
+        },
+        {
+          "template": "NotCoExistence",
+          "parameters": [
+            [
+              "O_Cancelled"
+            ],
+            [
+              "O_Accepted"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:41:49"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "In certain rare situations, it has been observed that the cancellation of an application may be followed by the creation of another offer.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": []
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:43:07"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "One of the blocking mechanisms of the claims only occurs for the accepted claims.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": []
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:44:54"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "A claim should not be subject to two conflicting actions.",
+    "questioning_triggered": "yes",
+    "parsed_response": "The input is ambiguous regarding which specific activities are considered conflicting actions. Please clarify which pairs of activities should never occur together. For example:\n\n- Are \"Accept Claim\" and \"Reject Claim\" conflicting?\n- Are \"Block Claim 1\" and \"Unblock Claim 1\" conflicting?\n- Should certain blocking/unblocking pairs be mutually exclusive?\n- Are there other conflicting pairs like \"Correct Claim\" and \"Withdraw Claim\"?\n\nWithout knowing the exact conflicting activity pairs, I cannot generate accurate NotCoExistence constraints. Please specify the conflicting pairs explicitly.",
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:45:49"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "Receiving an objection can occur a maximum of once.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "AtMost1",
+          "parameters": [
+            [
+              "Receive Objection 1"
+            ]
+          ]
+        },
+        {
+          "template": "AtMost1",
+          "parameters": [
+            [
+              "Receive Objection 2"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:48:34"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "In some cases, once an application is rejected, further actions may not be expected.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": []
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:53:35"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "Abort editing cannot occur after finishing the editing.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": []
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:55:49"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "All payments may eventually be finished.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": []
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:58:11"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "Calculations must occur after editing.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": [
+        {
+          "template": "Precedence",
+          "parameters": [
+            [
+              "finish editing"
+            ],
+            [
+              "calculate"
+            ]
+          ]
+        }
+      ]
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:59:07"
+  },
+  {
+    "model": "deepseek-reasoner",
+    "user_text": "Making a decision and revoking a decision can sometimes coexist.",
+    "questioning_triggered": "no",
+    "parsed_response": {
+      "constraints": []
+    },
+    "resolution_counter": 0,
+    "failure_counter": 0,
+    "resolution_counter_run": 0,
+    "timestamp": "2025-07-23 17:59:52"
+  }
+]

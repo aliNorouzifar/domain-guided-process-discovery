@@ -1,0 +1,94 @@
+log,template,act1,act2,User,text,response,match,error
+BPIC17,AtLeast1,O_Create Offer,,user1,"In all applications, the bank is required to create at least one offer.","('AtLeast1', 'O_Create Offer')",True,0
+BPIC17,AtMost1,A_Submitted,,user1,An application cannot be submitted more than once.,"('AtMost1', 'A_Submitted')",True,0
+BPIC17,AtMost1,A_Pending,,user1,Pending status of an application means that the application is approved and it cannot occur multiple times.,The number of extracted constraints is 2,True,0
+BPIC17,NotCoExistence,A_Cancelled,A_Pending,user1,Pending and cancelled status cannot occur at the same time.,"('NotCoExistence', 'A_Pending', 'A_Cancelled')",True,0
+BPIC17,NotCoExistence,A_Cancelled,A_Denied,user1,"Cancellation and denial of an application are final outcomes, and only one of them can occur for an individual.","('NotCoExistence', 'A_Cancelled', 'A_Denied')",True,0
+BPIC17,NotCoExistence,O_Sent (mail and online),O_Sent (online only),user1,An offer can be sent either online only or both online and via mail.,"('NotCoExistence', 'O_Sent (online only)', 'O_Sent (mail and online)')",True,0
+BPIC17,NotSuccession,A_Cancelled,O_Create Offer,user1,It is not allowed to create an offer after an application is cancelled.,"('NotSuccession', 'A_Cancelled', 'O_Create Offer')",True,0
+BPIC17,NotSuccession,A_Complete,A_Accepted,user1,We cannot accept an application after it has been completed.,"('NotSuccession', 'A_Complete', 'A_Accepted')",True,0
+BPIC17,Precedence,O_Accepted,A_Pending,user1,"If an application is in pending, there must be an accepted offer beforehand.","('Precedence', 'O_Accepted', 'A_Pending')",True,0
+BPIC17,Precedence,A_Validating,A_Incomplete,user1,We cannot have an incomplete status for an application without validating it first.,"('Precedence', 'A_Validating', 'A_Incomplete')",True,0
+BPIC18,AtLeast1,decide,,user1,Making a decision is a mandatory action in this process.,"('AtLeast1', 'decide')",True,0
+BPIC18,AtMost1,withdraw,,user1,Withdrawing the case cannot occur more than once.,"('AtMost1', 'withdraw')",True,0
+BPIC18,CoExistence,mail income,mail valid,user1,Mail income and mail valid both must exist in all individual applications.,The number of extracted constraints is 2,True,0
+BPIC18,NotCoExistence,revoke decision,withdraw,user1,Only one of the activities withdrawal and revoke decision can occur in a case.,"('NotCoExistence', 'withdraw', 'revoke decision')",True,0
+BPIC18,NotSuccession,finish payment,revoke decision,user1,The farmers cannot revoke the decision after the payment is finished.,"('NotSuccession', 'finish payment', 'revoke decision')",True,0
+BPIC18,NotSuccession,decide,begin editing,user1,We cannot begin editing when a decision is made.,"('NotSuccession', 'decide', 'begin editing')",True,0
+BPIC18,Precedence,decide,revoke decision,user1,It is not possible to revoke a decision without making a decision first.,"('Precedence', 'decide', 'revoke decision')",True,0
+BPIC18,RespondedExistence,insert document,begin payment,user1,"If documents are inserted, payment should also begin in each case.","('Response', 'insert document', 'begin payment')",False,0
+BPIC18,Response,mail income,calculate,user1,Any mail income should be followed by some calculations.,"('Response', 'mail income', 'calculate')",True,0
+BPIC18,Response,abort payment,finish payment,user1,"If a payment is aborted, it should be finished at some point after it.","('Response', 'abort payment', 'finish payment')",True,0
+UWV,AtLeast1,Receive Claim,,user1,We cannot have any claim without a receive claim event.,The number of extracted constraints is 12,True,0
+UWV,AtMost1,Reject Claim,,user1,We cannot have multiple rejections for a single claim.,"('AtMost1', 'Reject Claim')",True,0
+UWV,CoExistence,Receive objection 1,Repayment,user1,First type of receive objection and repayment always occur together in a claim.,"('CoExistence', 'Receive objection 1', 'Repayment')",True,0
+UWV,NotCoExistence,Accept Claim,Reject Claim,user1,One claim can be either accepted or rejected.,The number of extracted constraints is 3,True,0
+UWV,NotCoExistence,Block Claim 1,Block Claim 2,user1,First and second blocking mechanisms cannot occur together.,"('NotCoExistence', 'Block Claim 1', 'Block Claim 2')",True,0
+UWV,NotSuccession,Repayment,Payment Order,user1,We cannot have payment order and repayment in any order. No payment can happen after a repayment.,The number of extracted constraints is 2,True,0
+UWV,Precedence,Payment Order,Execute Payment,user1,We cannot execute a payment without first placing an order for the payment.,"('Precedence', 'Payment Order', 'Execute Payment')",True,0
+UWV,Precedence,Block Claim 1,Correct Claim,user1,Correction of claims is only possible if the claim is already blocked with the first blocking mechanism.,"('Precedence', 'Block Claim 1', 'Correct Claim')",True,0
+UWV,RespondedExistence,Withdraw Claim,Block Claim 3,user1,"If a claim is withdrawn, it should be blocked with mechanism 3 as well.","('RespondedExistence', 'Withdraw Claim', 'Block Claim 3')",True,0
+UWV,Response,Accept Claim,Payment Order,user1,All the accepted claims should have a payment order afterward.,"('Response', 'Accept Claim', 'Payment Order')",True,0
+UWV,Response,Unblock Claim 3,Payment Order,user1,"If a claim is unblocked with type three, then a payment order must occur afterward.","('Response', 'Unblock Claim 3', 'Payment Order')",True,0
+BPIC17,AtLeast1,O_Create Offer,,user2,Creating an offer is a mandatory step in the loan application process.,"('AtLeast1', 'O_Create Offer')",True,0
+BPIC17,AtMost1,A_Submitted,,user2,Submitting an application cannot occur multiple times.,"('AtMost1', 'A_Submitted')",True,0
+BPIC17,AtMost1,A_Pending,,user2,We may have a maximum of one application pending event.,"('AtMost1', 'A_Pending')",True,0
+BPIC17,NotCoExistence,A_Cancelled,A_Pending,user2,One application can have only one of the outcomes: pending or cancelled.,"('NotCoExistence', 'A_Pending', 'A_Cancelled')",True,0
+BPIC17,NotCoExistence,A_Cancelled,A_Denied,user2,An application can either be cancelled or denied.,"('NotCoExistence', 'A_Cancelled', 'A_Denied')",True,0
+BPIC17,NotCoExistence,O_Sent (mail and online),O_Sent (online only),user2,There are two possible sending procedures for offers: 1) mail and online 2) only online.,"('NotCoExistence', 'O_Sent (mail and online)', 'O_Sent (online only)')",True,0
+BPIC17,NotSuccession,A_Cancelled,O_Create Offer,user2,"When an application is cancelled, no more offer should be created for this application.","('NotSuccession', 'A_Cancelled', 'O_Create Offer')",True,0
+BPIC17,NotSuccession,A_Complete,A_Accepted,user2,Acceptance of an application never occurs after the completion of the application.,"('NotSuccession', 'A_Complete', 'A_Accepted')",True,0
+BPIC17,Precedence,O_Accepted,A_Pending,user2,All pending applications must be preceded by an accepted offer.,"('Precedence', 'O_Accepted', 'A_Pending')",True,0
+BPIC17,Precedence,A_Validating,A_Incomplete,user2,Any application incomplete event must be proceeded by the validation of the application.,"('Precedence', 'A_Validating', 'A_Incomplete')",True,0
+BPIC18,AtLeast1,decide,,user2,We cannot have cases without a decision.,"('AtLeast1', 'decide')",True,0
+BPIC18,AtMost1,withdraw,,user2,Each application can be withdrawn a maximum of one time.,"('AtMost1', 'withdraw')",True,0
+BPIC18,CoExistence,mail income,mail valid,user2,The activities mail valid and mail income occur together in all cases.,"('CoExistence', 'mail valid', 'mail income')",True,0
+BPIC18,NotCoExistence,revoke decision,withdraw,user2,We cannot have both revoking a decision and withdrawal of the application in one case.,"('NotCoExistence', 'revoke decision', 'withdraw')",True,0
+BPIC18,NotSuccession,finish payment,revoke decision,user2,Revoking a decision after finalizing the payment is not allowed.,"('NotSuccession', 'finish payment', 'revoke decision')",True,0
+BPIC18,NotSuccession,decide,begin editing,user2,Begin edition should not be permitted after making a decision.,"('NotSuccession', 'decide', 'begin editing')",True,0
+BPIC18,Precedence,decide,revoke decision,user2,"In order to have revoking of a decision, it is necessary to have a decision made in the process.","('Precedence', 'decide', 'revoke decision')",True,0
+BPIC18,RespondedExistence,insert document,begin payment,user2,Inserting documents in an application implies that payment has begun before or will begin after it.,"('RespondedExistence', 'insert document', 'begin payment')",True,0
+BPIC18,Response,mail income,calculate,user2,"If mail income is recorded, we should have calculations at some point after it.","('Response', 'mail income', 'calculate')",True,0
+BPIC18,Response,abort payment,finish payment,user2,Aborting a payment should be followed by finish editing.,"('Response', 'abort payment', 'begin editing')",False,0
+UWV,AtLeast1,Receive Claim,,user2,All the claims must be received first.,The number of extracted constraints is 13,True,0
+UWV,AtMost1,Reject Claim,,user2,Rejection of a claim may occur at most once.,"('AtMost1', 'Reject Claim')",True,0
+UWV,CoExistence,Receive objection 1,Repayment,user2,It is not possible to have claims with only repayment or only receiving an objection from the first type.,The number of extracted constraints is 2,True,0
+UWV,NotCoExistence,Accept Claim,Reject Claim,user2,We cannot have claims that are both accepted and rejected.,"('NotCoExistence', 'Accept Claim', 'Reject Claim')",True,0
+UWV,NotCoExistence,Block Claim 1,Block Claim 2,user2,"A claim may have block claim 1 or 2, but not both of them.","('NotCoExistence', 'Block Claim 1', 'Block Claim 2')",True,0
+UWV,NotSuccession,Repayment,Payment Order,user2,"After repaying the received benefits, there should be no payment order.","('NotSuccession', 'Repayment', 'Payment Order')",True,0
+UWV,Precedence,Payment Order,Execute Payment,user2,All executions of payments must be preceded by a payment order.,"('Precedence', 'Payment Order', 'Execute Payment')",True,0
+UWV,Precedence,Block Claim 1,Correct Claim,user2,All claim corrections must be preceded by a block claim 1.,"('Precedence', 'Block Claim 1', 'Correct Claim')",True,0
+UWV,RespondedExistence,Withdraw Claim,Block Claim 3,user2,Occurrence of withdraw claim is allowed only if block claim 3 also exists.,"('RespondedExistence', 'Withdraw Claim', 'Block Claim 3')",True,0
+UWV,Precedence,Accept Claim,Payment Order,user2,The model allows for ordering a payment without accepting the claim; that is not possible.,"('Precedence', 'Accept Claim', 'Payment Order')",True,0
+UWV,Response,Unblock Claim 3,Payment Order,user2,It is not possible to have the third unblocking mechanism event without any payment order occurring after it.,"('Response', 'Unblock Claim 3', 'Payment Order')",True,0
+BPIC17,AtLeast1,O_Create Offer,,user3,It is not possible to have applications without any offers created.,"('AtLeast1', 'O_Create Offer')",True,0
+BPIC17,AtMost1,A_Submitted,,user3,We cannot have applications that are submitted more than once.,"('AtMost1', 'A_Submitted')",True,0
+BPIC17,AtMost1,A_Pending,,user3,Application pending is a possible final outcome for an application and we can only have one outcome for each application.,The number of extracted constraints is 28,True,0
+BPIC17,NotCoExistence,A_Cancelled,A_Pending,user3,Cancellation and pending of an application can never occur together for an individual.,"('NotCoExistence', 'A_Cancelled', 'A_Pending')",True,0
+BPIC17,NotCoExistence,A_Cancelled,A_Denied,user3,It should not be possible to have both cancellation and denial of an application.,"('NotCoExistence', 'A_Cancelled', 'A_Denied')",True,0
+BPIC17,NotCoExistence,O_Sent (mail and online),O_Sent (online only),user3,It is not possible to have an application with both events: offer sent online and offer sent via mail and online.,"('NotCoExistence', 'O_Sent (online only)', 'O_Sent (mail and online)')",True,0
+BPIC17,NotSuccession,A_Cancelled,O_Create Offer,user3,Creation of offers after the cancellation of an application is impossible.,"('NotSuccession', 'A_Cancelled', 'O_Create Offer')",True,0
+BPIC17,NotSuccession,A_Complete,A_Accepted,user3,It is not allowed to have the acceptance of an application after it is completed.,"('NotSuccession', 'A_Complete', 'A_Accepted')",True,0
+BPIC17,Precedence,O_Accepted,A_Pending,user3,It should not be possible to have a pending application without first having an offer accepted.,"('Precedence', 'O_Accepted', 'A_Pending')",True,0
+BPIC17,Precedence,A_Validating,A_Incomplete,user3,Validation of an application should occur prior to deciding any incompleteness in the application.,"('Precedence', 'A_Validating', 'A_Incomplete')",True,0
+BPIC18,AtLeast1,decide,,user3,All the applications must have a decision.,"('AtLeast1', 'decide')",True,0
+BPIC18,AtMost1,withdraw,,user3,We cannot have multiple withdrawals within the same application.,"('AtMost1', 'withdraw')",True,0
+BPIC18,CoExistence,mail income,mail valid,user3,"We cannot have mail income without mail valid, and vice versa.","('CoExistence', 'mail income', 'mail valid')",True,0
+BPIC18,NotCoExistence,revoke decision,withdraw,user3,"If a decision is revoked, it cannot be withdrawn, and vice versa.","('NotCoExistence', 'revoke decision', 'withdraw')",True,0
+BPIC18,NotSuccession,finish payment,revoke decision,user3,No revoke decision can occur after finishing the payment.,"('NotSuccession', 'finish payment', 'revoke decision')",True,0
+BPIC18,NotSuccession,decide,begin editing,user3,"After making a decision, no editing should begin.","('NotSuccession', 'decide', 'begin editing')",True,0
+BPIC18,Precedence,decide,revoke decision,user3,All revoke decisions should be preceded by a decision.,"('Precedence', 'decide', 'revoke decision')",True,0
+BPIC18,RespondedExistence,insert document,begin payment,user3,Applications with insertion of documents have begin payment as well.,"('RespondedExistence', 'insert document', 'begin payment')",True,0
+BPIC18,Response,mail income,calculate,user3,It is not possible to have mail income without some calculations after it.,"('Response', 'mail income', 'calculate')",True,0
+BPIC18,Response,abort payment,finish payment,user3,Any aborted payment will eventually have finish payment.,"('Response', 'abort payment', 'finish payment')",True,0
+UWV,AtLeast1,Receive Claim,,user3,Receiving a claim is a mandatory step in the process.,"('AtLeast1', 'Receive Claim')",True,0
+UWV,AtMost1,Reject Claim,,user3,It is impossible to have claims with multiple rejections.,"('AtMost1', 'Reject Claim')",True,0
+UWV,CoExistence,Receive objection 1,Repayment,user3,"Repayment without receiving the first objection is impossible, and vice versa.","('CoExistence', 'Repayment', 'Receive objection 1')",True,0
+UWV,NotCoExistence,Accept Claim,Reject Claim,user3,"If a claim is accepted, it cannot be rejected and vice versa.","('NotCoExistence', 'Accept Claim', 'Reject Claim')",True,0
+UWV,NotCoExistence,Block Claim 1,Block Claim 2,user3,"A claim is either blocked with the first type of blocking or the second type, and not both.","('NotCoExistence', 'Block Claim 1', 'Block Claim 2')",True,0
+UWV,NotSuccession,Repayment,Payment Order,user3,Placing a payment order after the repayment should not be allowed.,"('NotSuccession', 'Repayment', 'Payment Order')",True,0
+UWV,Precedence,Payment Order,Execute Payment,user3,We need to first place a payment order before executing any payment.,"('Precedence', 'Payment Order', 'Execute Payment')",True,0
+UWV,Precedence,Block Claim 1,Correct Claim,user3,We cannot have any correct claim without a block claim type 1 before it.,"('Precedence', 'Block Claim 1', 'Correct Claim')",True,0
+UWV,RespondedExistence,Block Claim 3,Withdraw Claim,user3,Withdraw claim must always exist when the third type of blocking exists in the claim.,"('RespondedExistence', 'Block Claim 3', 'Withdraw Claim')",True,0
+UWV,Response,Accept Claim,Payment Order,user3,We cannot have accepted claims without any payment order after it.,"('Response', 'Accept Claim', 'Payment Order')",True,0
+UWV,Response,Unblock Claim 3,Payment Order,user3,Unblocking claims with the third mechanism must be followed by a payment order.,"('Response', 'Unblock Claim 3', 'Payment Order')",True,0

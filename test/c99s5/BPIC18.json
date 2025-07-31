@@ -1,0 +1,5526 @@
+{
+  "name": "Process specification discovered from BPIC18.xes",
+  "tasks": [
+    "revoke decision",
+    "finish payment",
+    "remove document",
+    "revoke withdrawal",
+    "begin payment",
+    "insert document",
+    "mail valid",
+    "begin editing",
+    "mail income",
+    "decide",
+    "calculate",
+    "initialize",
+    "finish editing",
+    "abort payment",
+    "withdraw"
+  ],
+  "constraints": [
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.023018216963638264,
+      "confidence": 1.0,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.32368377669862114,
+      "confidence": 0.9999633844730194,
+      "coverage": 0.32369562898465776,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.9999543472802392,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.09431079495437408,
+      "confidence": 1.0,
+      "coverage": 0.09431079495437408,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.19624153234973726,
+      "confidence": 0.9999176480276702,
+      "coverage": 0.196257694557969,
+      "tr_support": 0.9996576046017942,
+      "tr_confidence": 0.9996576046017942,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.0354878993546969,
+      "confidence": 1.0,
+      "coverage": 0.0354878993546969,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6077518318153804
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.04720334536160786,
+      "confidence": 1.0,
+      "coverage": 0.04720334536160786,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.32369562898465776,
+      "confidence": 1.0,
+      "coverage": 0.32369562898465776,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.07012674403695328,
+      "confidence": 1.0,
+      "coverage": 0.07012674403695328,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.999931387796176,
+      "tr_coverage": 0.9980597594101669
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.21956252134758336,
+      "confidence": 1.0,
+      "coverage": 0.21956252134758336,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9999543326863797,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.047187183153376125,
+      "confidence": 0.9996804236669101,
+      "coverage": 0.04720226788105908,
+      "tr_support": 0.9996576046017942,
+      "tr_confidence": 0.9996804236669101,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.08228826699106015,
+      "confidence": 0.9944788072140113,
+      "coverage": 0.08274511874374388,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.998128238489808
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.1297049535013269,
+      "confidence": 1.0,
+      "coverage": 0.1297049535013269,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.9998627850069751,
+      "tr_coverage": 0.998128238489808
+    },
+    {
+      "template": "Response",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.023005287197052877,
+      "confidence": 0.9994382811402893,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.4704512771348353,
+      "tr_confidence": 0.9994665632122594,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.17380084496024636,
+      "confidence": 1.0,
+      "coverage": 0.17380084496024636,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.19632342087144472,
+      "confidence": 0.9999341448155507,
+      "coverage": 0.1963363506380301,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9999315037216311,
+      "tr_coverage": 0.9997489100413157
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.07012674403695328,
+      "confidence": 1.0,
+      "coverage": 0.07012674403695328,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 0.47161741835147747,
+      "tr_coverage": 0.9980597594101669
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.09431187243492287,
+      "confidence": 1.0,
+      "coverage": 0.09431187243492287,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.9979912803305256,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.1297114183846196,
+      "confidence": 0.9993276055285768,
+      "coverage": 0.12979869430907098,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.31186166011738076,
+      "confidence": 0.9996166425485327,
+      "coverage": 0.31198126045829555,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 0.6077657048940833,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.0354878993546969,
+      "confidence": 1.0,
+      "coverage": 0.0354878993546969,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6077518318153804
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.17379761251860001,
+      "confidence": 0.9999814014618451,
+      "coverage": 0.17380084496024636,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.9999543472802392,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.2195603663864858,
+      "confidence": 0.9999901852051782,
+      "coverage": 0.21956252134758336,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9999543326863797,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.0354878993546969,
+      "confidence": 1.0,
+      "coverage": 0.0354878993546969,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6077518318153804
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.047070815254107626,
+      "confidence": 0.9940610280565226,
+      "coverage": 0.04735203767733983,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.14885070537264125,
+      "confidence": 0.9983378740686675,
+      "coverage": 0.14909852589886122,
+      "tr_support": 0.9987902029263394,
+      "tr_confidence": 0.9991094873844046,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.32369670646520654,
+      "confidence": 1.0,
+      "coverage": 0.32369670646520654,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.35860707624575605,
+      "confidence": 0.9986557365243588,
+      "coverage": 0.3590897875316106,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "ChainResponse",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.035425405482867524,
+      "confidence": 0.9982390089871266,
+      "coverage": 0.0354878993546969,
+      "tr_support": 0.6064507293021982,
+      "tr_confidence": 0.9978591549295774,
+      "tr_coverage": 0.6077518318153804
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.2091950035071992,
+      "confidence": 1.0,
+      "coverage": 0.2091950035071992,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.07042089622677086,
+      "confidence": 0.9981672953861661,
+      "coverage": 0.07055019389262475,
+      "tr_support": 0.9987445502065786,
+      "tr_confidence": 0.9991094467152285,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.17380084496024636,
+      "confidence": 0.9999938005257154,
+      "coverage": 0.17380192244079515,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.17357996144774596,
+      "confidence": 0.9992680627233029,
+      "coverage": 0.1737071041525023,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998014061358656,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.08251992530904836,
+      "confidence": 0.9985527465220282,
+      "coverage": 0.0826395256499632,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.998128238489808
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.19624368731083483,
+      "confidence": 0.9999231385811382,
+      "coverage": 0.19625877203851777,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9996804309616746,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.1176932003435008,
+      "confidence": 0.999862693944803,
+      "coverage": 0.11770936255173253,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.0354878993546969,
+      "confidence": 1.0,
+      "coverage": 0.0354878993546969,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6077518318153804
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.09431187243492287,
+      "confidence": 1.0,
+      "coverage": 0.09431187243492287,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.12979869430907098,
+      "confidence": 1.0,
+      "coverage": 0.12979869430907098,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.2315365626862021,
+      "confidence": 0.9995023116924193,
+      "coverage": 0.2316518531049218,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9984473113369106,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.32368377669862114,
+      "confidence": 0.9999633844730194,
+      "coverage": 0.32369562898465776,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.9999543472802392,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.2757121877057314,
+      "confidence": 0.9966387405598464,
+      "coverage": 0.2766420534193306,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.15298715319941686,
+      "confidence": 0.9992399397581883,
+      "coverage": 0.15310352109868536,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9984929098257712,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.196257694557969,
+      "confidence": 1.0,
+      "coverage": 0.196257694557969,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9996804309616746,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.0354878993546969,
+      "confidence": 1.0,
+      "coverage": 0.0354878993546969,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6077518318153804
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.32376351025923106,
+      "confidence": 0.9999667212438268,
+      "coverage": 0.3237742850647189,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.023018216963638264,
+      "confidence": 1.0,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.05850611631833516,
+      "confidence": 1.0,
+      "coverage": 0.05850611631833516,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 0.6597031160023034,
+      "tr_coverage": 0.7135063571412267
+    },
+    {
+      "template": "ChainResponse",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.04719903543941273,
+      "confidence": 0.9999086945604785,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9999086945604785,
+      "tr_confidence": 0.9999086945604785,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.27604189675365887,
+      "confidence": 0.9981726869294517,
+      "coverage": 0.2765472351310378,
+      "tr_support": 2.2826359880389874E-5,
+      "tr_confidence": 2.2826359880389874E-5,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.04720334536160786,
+      "confidence": 1.0,
+      "coverage": 0.04720334536160786,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.02294494828632106,
+      "confidence": 0.994489328912343,
+      "coverage": 0.023072090991077383,
+      "tr_support": 0.46981213905818436,
+      "tr_confidence": 0.997721653982258,
+      "tr_coverage": 0.47088497797256273
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.0704316710322587,
+      "confidence": 0.9981675752439415,
+      "coverage": 0.07056096869811258,
+      "tr_support": 1.82610879043119E-4,
+      "tr_confidence": 1.8264423186685236E-4,
+      "tr_coverage": 0.9998173891209569
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.11678596172142602,
+      "confidence": 0.9914927093433835,
+      "coverage": 0.11778801863179365,
+      "tr_support": 0.9976260585724395,
+      "tr_confidence": 0.997899399502249,
+      "tr_coverage": 0.9997260836814353
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.32368377669862114,
+      "confidence": 0.9999633844730194,
+      "coverage": 0.32369562898465776,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.9999543472802392,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.3236018881769137,
+      "confidence": 1.0,
+      "coverage": 0.3236018881769137,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998014061358656,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.0354878993546969,
+      "confidence": 1.0,
+      "coverage": 0.0354878993546969,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6077518318153804
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.04716132362020534,
+      "confidence": 0.9981983625624301,
+      "coverage": 0.04724644458355916,
+      "tr_support": 0.9991097719646648,
+      "tr_confidence": 0.9991097719646648,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.2757121877057314,
+      "confidence": 0.9966387405598464,
+      "coverage": 0.2766420534193306,
+      "tr_support": 0.9971695313748317,
+      "tr_confidence": 0.9971922936449964,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.10599499402537035,
+      "confidence": 1.0,
+      "coverage": 0.10599499402537035,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.195841787066139,
+      "confidence": 0.9935877812520499,
+      "coverage": 0.19710567174986074,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.023018216963638264,
+      "confidence": 1.0,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.12908647966632583,
+      "confidence": 0.9939106339909406,
+      "coverage": 0.1298773503891321,
+      "tr_support": 0.6651144741948002,
+      "tr_confidence": 0.6653726708074534,
+      "tr_coverage": 0.9996119518820333
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.07016876577835579,
+      "confidence": 0.9931071292413267,
+      "coverage": 0.07065578698640543,
+      "tr_support": 0.9968271359766258,
+      "tr_confidence": 0.9971913319480282,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.04716024613965657,
+      "confidence": 0.9981983214741835,
+      "coverage": 0.047245367103010374,
+      "tr_support": 0.9990869456047844,
+      "tr_confidence": 0.9991097516435354,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "ChainResponse",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.1265533228961384,
+      "confidence": 0.9996425379803396,
+      "coverage": 0.12659857707918729,
+      "tr_support": 0.999064119244904,
+      "tr_confidence": 0.9990869247626004,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.19625877203851777,
+      "confidence": 1.0,
+      "coverage": 0.19625877203851777,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost3",
+      "parameters": [
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.04720226788105908,
+      "confidence": 0.9999771736401196,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.0704316710322587,
+      "confidence": 0.9981675752439415,
+      "coverage": 0.07056096869811258,
+      "tr_support": 0.9987445502065786,
+      "tr_confidence": 0.9989269651377822,
+      "tr_coverage": 0.9998173891209569
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.19604543088985887,
+      "confidence": 0.9993957969438311,
+      "coverage": 0.1961639537502249,
+      "tr_support": 0.21917870757150357,
+      "tr_confidence": 0.21924877269094645,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.023018216963638264,
+      "confidence": 1.0,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.31198126045829555,
+      "confidence": 1.0,
+      "coverage": 0.31198126045829555,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.04707728013740032,
+      "confidence": 0.9981951520413059,
+      "coverage": 0.04716240110075413,
+      "tr_support": 0.9971010522951905,
+      "tr_confidence": 0.9989251983809372,
+      "tr_coverage": 0.9981738912095688
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.12979869430907098,
+      "confidence": 1.0,
+      "coverage": 0.12979869430907098,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.1176932003435008,
+      "confidence": 0.999862693944803,
+      "coverage": 0.11770936255173253,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.04720334536160786,
+      "confidence": 1.0,
+      "coverage": 0.04720334536160786,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.27604189675365887,
+      "confidence": 0.9981726869294517,
+      "coverage": 0.2765472351310378,
+      "tr_support": 0.9989271610856216,
+      "tr_confidence": 0.9989271610856216,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.0472744590778275,
+      "confidence": 0.9998632665618377,
+      "coverage": 0.04728092396112019,
+      "tr_support": 0.6681275536990117,
+      "tr_confidence": 0.9997950539691215,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.27609253833945163,
+      "confidence": 0.998394707209401,
+      "coverage": 0.27653646032554996,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.07014398372573379,
+      "confidence": 0.9977929004965974,
+      "coverage": 0.07029914092475846,
+      "tr_support": 0.6678992901002078,
+      "tr_confidence": 0.834545506403126,
+      "tr_coverage": 0.8003150037663493
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.08269016723575598,
+      "confidence": 1.0,
+      "coverage": 0.08269016723575598,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 0.6077657048940833,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.11770936255173253,
+      "confidence": 1.0,
+      "coverage": 0.11770936255173253,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.16208647643388419,
+      "confidence": 1.0,
+      "coverage": 0.16208647643388419,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.12640570806095522,
+      "confidence": 0.9973051779687673,
+      "coverage": 0.12674726939491926,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.04718826063392491,
+      "confidence": 0.9996804309616746,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9996804309616746,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.1488226908783729,
+      "confidence": 0.9946924195941177,
+      "coverage": 0.14961679404282555,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 0.47071311176040903,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.17379761251860001,
+      "confidence": 0.9999814014618451,
+      "coverage": 0.17380084496024636,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.9999543472802392,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.07022048484469734,
+      "confidence": 1.0,
+      "coverage": 0.07022048484469734,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.08269124471630476,
+      "confidence": 1.0,
+      "coverage": 0.08269124471630476,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 0.6077518318153804,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.07022156232524612,
+      "confidence": 1.0,
+      "coverage": 0.07022156232524612,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.047233514816973764,
+      "confidence": 0.99786028089504,
+      "coverage": 0.04733479798855931,
+      "tr_support": 1.3695815928233926E-4,
+      "tr_confidence": 2.0490403660952122E-4,
+      "tr_coverage": 0.6684014700175763
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.07016768829780701,
+      "confidence": 0.9981300962540617,
+      "coverage": 0.07029914092475846,
+      "tr_support": 0.47035997169531374,
+      "tr_confidence": 0.5877185476740537,
+      "tr_coverage": 0.8003150037663493
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.04720226788105908,
+      "confidence": 0.9999771736401196,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.04718610567282734,
+      "confidence": 0.9996575967859752,
+      "coverage": 0.04720226788105908,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "RespondedExistence",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.0471764083478883,
+      "confidence": 0.9977894760830428,
+      "coverage": 0.04728092396112019,
+      "tr_support": 0.6667807984660686,
+      "tr_confidence": 0.9977797513321492,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.17379761251860001,
+      "confidence": 0.9999814014618451,
+      "coverage": 0.17380084496024636,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.9999543472802392,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.023018216963638264,
+      "confidence": 1.0,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.12979869430907098,
+      "confidence": 1.0,
+      "coverage": 0.12979869430907098,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.3590897875316106,
+      "confidence": 1.0,
+      "coverage": 0.3590897875316106,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.09448319184217926,
+      "confidence": 1.0,
+      "coverage": 0.09448319184217926,
+      "tr_support": 0.6682645118582939,
+      "tr_confidence": 0.6682645118582939,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.11761562174398847,
+      "confidence": 1.0,
+      "coverage": 0.11761562174398847,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.09431079495437408,
+      "confidence": 1.0,
+      "coverage": 0.09431079495437408,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.15301409021313642,
+      "confidence": 0.999415879628978,
+      "coverage": 0.15310352109868536,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9984929098257712,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.1297114183846196,
+      "confidence": 0.9993193100127837,
+      "coverage": 0.12979977178961977,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.998128238489808,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.1961639537502249,
+      "confidence": 1.0,
+      "coverage": 0.1961639537502249,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.32369562898465776,
+      "confidence": 1.0,
+      "coverage": 0.32369562898465776,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.12979977178961977,
+      "confidence": 1.0,
+      "coverage": 0.12979977178961977,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.40307469849400546,
+      "confidence": 0.9999572313729264,
+      "coverage": 0.40309193818278594,
+      "tr_support": 0.9996119518820333,
+      "tr_confidence": 0.9996347699050402,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.10587862612610185,
+      "confidence": 0.9989021377817084,
+      "coverage": 0.10599499402537035,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 0.6079738771036467,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.19624153234973726,
+      "confidence": 0.9999176480276702,
+      "coverage": 0.196257694557969,
+      "tr_support": 0.9996576046017942,
+      "tr_confidence": 0.9996576046017942,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.0470665053319125,
+      "confidence": 0.998194739608327,
+      "coverage": 0.047151626295266306,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9979912803305256
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.07016876577835579,
+      "confidence": 0.9931071292413267,
+      "coverage": 0.07065578698640543,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.0470665053319125,
+      "confidence": 0.998194739608327,
+      "coverage": 0.047151626295266306,
+      "tr_support": 0.9971010522951905,
+      "tr_confidence": 0.9991079801468402,
+      "tr_coverage": 0.9979912803305256
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.05833695187217633,
+      "confidence": 0.9971086023683677,
+      "coverage": 0.05850611631833516,
+      "tr_support": 0.6076377000159785,
+      "tr_confidence": 0.8516219847718984,
+      "tr_coverage": 0.7135063571412267
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.09421705414663002,
+      "confidence": 0.9990060437112271,
+      "coverage": 0.09431079495437408,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998014061358656,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.1970884320610802,
+      "confidence": 0.9999125358056545,
+      "coverage": 0.19710567174986074,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.1737071041525023,
+      "confidence": 1.0,
+      "coverage": 0.1737071041525023,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.09421705414663002,
+      "confidence": 0.99899463041243,
+      "coverage": 0.09431187243492287,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.9979912803305256,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.3462753113649416,
+      "confidence": 0.9979102494038156,
+      "coverage": 0.34700045577427213,
+      "tr_support": 9.13054395215595E-5,
+      "tr_confidence": 9.130752373995617E-5,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.08269016723575598,
+      "confidence": 1.0,
+      "coverage": 0.08269016723575598,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 0.6077657048940833,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.20909048789396728,
+      "confidence": 0.9995003914458774,
+      "coverage": 0.2091950035071992,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.04720334536160786,
+      "confidence": 1.0,
+      "coverage": 0.04720334536160786,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "ChainPrecedence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.14898108051904393,
+      "confidence": 0.9995012180400038,
+      "coverage": 0.1490554266769099,
+      "tr_support": 0.9983108493688512,
+      "tr_confidence": 0.9986299805913917,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.11751972597514683,
+      "confidence": 0.9991846680957878,
+      "coverage": 0.11761562174398847,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998355901628114,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.19624153234973726,
+      "confidence": 0.9999176480276702,
+      "coverage": 0.196257694557969,
+      "tr_support": 0.9996576046017942,
+      "tr_confidence": 0.9996576046017942,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.04715270377581509,
+      "confidence": 0.9977883672678356,
+      "coverage": 0.04725721938904698,
+      "tr_support": 0.9989271610856216,
+      "tr_confidence": 0.9989271610856216,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.047201190400510296,
+      "confidence": 0.999977173119065,
+      "coverage": 0.04720226788105908,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.999977173119065,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.04726368427233967,
+      "confidence": 0.9996353774982338,
+      "coverage": 0.04728092396112019,
+      "tr_support": 0.6679221164600881,
+      "tr_confidence": 0.9994876349228037,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.17380084496024636,
+      "confidence": 0.9999938005257154,
+      "coverage": 0.17380192244079515,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.04718826063392491,
+      "confidence": 0.9996804309616746,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9996804309616746,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.09440453576211816,
+      "confidence": 0.9999885866897976,
+      "coverage": 0.09440561324266694,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.20909048789396728,
+      "confidence": 0.9995003914458774,
+      "coverage": 0.2091950035071992,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.08251992530904836,
+      "confidence": 0.9985527465220282,
+      "coverage": 0.0826395256499632,
+      "tr_support": 0.9972380104544728,
+      "tr_confidence": 0.9991081025453381,
+      "tr_coverage": 0.998128238489808
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.03547496958811151,
+      "confidence": 0.998120414721397,
+      "coverage": 0.035541773382136016,
+      "tr_support": 4.1087447784701774E-4,
+      "tr_confidence": 6.755995946402432E-4,
+      "tr_coverage": 0.6081627062932274
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.046764810778253424,
+      "confidence": 0.9907096715286813,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9907096715286813,
+      "tr_confidence": 0.9907096715286813,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Response",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.023013907041443134,
+      "confidence": 0.9998127603800965,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.47063388801387845,
+      "tr_confidence": 0.9998545172397071,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.047153781256363866,
+      "confidence": 0.9978339185553377,
+      "coverage": 0.047256141908498195,
+      "tr_support": 0.9989271610856216,
+      "tr_confidence": 0.9989271610856216,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.11751972597514683,
+      "confidence": 0.9991846680957878,
+      "coverage": 0.11761562174398847,
+      "tr_support": 0.520258394393846,
+      "tr_confidence": 0.5204484735003311,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.2315559573360802,
+      "confidence": 0.9995860349591151,
+      "coverage": 0.2316518531049218,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9984473113369106,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.12640570806095522,
+      "confidence": 0.9973051779687673,
+      "coverage": 0.12674726939491926,
+      "tr_support": 0.9971695313748317,
+      "tr_confidence": 0.9971922936449964,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.04718826063392491,
+      "confidence": 0.9996804309616746,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9996804309616746,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.10559955866396722,
+      "confidence": 0.9998571720057131,
+      "coverage": 0.10561464339165018,
+      "tr_support": 0.47065671437375883,
+      "tr_confidence": 0.4715069746169678,
+      "tr_coverage": 0.9981967175694492
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.0229729627805894,
+      "confidence": 0.991628296358309,
+      "coverage": 0.023166909279370235,
+      "tr_support": 0.470314318975553,
+      "tr_confidence": 0.9985944845635633,
+      "tr_coverage": 0.47097628341208425
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.0825964264280119,
+      "confidence": 1.0,
+      "coverage": 0.0825964264280119,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.9998627850069751,
+      "tr_coverage": 0.998128238489808
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.04706973777355884,
+      "confidence": 0.9940608929140309,
+      "coverage": 0.047350960196791046,
+      "tr_support": 0.9971695313748317,
+      "tr_confidence": 0.9971922936449964,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.19609068507290772,
+      "confidence": 0.9987487514954615,
+      "coverage": 0.1963363506380301,
+      "tr_support": 0.6682645118582939,
+      "tr_confidence": 0.6684323485090643,
+      "tr_coverage": 0.9997489100413157
+    },
+    {
+      "template": "Absence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.04716132362020534,
+      "confidence": 0.9991097719646648,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9991097719646648,
+      "tr_confidence": 0.9991097719646648,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.07022156232524612,
+      "confidence": 1.0,
+      "coverage": 0.07022156232524612,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 0.4707023670935196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.04722704993368107,
+      "confidence": 0.9979508663281801,
+      "coverage": 0.04732402318307149,
+      "tr_support": 0.6673742838229587,
+      "tr_confidence": 0.9986678507992895,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.07022048484469734,
+      "confidence": 1.0,
+      "coverage": 0.07022048484469734,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 0.47071311176040903,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.14867830848483607,
+      "confidence": 0.9964758981765661,
+      "coverage": 0.14920411899264188,
+      "tr_support": 0.9968727886963866,
+      "tr_confidence": 0.997191460212353,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.1845433260316068,
+      "confidence": 1.0,
+      "coverage": 0.1845433260316068,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.08269016723575598,
+      "confidence": 1.0,
+      "coverage": 0.08269016723575598,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.047187183153376125,
+      "confidence": 0.9996804236669101,
+      "coverage": 0.04720226788105908,
+      "tr_support": 0.9996576046017942,
+      "tr_confidence": 0.9996804236669101,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.12969741113748545,
+      "confidence": 0.9999418498396717,
+      "coverage": 0.1297049535013269,
+      "tr_support": 0.39037640667442763,
+      "tr_confidence": 0.3911084684519862,
+      "tr_coverage": 0.998128238489808
+    },
+    {
+      "template": "Response",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.03548035699085542,
+      "confidence": 0.9997874666018945,
+      "coverage": 0.0354878993546969,
+      "tr_support": 0.607614873656098,
+      "tr_confidence": 0.999774647887324,
+      "tr_coverage": 0.6077518318153804
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.12969741113748545,
+      "confidence": 0.9999418498396717,
+      "coverage": 0.1297049535013269,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.9998627850069751,
+      "tr_coverage": 0.998128238489808
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.047114991956607705,
+      "confidence": 0.9981510226442659,
+      "coverage": 0.04720226788105908,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.09440561324266694,
+      "confidence": 1.0,
+      "coverage": 0.09440561324266694,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "End",
+      "parameters": [
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.04705788548752224,
+      "confidence": 0.9969184414161474,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9969184414161474,
+      "tr_confidence": 0.9969184414161474,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.40309193818278594,
+      "confidence": 1.0,
+      "coverage": 0.40309193818278594,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.34700045577427213,
+      "confidence": 1.0,
+      "coverage": 0.34700045577427213,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.035464194782623686,
+      "confidence": 0.9981198447355653,
+      "coverage": 0.035530998576648196,
+      "tr_support": 2.2826359880389875E-4,
+      "tr_confidence": 3.7544584193730055E-4,
+      "tr_coverage": 0.6079800954141843
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.12979977178961977,
+      "confidence": 1.0,
+      "coverage": 0.12979977178961977,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.998128238489808,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.1970884320610802,
+      "confidence": 0.9999125358056545,
+      "coverage": 0.19710567174986074,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.047201190400510296,
+      "confidence": 0.999977173119065,
+      "coverage": 0.04720226788105908,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.999977173119065,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.04716024613965657,
+      "confidence": 0.9981983214741835,
+      "coverage": 0.047245367103010374,
+      "tr_support": 0.9990869456047844,
+      "tr_confidence": 0.9991097516435354,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.04720442284215664,
+      "confidence": 0.9952520502510279,
+      "coverage": 0.04742961627685216,
+      "tr_support": 0.6668492775457098,
+      "tr_confidence": 0.9958073422640352,
+      "tr_coverage": 0.6696569198109977
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.09428601290175209,
+      "confidence": 0.9989041346087989,
+      "coverage": 0.0943894510344352,
+      "tr_support": 0.9973749686137552,
+      "tr_confidence": 0.9977621483375959,
+      "tr_coverage": 0.9996119518820333
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.04727769151947384,
+      "confidence": 0.9999316332809188,
+      "coverage": 0.04728092396112019,
+      "tr_support": 0.6681960327786528,
+      "tr_confidence": 0.9998975269845607,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.17382454953231957,
+      "confidence": 0.9996839678762641,
+      "coverage": 0.17387950104030747,
+      "tr_support": 0.6681960327786528,
+      "tr_confidence": 0.6682112856099343,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.14885070537264125,
+      "confidence": 0.9983378740686675,
+      "coverage": 0.14909852589886122,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.2316518531049218,
+      "confidence": 1.0,
+      "coverage": 0.2316518531049218,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.04720442284215664,
+      "confidence": 0.9952520502510279,
+      "coverage": 0.04742961627685216,
+      "tr_support": 0.0013924079527037824,
+      "tr_confidence": 0.002079285543852473,
+      "tr_coverage": 0.6696569198109977
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.3439317911713399,
+      "confidence": 0.9911565977742448,
+      "coverage": 0.34700045577427213,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.04720334536160786,
+      "confidence": 1.0,
+      "coverage": 0.04720334536160786,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.04707728013740032,
+      "confidence": 0.9981951520413059,
+      "coverage": 0.04716240110075413,
+      "tr_support": 1.82610879043119E-4,
+      "tr_confidence": 1.8294495643623226E-4,
+      "tr_coverage": 0.9981738912095688
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.09431079495437408,
+      "confidence": 1.0,
+      "coverage": 0.09431079495437408,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998014061358656,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.12639277829436985,
+      "confidence": 0.9979497213833,
+      "coverage": 0.1266524511066264,
+      "tr_support": 2.2826359880389874E-5,
+      "tr_confidence": 2.2826359880389874E-5,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.1176932003435008,
+      "confidence": 0.999853541548432,
+      "coverage": 0.11771044003228132,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996347782419137,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.32368377669862114,
+      "confidence": 0.9999633844730194,
+      "coverage": 0.32369562898465776,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.9999543472802392,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.10544547894549133,
+      "confidence": 0.9983982860640686,
+      "coverage": 0.10561464339165018,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9999313972101532,
+      "tr_coverage": 0.9981967175694492
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.14867830848483607,
+      "confidence": 0.9964758981765661,
+      "coverage": 0.14920411899264188,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.09448319184217926,
+      "confidence": 1.0,
+      "coverage": 0.09448319184217926,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.17379761251860001,
+      "confidence": 0.9999814014618451,
+      "coverage": 0.17380084496024636,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.9999543472802392,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.023018216963638264,
+      "confidence": 1.0,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.1961639537502249,
+      "confidence": 1.0,
+      "coverage": 0.1961639537502249,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.9983103093960498,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.16207139170620122,
+      "confidence": 0.999906934076088,
+      "coverage": 0.16208647643388419,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 0.6077657048940833,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.19624153234973726,
+      "confidence": 0.9999176480276702,
+      "coverage": 0.196257694557969,
+      "tr_support": 0.9996576046017942,
+      "tr_confidence": 0.9996576046017942,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.19624368731083483,
+      "confidence": 0.9999231385811382,
+      "coverage": 0.19625877203851777,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9996804309616746,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.08276020347142683,
+      "confidence": 0.9998958563859562,
+      "coverage": 0.08276882331581709,
+      "tr_support": 0.6077061790956196,
+      "tr_confidence": 0.608011510265604,
+      "tr_coverage": 0.9994978200826314
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.09440453576211816,
+      "confidence": 1.0,
+      "coverage": 0.09440453576211816,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.32369562898465776,
+      "confidence": 0.9999966713268091,
+      "coverage": 0.32369670646520654,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.1297114183846196,
+      "confidence": 0.9993276055285768,
+      "coverage": 0.12979869430907098,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.04706973777355884,
+      "confidence": 0.9940608929140309,
+      "coverage": 0.047350960196791046,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.4253763908927034,
+      "confidence": 0.9995948833770522,
+      "coverage": 0.4255487877805086,
+      "tr_support": 0.2127873268049944,
+      "tr_confidence": 0.21279218407596787,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.09440561324266694,
+      "confidence": 1.0,
+      "coverage": 0.09440561324266694,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.15301409021313642,
+      "confidence": 0.999415879628978,
+      "coverage": 0.15310352109868536,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9984929098257712,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.17380084496024636,
+      "confidence": 1.0,
+      "coverage": 0.17380084496024636,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.09440453576211816,
+      "confidence": 0.9999885866897976,
+      "coverage": 0.09440561324266694,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.1738773460792099,
+      "confidence": 0.9999876065833829,
+      "coverage": 0.17387950104030747,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Absence",
+      "parameters": [
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.04715270377581509,
+      "confidence": 0.9989271610856216,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9989271610856216,
+      "tr_confidence": 0.9989271610856216,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.2189537448375213,
+      "confidence": 0.9972273204628658,
+      "coverage": 0.21956252134758336,
+      "tr_support": 0.3814284736013148,
+      "tr_confidence": 0.38155040529740836,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.0354878993546969,
+      "confidence": 1.0,
+      "coverage": 0.0354878993546969,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6077518318153804
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.04722704993368107,
+      "confidence": 0.9979508663281801,
+      "coverage": 0.04732402318307149,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.34688947527774755,
+      "confidence": 0.999680171899841,
+      "coverage": 0.34700045577427213,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.1844280356128871,
+      "confidence": 0.99937526638758,
+      "coverage": 0.1845433260316068,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 0.607946112569928,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.32309547231898594,
+      "confidence": 0.9984350651945181,
+      "coverage": 0.3236018881769137,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998014061358656,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.047233514816973764,
+      "confidence": 0.99786028089504,
+      "coverage": 0.04733479798855931,
+      "tr_support": 0.667328631103198,
+      "tr_confidence": 0.9983949183798921,
+      "tr_coverage": 0.6684014700175763
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.425462589336606,
+      "confidence": 0.9997974416885261,
+      "coverage": 0.4255487877805086,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9997032505478451,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.09421705414663002,
+      "confidence": 0.9990060437112271,
+      "coverage": 0.09431079495437408,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998014061358656,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.29950942310613937,
+      "confidence": 0.9999928050824898,
+      "coverage": 0.29951157806723694,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.32369562898465776,
+      "confidence": 0.9999966713268091,
+      "coverage": 0.32369670646520654,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.27556565035109704,
+      "confidence": 0.9996794771568842,
+      "coverage": 0.27565400375609717,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.04716024613965657,
+      "confidence": 0.9981983214741835,
+      "coverage": 0.047245367103010374,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.27563999650896304,
+      "confidence": 0.9999491854029207,
+      "coverage": 0.27565400375609717,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9997032505478451,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AtMost3",
+      "parameters": [
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.04708805494288815,
+      "confidence": 0.9975575794927983,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9975575794927983,
+      "tr_confidence": 0.9975575794927983,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.11761562174398847,
+      "confidence": 1.0,
+      "coverage": 0.11761562174398847,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998355901628114,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.1176932003435008,
+      "confidence": 0.999862693944803,
+      "coverage": 0.11770936255173253,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.32369562898465776,
+      "confidence": 1.0,
+      "coverage": 0.32369562898465776,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.09431079495437408,
+      "confidence": 1.0,
+      "coverage": 0.09431079495437408,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998014061358656,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.11770936255173253,
+      "confidence": 1.0,
+      "coverage": 0.11770936255173253,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.03532412231128198,
+      "confidence": 0.9912317832738707,
+      "coverage": 0.03563659167042887,
+      "tr_support": 0.605149626789016,
+      "tr_confidence": 0.9953818427573777,
+      "tr_coverage": 0.6079572690543039
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.12639816569711376,
+      "confidence": 0.9980771685029991,
+      "coverage": 0.12664167630113857,
+      "tr_support": 0.9990869456047844,
+      "tr_confidence": 0.9991097516435354,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.35860707624575605,
+      "confidence": 0.9986557365243588,
+      "coverage": 0.3590897875316106,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.07022048484469734,
+      "confidence": 1.0,
+      "coverage": 0.07022048484469734,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 0.47071311176040903,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.04727984648057141,
+      "confidence": 0.9999772110936396,
+      "coverage": 0.04728092396112019,
+      "tr_support": 0.6682416854984136,
+      "tr_confidence": 0.9999658423281869,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.11770936255173253,
+      "confidence": 1.0,
+      "coverage": 0.11770936255173253,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.09421705414663002,
+      "confidence": 0.9990060437112271,
+      "coverage": 0.09431079495437408,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998014061358656,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.32369562898465776,
+      "confidence": 1.0,
+      "coverage": 0.32369562898465776,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.09448319184217926,
+      "confidence": 1.0,
+      "coverage": 0.09448319184217926,
+      "tr_support": 0.6682645118582939,
+      "tr_confidence": 0.6682645118582939,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.12639816569711376,
+      "confidence": 0.9980771685029991,
+      "coverage": 0.12664167630113857,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.08228826699106015,
+      "confidence": 0.9944788072140113,
+      "coverage": 0.08274511874374388,
+      "tr_support": 0.9953205962245201,
+      "tr_confidence": 0.9971870926429894,
+      "tr_coverage": 0.998128238489808
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.14885932521703152,
+      "confidence": 0.9983235419511949,
+      "coverage": 0.14910930070434902,
+      "tr_support": 1.597845191627291E-4,
+      "tr_confidence": 1.5981005433541846E-4,
+      "tr_coverage": 0.9998402154808372
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.08253070011453618,
+      "confidence": 0.9985529351949627,
+      "coverage": 0.08265030045545103,
+      "tr_support": 1.82610879043119E-4,
+      "tr_confidence": 1.8291985823710985E-4,
+      "tr_coverage": 0.9983108493688512
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.04728092396112019,
+      "confidence": 1.0,
+      "coverage": 0.04728092396112019,
+      "tr_support": 0.6682645118582939,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.19710567174986074,
+      "confidence": 1.0,
+      "coverage": 0.19710567174986074,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.09421705414663002,
+      "confidence": 0.9990060437112271,
+      "coverage": 0.09431079495437408,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998014061358656,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.03547496958811151,
+      "confidence": 0.998120414721397,
+      "coverage": 0.035541773382136016,
+      "tr_support": 0.6070898673788491,
+      "tr_confidence": 0.9982359343917727,
+      "tr_coverage": 0.6081627062932274
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.08253070011453618,
+      "confidence": 0.9985529351949627,
+      "coverage": 0.08265030045545103,
+      "tr_support": 0.9972380104544728,
+      "tr_confidence": 0.998925345832857,
+      "tr_coverage": 0.9983108493688512
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.17380084496024636,
+      "confidence": 1.0,
+      "coverage": 0.17380084496024636,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.11771044003228132,
+      "confidence": 1.0,
+      "coverage": 0.11771044003228132,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.04720226788105908,
+      "confidence": 0.9999771736401196,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.04706973777355884,
+      "confidence": 0.9940608929140309,
+      "coverage": 0.047350960196791046,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.04727984648057141,
+      "confidence": 0.9999772110936396,
+      "coverage": 0.04728092396112019,
+      "tr_support": 0.6682416854984136,
+      "tr_confidence": 0.9999658423281869,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.17357996144774596,
+      "confidence": 0.9992680627233029,
+      "coverage": 0.1737071041525023,
+      "tr_support": 0.3802871556072953,
+      "tr_confidence": 0.38029583637691744,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.09421705414663002,
+      "confidence": 0.99899463041243,
+      "coverage": 0.09431187243492287,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.9979912803305256,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.32369670646520654,
+      "confidence": 1.0,
+      "coverage": 0.32369670646520654,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.196257694557969,
+      "confidence": 1.0,
+      "coverage": 0.196257694557969,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.02294494828632106,
+      "confidence": 0.994489328912343,
+      "coverage": 0.023072090991077383,
+      "tr_support": 1.82610879043119E-4,
+      "tr_confidence": 3.8780357748800234E-4,
+      "tr_coverage": 0.47088497797256273
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.1737071041525023,
+      "confidence": 1.0,
+      "coverage": 0.1737071041525023,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.998014061358656,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.09448319184217926,
+      "confidence": 1.0,
+      "coverage": 0.09448319184217926,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.11770936255173253,
+      "confidence": 1.0,
+      "coverage": 0.11770936255173253,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.046975996965814774,
+      "confidence": 0.9940491119268565,
+      "coverage": 0.04725721938904698,
+      "tr_support": 0.9951836380652377,
+      "tr_confidence": 0.9971867066169575,
+      "tr_coverage": 0.9979912803305256
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.09440453576211816,
+      "confidence": 0.9999885866897976,
+      "coverage": 0.09440561324266694,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotPrecedence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.02285336243967456,
+      "confidence": 0.9928380845386884,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.468442557465361,
+      "tr_confidence": 0.9951990689103342,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.19625877203851777,
+      "confidence": 1.0,
+      "coverage": 0.19625877203851777,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9996804309616746,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.04706973777355884,
+      "confidence": 0.9940608929140309,
+      "coverage": 0.047350960196791046,
+      "tr_support": 0.9971695313748317,
+      "tr_confidence": 0.9971922936449964,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.07042089622677086,
+      "confidence": 0.9981672953861661,
+      "coverage": 0.07055019389262475,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9996347782419137
+    },
+    {
+      "template": "AtMost2",
+      "parameters": [
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.04720226788105908,
+      "confidence": 0.9999771736401196,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.09448426932272805,
+      "confidence": 1.0,
+      "coverage": 0.09448426932272805,
+      "tr_support": 0.6682645118582939,
+      "tr_confidence": 0.6682645118582939,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.1720305444185969,
+      "confidence": 0.9997495303694427,
+      "coverage": 0.17207364364054817,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 0.47085283708185866,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.047070815254107626,
+      "confidence": 0.9940610280565226,
+      "coverage": 0.04735203767733983,
+      "tr_support": 0.997192357734712,
+      "tr_confidence": 0.997192357734712,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.1297114183846196,
+      "confidence": 0.9993276055285768,
+      "coverage": 0.12979869430907098,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.047153781256363866,
+      "confidence": 0.9978339185553377,
+      "coverage": 0.047256141908498195,
+      "tr_support": 2.2826359880389874E-5,
+      "tr_confidence": 2.2826359880389874E-5,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.196257694557969,
+      "confidence": 1.0,
+      "coverage": 0.196257694557969,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.1176932003435008,
+      "confidence": 0.999853541548432,
+      "coverage": 0.11771044003228132,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996347782419137,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.04715270377581509,
+      "confidence": 0.9977883672678356,
+      "coverage": 0.04725721938904698,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Response",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.047109604553863794,
+      "confidence": 0.996376563888699,
+      "coverage": 0.04728092396112019,
+      "tr_support": 0.6655938277522884,
+      "tr_confidence": 0.9960035523978685,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.40309193818278594,
+      "confidence": 1.0,
+      "coverage": 0.40309193818278594,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.20917991877951622,
+      "confidence": 0.9999278915488895,
+      "coverage": 0.2091950035071992,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.0354878993546969,
+      "confidence": 1.0,
+      "coverage": 0.0354878993546969,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6077518318153804
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.03532412231128198,
+      "confidence": 0.9912317832738707,
+      "coverage": 0.03563659167042887,
+      "tr_support": 2.0543723892350887E-4,
+      "tr_confidence": 3.3791394458211306E-4,
+      "tr_coverage": 0.6079572690543039
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.35897018719069573,
+      "confidence": 0.999666934719205,
+      "coverage": 0.3590897875316106,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.1176932003435008,
+      "confidence": 0.999862693944803,
+      "coverage": 0.11770936255173253,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.023018216963638264,
+      "confidence": 1.0,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.4707023670935196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.42545504697276454,
+      "confidence": 0.9997797178362721,
+      "coverage": 0.4255487877805086,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9997032505478451,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.09440453576211816,
+      "confidence": 1.0,
+      "coverage": 0.09440453576211816,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.09447780443943536,
+      "confidence": 0.9999315771467671,
+      "coverage": 0.09448426932272805,
+      "tr_support": 0.9999315209203589,
+      "tr_confidence": 0.9999315209203589,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.047201190400510296,
+      "confidence": 0.9999543472802392,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.9999543472802392,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.022934173480833236,
+      "confidence": 0.9944867541933374,
+      "coverage": 0.02306131618558956,
+      "tr_support": 0.46981213905818436,
+      "tr_confidence": 0.9981087241161922,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.17380192244079515,
+      "confidence": 1.0,
+      "coverage": 0.17380192244079515,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.3236018881769137,
+      "confidence": 1.0,
+      "coverage": 0.3236018881769137,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.047114991956607705,
+      "confidence": 0.998128238489808,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.998128238489808,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.0825964264280119,
+      "confidence": 1.0,
+      "coverage": 0.0825964264280119,
+      "tr_support": 0.6077518318153804,
+      "tr_confidence": 0.6088915315480138,
+      "tr_coverage": 0.998128238489808
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.27563891902841425,
+      "confidence": 0.9999452765877607,
+      "coverage": 0.27565400375609717,
+      "tr_support": 0.9996576046017942,
+      "tr_confidence": 0.9996804236669101,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.3234909076803891,
+      "confidence": 0.9991247687126446,
+      "coverage": 0.3237742850647189,
+      "tr_support": 0.6681960327786528,
+      "tr_confidence": 0.6682112856099343,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.04716132362020534,
+      "confidence": 0.9981983625624301,
+      "coverage": 0.04724644458355916,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.12658349235150432,
+      "confidence": 0.9998808459934465,
+      "coverage": 0.12659857707918729,
+      "tr_support": 0.9996576046017942,
+      "tr_confidence": 0.9996804236669101,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "finish payment"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.19604543088985887,
+      "confidence": 0.9993957969438311,
+      "coverage": 0.1961639537502249,
+      "tr_support": 0.9979912803305256,
+      "tr_confidence": 0.9983103093960498,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "Absence",
+      "parameters": [
+        [
+          "remove document"
+        ]
+      ],
+      "support": 0.047070815254107626,
+      "confidence": 0.997192357734712,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.997192357734712,
+      "tr_confidence": 0.997192357734712,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "insert document"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.11752080345569561,
+      "confidence": 0.9977313891582356,
+      "coverage": 0.11778801863179365,
+      "tr_support": 0.6682645118582939,
+      "tr_confidence": 0.6684476105669338,
+      "tr_coverage": 0.9997260836814353
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.12979869430907098,
+      "confidence": 1.0,
+      "coverage": 0.12979869430907098,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "withdraw"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.047153781256363866,
+      "confidence": 0.9978339185553377,
+      "coverage": 0.047256141908498195,
+      "tr_support": 2.2826359880389874E-5,
+      "tr_confidence": 2.2826359880389874E-5,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.022951413169613754,
+      "confidence": 0.9906981070647877,
+      "coverage": 0.023166909279370235,
+      "tr_support": 0.0020315460293546988,
+      "tr_confidence": 0.004313478408374934,
+      "tr_coverage": 0.47097628341208425
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.04720226788105908,
+      "confidence": 0.9999771736401196,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "begin payment"
+        ],
+        [
+          "finish editing"
+        ]
+      ],
+      "support": 0.2315559573360802,
+      "confidence": 0.9995860349591151,
+      "coverage": 0.2316518531049218,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9984473113369106,
+      "tr_coverage": 0.9996804309616746
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.04718610567282734,
+      "confidence": 0.9996347782419137,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996347782419137,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Response",
+      "parameters": [
+        [
+          "revoke decision"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.023013907041443134,
+      "confidence": 0.9998127603800965,
+      "coverage": 0.023018216963638264,
+      "tr_support": 0.47063388801387845,
+      "tr_confidence": 0.9998545172397071,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "decide"
+        ],
+        [
+          "initialize"
+        ]
+      ],
+      "support": 0.11771044003228132,
+      "confidence": 1.0,
+      "coverage": 0.11771044003228132,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996347782419137,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.27609253833945163,
+      "confidence": 0.998394707209401,
+      "coverage": 0.27653646032554996,
+      "tr_support": 0.9990869456047844,
+      "tr_confidence": 0.9991097516435354,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.09440453576211816,
+      "confidence": 0.9999885866897976,
+      "coverage": 0.09440561324266694,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.047114991956607705,
+      "confidence": 0.9981510226442659,
+      "coverage": 0.04720226788105908,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "abort payment"
+        ],
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.035464194782623686,
+      "confidence": 0.9981198447355653,
+      "coverage": 0.035530998576648196,
+      "tr_support": 0.6070898673788491,
+      "tr_confidence": 0.9985357612164445,
+      "tr_coverage": 0.6079800954141843
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.32309547231898594,
+      "confidence": 0.9984350651945181,
+      "coverage": 0.3236018881769137,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.08269124471630476,
+      "confidence": 1.0,
+      "coverage": 0.08269124471630476,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.1297114183846196,
+      "confidence": 0.9993193100127837,
+      "coverage": 0.12979977178961977,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.998128238489808,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.022934173480833236,
+      "confidence": 0.9944867541933374,
+      "coverage": 0.02306131618558956,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.4707023670935196
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.14961679404282555,
+      "confidence": 1.0,
+      "coverage": 0.14961679404282555,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AtLeast3",
+      "parameters": [
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.04718933811447369,
+      "confidence": 0.999703257321555,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.999703257321555,
+      "tr_confidence": 0.999703257321555,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "calculate"
+        ]
+      ],
+      "support": 0.047201190400510296,
+      "confidence": 0.999977173119065,
+      "coverage": 0.04720226788105908,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.999977173119065,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.04718610567282734,
+      "confidence": 0.9996575967859752,
+      "coverage": 0.04720226788105908,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996575967859752,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "decide"
+        ]
+      ],
+      "support": 0.04718610567282734,
+      "confidence": 0.9996347782419137,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9996347782419137,
+      "tr_confidence": 0.9996347782419137,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.12639277829436985,
+      "confidence": 0.9979497213833,
+      "coverage": 0.1266524511066264,
+      "tr_support": 0.9989271610856216,
+      "tr_confidence": 0.9989271610856216,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.047201190400510296,
+      "confidence": 0.999977173119065,
+      "coverage": 0.04720226788105908,
+      "tr_support": 0.9999543472802392,
+      "tr_confidence": 0.999977173119065,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "initialize"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.047114991956607705,
+      "confidence": 0.998128238489808,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.998128238489808,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "abort payment"
+        ]
+      ],
+      "support": 0.08269016723575598,
+      "confidence": 1.0,
+      "coverage": 0.08269016723575598,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.196257694557969,
+      "confidence": 1.0,
+      "coverage": 0.196257694557969,
+      "tr_support": 0.9996804309616746,
+      "tr_confidence": 0.9996804309616746,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "remove document"
+        ],
+        [
+          "finish payment"
+        ]
+      ],
+      "support": 0.046975996965814774,
+      "confidence": 0.9940491119268565,
+      "coverage": 0.04725721938904698,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9979912803305256
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "begin editing"
+        ]
+      ],
+      "support": 0.04720226788105908,
+      "confidence": 0.9999771736401196,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost2",
+      "parameters": [
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.04718502819227856,
+      "confidence": 0.9996119518820333,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9996119518820333,
+      "tr_confidence": 0.9996119518820333,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ]
+      ],
+      "support": 0.04720226788105908,
+      "confidence": 0.9999771736401196,
+      "coverage": 0.04720334536160786,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "revoke decision"
+        ]
+      ],
+      "support": 0.07022048484469734,
+      "confidence": 1.0,
+      "coverage": 0.07022048484469734,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "calculate"
+        ],
+        [
+          "insert document"
+        ]
+      ],
+      "support": 0.04727769151947384,
+      "confidence": 0.9999316332809188,
+      "coverage": 0.04728092396112019,
+      "tr_support": 0.6681960327786528,
+      "tr_confidence": 0.9998975269845607,
+      "tr_coverage": 0.6682645118582939
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "revoke withdrawal"
+        ],
+        [
+          "mail valid"
+        ]
+      ],
+      "support": 0.04716024613965657,
+      "confidence": 0.9981983214741835,
+      "coverage": 0.047245367103010374,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "begin editing"
+        ],
+        [
+          "mail income"
+        ]
+      ],
+      "support": 0.17380084496024636,
+      "confidence": 1.0,
+      "coverage": 0.17380084496024636,
+      "tr_support": 0.9999771736401196,
+      "tr_confidence": 0.9999771736401196,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "mail valid"
+        ],
+        [
+          "begin payment"
+        ]
+      ],
+      "support": 0.1297114183846196,
+      "confidence": 0.9993276055285768,
+      "coverage": 0.12979869430907098,
+      "tr_support": 0.998128238489808,
+      "tr_confidence": 0.9981510226442659,
+      "tr_coverage": 0.9999771736401196
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "mail income"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.047153781256363866,
+      "confidence": 0.9978339185553377,
+      "coverage": 0.047256141908498195,
+      "tr_support": 0.9989271610856216,
+      "tr_confidence": 0.9989271610856216,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "finish editing"
+        ],
+        [
+          "withdraw"
+        ]
+      ],
+      "support": 0.14885932521703152,
+      "confidence": 0.9983235419511949,
+      "coverage": 0.14910930070434902,
+      "tr_support": 0.998767376566459,
+      "tr_confidence": 0.9989269896351765,
+      "tr_coverage": 0.9998402154808372
+    }
+  ]
+}

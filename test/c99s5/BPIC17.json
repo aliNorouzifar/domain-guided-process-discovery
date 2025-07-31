@@ -1,0 +1,7023 @@
+{
+  "name": "Process specification discovered from BPIC17.xes",
+  "tasks": [
+    "A_Pending",
+    "O_Returned",
+    "O_Sent (online only)",
+    "A_Validating",
+    "O_Sent (mail and online)",
+    "A_Incomplete",
+    "O_Created",
+    "A_Create Application",
+    "O_Accepted",
+    "O_Cancelled",
+    "A_Denied",
+    "A_Submitted",
+    "A_Accepted",
+    "O_Create Offer",
+    "O_Refused",
+    "A_Complete",
+    "A_Concept",
+    "A_Cancelled"
+  ],
+  "constraints": [
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.0868647391589225,
+      "confidence": 1.0,
+      "coverage": 0.0868647391589225,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.6244970457099358,
+      "tr_coverage": 0.8755276270271986
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.05376703795646035,
+      "confidence": 1.0,
+      "coverage": 0.05376703795646035,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.14538902372624837,
+      "confidence": 1.0,
+      "coverage": 0.14538902372624837,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.16224702614409242,
+      "confidence": 1.0,
+      "coverage": 0.16224702614409242,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.09351381031921079,
+      "confidence": 1.0,
+      "coverage": 0.09351381031921079,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.14460460866917063,
+      "confidence": 0.9986616105286639,
+      "coverage": 0.14479840533033103,
+      "tr_support": 0.9854009965406709,
+      "tr_confidence": 0.9944271850879159,
+      "tr_coverage": 0.9909232282839824
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.05179215769511171,
+      "confidence": 1.0,
+      "coverage": 0.05179215769511171,
+      "tr_support": 0.057126535275635534,
+      "tr_confidence": 0.08472980606288834,
+      "tr_coverage": 0.6742200641086674
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.14421701534684989,
+      "confidence": 0.992033263505364,
+      "coverage": 0.14537518110759406,
+      "tr_support": 0.9853692595766289,
+      "tr_confidence": 0.99305933152087,
+      "tr_coverage": 0.9922561807737472
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.10019287381991676,
+      "confidence": 0.999263690750115,
+      "coverage": 0.10026670111940643,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9980713596914176,
+      "tr_coverage": 0.9873369513472341
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.09533180756914388,
+      "confidence": 1.0,
+      "coverage": 0.09533180756914388,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.8114669421487604,
+      "tr_coverage": 0.7987559110095528
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.18957927667703325,
+      "confidence": 0.9935914488162317,
+      "coverage": 0.1908020413248309,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.10773248678029919,
+      "confidence": 0.9988876529477196,
+      "coverage": 0.1078524561419699,
+      "tr_support": 0.9992700498270335,
+      "tr_confidence": 0.9992700498270335,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.05274499127915025,
+      "confidence": 0.9972954109230501,
+      "coverage": 0.05288803167191148,
+      "tr_support": 0.056967850455425434,
+      "tr_confidence": 0.11229277447607132,
+      "tr_coverage": 0.5073153702116856
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.05319026217919731,
+      "confidence": 1.0,
+      "coverage": 0.05319026217919731,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.47614967152242216
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.048213840772971826,
+      "confidence": 1.0,
+      "coverage": 0.048213840772971826,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4976990701069536
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.13894067053644762,
+      "confidence": 1.0,
+      "coverage": 0.13894067053644762,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5467644165159161,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.08318721680309336,
+      "confidence": 1.0,
+      "coverage": 0.08318721680309336,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9991716579584554,
+      "tr_coverage": 0.9961598273509156
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.1258847740423215,
+      "confidence": 1.0,
+      "coverage": 0.1258847740423215,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 0.47614967152242216,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "ChainPrecedence",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.047117966796172056,
+      "confidence": 1.0,
+      "coverage": 0.047117966796172056,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6481640166301692
+    },
+    {
+      "template": "ChainSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.07949354472550087,
+      "confidence": 1.0,
+      "coverage": 0.07949354472550087,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.04840533033102316,
+      "confidence": 1.0,
+      "coverage": 0.04840533033102316,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.821163012392755,
+      "tr_coverage": 0.6658415056015742
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.1258847740423215,
+      "confidence": 1.0,
+      "coverage": 0.1258847740423215,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.0916081431511337,
+      "confidence": 1.0,
+      "coverage": 0.0916081431511337,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9854327335047129
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.032723950498795694,
+      "confidence": 1.0,
+      "coverage": 0.032723950498795694,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.7354579426073469,
+      "tr_coverage": 0.45012536100796596
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.07736870276206384,
+      "confidence": 1.0,
+      "coverage": 0.07736870276206384,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.09533180756914388,
+      "confidence": 1.0,
+      "coverage": 0.09533180756914388,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 0.6230928162746344,
+      "tr_coverage": 0.7987559110095528
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.15296093613015752,
+      "confidence": 1.0,
+      "coverage": 0.15296093613015752,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.07702033019259696,
+      "confidence": 0.9998801964777765,
+      "coverage": 0.07702955860503317,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.13894067053644762,
+      "confidence": 1.0,
+      "coverage": 0.13894067053644762,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.152494901302129,
+      "confidence": 0.9969532428355958,
+      "coverage": 0.15296093613015752,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.6908502332666857,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.14471073541218704,
+      "confidence": 0.997661879085747,
+      "coverage": 0.14504987956921772,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.11346102380007567,
+      "confidence": 0.9986192052307755,
+      "coverage": 0.11361790681149123,
+      "tr_support": 0.6939604557428036,
+      "tr_confidence": 0.6988845207274587,
+      "tr_coverage": 0.9929543939826716
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.08135306983139691,
+      "confidence": 1.0,
+      "coverage": 0.08135306983139691,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.12646154981958455,
+      "confidence": 1.0,
+      "coverage": 0.12646154981958455,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.147407738946669,
+      "confidence": 1.0,
+      "coverage": 0.147407738946669,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.10038436337796809,
+      "confidence": 1.0,
+      "coverage": 0.10038436337796809,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 0.9932331168536264,
+      "tr_coverage": 0.6988162112412326
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.05057862145975028,
+      "confidence": 1.0,
+      "coverage": 0.05057862145975028,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.822417414550315,
+      "tr_coverage": 0.6648259227522295
+    },
+    {
+      "template": "AtMost3",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.07198623120864518,
+      "confidence": 0.9902567520390999,
+      "coverage": 0.07269451186312419,
+      "tr_support": 0.9902567520390999,
+      "tr_confidence": 0.9902567520390999,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.12646154981958455,
+      "confidence": 1.0,
+      "coverage": 0.12646154981958455,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.07736870276206384,
+      "confidence": 1.0,
+      "coverage": 0.07736870276206384,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.11002574727069703,
+      "confidence": 1.0,
+      "coverage": 0.11002574727069703,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.11806150623631344,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.15234263249693156,
+      "confidence": 0.9997274791824375,
+      "coverage": 0.15238416035289448,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.024065392530522974,
+      "confidence": 1.0,
+      "coverage": 0.024065392530522974,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.3310482719223079
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.1643026550142579,
+      "confidence": 1.0,
+      "coverage": 0.1643026550142579,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.14504987956921772,
+      "confidence": 1.0,
+      "coverage": 0.14504987956921772,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.16324369468720296,
+      "confidence": 0.9935548191417659,
+      "coverage": 0.1643026550142579,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.14538902372624837,
+      "confidence": 1.0,
+      "coverage": 0.14538902372624837,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.047117966796172056,
+      "confidence": 1.0,
+      "coverage": 0.047117966796172056,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6481640166301692
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.1715492658797907,
+      "confidence": 1.0,
+      "coverage": 0.1715492658797907,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.04840533033102316,
+      "confidence": 1.0,
+      "coverage": 0.04840533033102316,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.178836987607245,
+      "tr_coverage": 0.6658415056015742
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.16224702614409242,
+      "confidence": 1.0,
+      "coverage": 0.16224702614409242,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.013332748867212373,
+      "confidence": 1.0,
+      "coverage": 0.013332748867212373,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.6914854404718024,
+      "tr_coverage": 0.17220476689199912
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.0774909792268436,
+      "confidence": 0.9956129950201565,
+      "coverage": 0.07783243048698332,
+      "tr_support": 0.6885334348916182,
+      "tr_confidence": 0.6944622279129321,
+      "tr_coverage": 0.9914627566726967
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.16224702614409242,
+      "confidence": 1.0,
+      "coverage": 0.16224702614409242,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 0.6940874035989717,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.1008850047526324,
+      "confidence": 1.0,
+      "coverage": 0.1008850047526324,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.7531137558815388,
+      "tr_coverage": 0.9173252086705386
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.10193012246103303,
+      "confidence": 0.9995022962242381,
+      "coverage": 0.10198087872943218,
+      "tr_support": 0.6905963375543496,
+      "tr_confidence": 0.6957411433687172,
+      "tr_coverage": 0.9926052873782094
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.044420963261690094,
+      "confidence": 1.0,
+      "coverage": 0.044420963261690094,
+      "tr_support": 0.057126535275635534,
+      "tr_confidence": 0.10179268223717695,
+      "tr_coverage": 0.5612047351550351
+    },
+    {
+      "template": "ChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.14538902372624837,
+      "confidence": 1.0,
+      "coverage": 0.14538902372624837,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.05376703795646035,
+      "confidence": 1.0,
+      "coverage": 0.05376703795646035,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.1908020413248309,
+      "confidence": 1.0,
+      "coverage": 0.1908020413248309,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.1711685938667971,
+      "confidence": 0.9977809755638339,
+      "coverage": 0.1715492658797907,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.008656250865163665,
+      "confidence": 0.9997335464961364,
+      "coverage": 0.008658557968272718,
+      "tr_support": 0.11904535212161604,
+      "tr_confidence": 0.9997334754797441,
+      "tr_coverage": 0.11907708908565806
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.05319026217919731,
+      "confidence": 1.0,
+      "coverage": 0.05319026217919731,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.47614967152242216
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.1643026550142579,
+      "confidence": 1.0,
+      "coverage": 0.1643026550142579,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.09675990439364716,
+      "confidence": 1.0,
+      "coverage": 0.09675990439364716,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.18957927667703325,
+      "confidence": 0.9935914488162317,
+      "coverage": 0.1908020413248309,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.00857319515323779,
+      "confidence": 0.9901412203570477,
+      "coverage": 0.008658557968272718,
+      "tr_support": 0.11790282141610334,
+      "tr_confidence": 0.9901385927505331,
+      "tr_coverage": 0.11907708908565806
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.09675990439364716,
+      "confidence": 1.0,
+      "coverage": 0.09675990439364716,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.3310482719223079,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.1711685938667971,
+      "confidence": 0.9977809755638339,
+      "coverage": 0.1715492658797907,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.0868647391589225,
+      "confidence": 1.0,
+      "coverage": 0.0868647391589225,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.740312466016602,
+      "tr_coverage": 0.8755276270271986
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.08796061313572226,
+      "confidence": 1.0,
+      "coverage": 0.08796061313572226,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 0.5628858578607322,
+      "tr_coverage": 0.8841918182106699
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.12646154981958455,
+      "confidence": 1.0,
+      "coverage": 0.12646154981958455,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.16224702614409242,
+      "confidence": 1.0,
+      "coverage": 0.16224702614409242,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5467644165159161,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.14631186496986923,
+      "confidence": 1.0,
+      "coverage": 0.14631186496986923,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.0579498158931719,
+      "confidence": 1.0,
+      "coverage": 0.0579498158931719,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.1732973073697941,
+      "tr_coverage": 0.6812656701259957
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.12646154981958455,
+      "confidence": 1.0,
+      "coverage": 0.12646154981958455,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.6908502332666857,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.1447799485054586,
+      "confidence": 0.9998725343360633,
+      "coverage": 0.14479840533033103,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 0.48051116164366015,
+      "tr_coverage": 0.9909232282839824
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.08352636096012403,
+      "confidence": 1.0,
+      "coverage": 0.08352636096012403,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.14504987956921772,
+      "confidence": 1.0,
+      "coverage": 0.14504987956921772,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.08955251428096825,
+      "confidence": 1.0,
+      "coverage": 0.08955251428096825,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.05319026217919731,
+      "confidence": 1.0,
+      "coverage": 0.05319026217919731,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.47614967152242216
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.1715492658797907,
+      "confidence": 1.0,
+      "coverage": 0.1715492658797907,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.14504987956921772,
+      "confidence": 1.0,
+      "coverage": 0.14504987956921772,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.16224702614409242,
+      "confidence": 1.0,
+      "coverage": 0.16224702614409242,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 0.6940874035989717,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.14538902372624837,
+      "confidence": 1.0,
+      "coverage": 0.14538902372624837,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.1643026550142579,
+      "confidence": 1.0,
+      "coverage": 0.1643026550142579,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.1715492658797907,
+      "confidence": 1.0,
+      "coverage": 0.1715492658797907,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.06242559592473307,
+      "confidence": 1.0,
+      "coverage": 0.06242559592473307,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.17066957787481804,
+      "tr_coverage": 0.697705417499762
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.10030822897536937,
+      "confidence": 1.0,
+      "coverage": 0.10030822897536937,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 0.5750258709899966,
+      "tr_coverage": 0.8280491288203371
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.07235536770609352,
+      "confidence": 1.0,
+      "coverage": 0.07235536770609352,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.16324369468720296,
+      "confidence": 0.9935548191417659,
+      "coverage": 0.1643026550142579,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.06184882014747003,
+      "confidence": 1.0,
+      "coverage": 0.06184882014747003,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.21564457727455602,
+      "tr_coverage": 0.5521914373671014
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.15238416035289448,
+      "confidence": 1.0,
+      "coverage": 0.15238416035289448,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 0.47614967152242216,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.1643026550142579,
+      "confidence": 1.0,
+      "coverage": 0.1643026550142579,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.05318334086987016,
+      "confidence": 0.9998698763825634,
+      "coverage": 0.05319026217919731,
+      "tr_support": 0.4760544606302961,
+      "tr_confidence": 0.9998000399920016,
+      "tr_coverage": 0.47614967152242216
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.13894067053644762,
+      "confidence": 1.0,
+      "coverage": 0.13894067053644762,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.010831849096999843,
+      "confidence": 1.0,
+      "coverage": 0.010831849096999843,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.11806150623631344
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.07736870276206384,
+      "confidence": 1.0,
+      "coverage": 0.07736870276206384,
+      "tr_support": 0.057126535275635534,
+      "tr_confidence": 0.057126535275635534,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.14538902372624837,
+      "confidence": 1.0,
+      "coverage": 0.14538902372624837,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.14631186496986923,
+      "confidence": 1.0,
+      "coverage": 0.14631186496986923,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.6481640166301692,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.05783676784082834,
+      "confidence": 0.9995215501774252,
+      "coverage": 0.057864453078136965,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 0.9749805042890564,
+      "tr_coverage": 0.48836840267859977
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.09675990439364716,
+      "confidence": 1.0,
+      "coverage": 0.09675990439364716,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.13894067053644762,
+      "confidence": 1.0,
+      "coverage": 0.13894067053644762,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5467644165159161,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.08796061313572226,
+      "confidence": 1.0,
+      "coverage": 0.08796061313572226,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.6183776022972003,
+      "tr_coverage": 0.8841918182106699
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.046764980020487075,
+      "confidence": 0.9925084463594966,
+      "coverage": 0.047117966796172056,
+      "tr_support": 0.6433082611317401,
+      "tr_confidence": 0.9925084463594966,
+      "tr_coverage": 0.6481640166301692
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.10095652494901303,
+      "confidence": 0.9955861943439583,
+      "coverage": 0.10140410295216915,
+      "tr_support": 0.47513408867307755,
+      "tr_confidence": 0.5879511447983349,
+      "tr_coverage": 0.8081183154019487
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.11210214006884396,
+      "confidence": 1.0,
+      "coverage": 0.11210214006884396,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.048213840772971826,
+      "confidence": 1.0,
+      "coverage": 0.048213840772971826,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4976990701069536
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.044420963261690094,
+      "confidence": 1.0,
+      "coverage": 0.044420963261690094,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.974269071990047,
+      "tr_coverage": 0.5612047351550351
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.12612240566255387,
+      "confidence": 1.0,
+      "coverage": 0.12612240566255387,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.09821107224924096,
+      "confidence": 1.0,
+      "coverage": 0.09821107224924096,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.17024365896819274,
+      "tr_coverage": 0.6994509505220731
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.07736870276206384,
+      "confidence": 1.0,
+      "coverage": 0.07736870276206384,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.13135491551388415,
+      "confidence": 1.0,
+      "coverage": 0.13135491551388415,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.551472471190781,
+      "tr_coverage": 0.9914627566726967
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.034897241627522814,
+      "confidence": 1.0,
+      "coverage": 0.034897241627522814,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.26287894848420607,
+      "tr_coverage": 0.44910977815862135
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.13894067053644762,
+      "confidence": 1.0,
+      "coverage": 0.13894067053644762,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.18957927667703325,
+      "confidence": 0.9935914488162317,
+      "coverage": 0.1908020413248309,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.14538902372624837,
+      "confidence": 1.0,
+      "coverage": 0.14538902372624837,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.14471073541218704,
+      "confidence": 0.997661879085747,
+      "coverage": 0.14504987956921772,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.08135306983139691,
+      "confidence": 1.0,
+      "coverage": 0.08135306983139691,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.11907708908565806,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.1258847740423215,
+      "confidence": 1.0,
+      "coverage": 0.1258847740423215,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.047117966796172056,
+      "confidence": 1.0,
+      "coverage": 0.047117966796172056,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6481640166301692
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.14504987956921772,
+      "confidence": 1.0,
+      "coverage": 0.14504987956921772,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.0868647391589225,
+      "confidence": 1.0,
+      "coverage": 0.0868647391589225,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.6244970457099358,
+      "tr_coverage": 0.8755276270271986
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.11947333450226558,
+      "confidence": 1.0,
+      "coverage": 0.11947333450226558,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.6490703956777372,
+      "tr_coverage": 0.9986035735821511
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.120908352636096,
+      "confidence": 1.0,
+      "coverage": 0.120908352636096,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.08352636096012403,
+      "confidence": 1.0,
+      "coverage": 0.08352636096012403,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.08352636096012403,
+      "confidence": 1.0,
+      "coverage": 0.08352636096012403,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.11806150623631344,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.024065392530522974,
+      "confidence": 1.0,
+      "coverage": 0.024065392530522974,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.3310482719223079
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.12554562988529083,
+      "confidence": 1.0,
+      "coverage": 0.12554562988529083,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.05057862145975028,
+      "confidence": 1.0,
+      "coverage": 0.05057862145975028,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.822417414550315,
+      "tr_coverage": 0.6648259227522295
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.18874641245466542,
+      "confidence": 1.0,
+      "coverage": 0.18874641245466542,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 0.6940874035989717,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.16324369468720296,
+      "confidence": 0.9935548191417659,
+      "coverage": 0.1643026550142579,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.15296093613015752,
+      "confidence": 1.0,
+      "coverage": 0.15296093613015752,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.6908502332666857,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.07736870276206384,
+      "confidence": 1.0,
+      "coverage": 0.07736870276206384,
+      "tr_support": 0.057126535275635534,
+      "tr_confidence": 0.057126535275635534,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.16324369468720296,
+      "confidence": 0.9935548191417659,
+      "coverage": 0.1643026550142579,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotPrecedence",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.09080296416607452,
+      "confidence": 0.9912106177752034,
+      "coverage": 0.0916081431511337,
+      "tr_support": 0.9764829096448634,
+      "tr_confidence": 0.9909178743961352,
+      "tr_coverage": 0.9854327335047129
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.16324369468720296,
+      "confidence": 0.9935548191417659,
+      "coverage": 0.1643026550142579,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.1885110879375421,
+      "confidence": 0.9987532238940974,
+      "coverage": 0.18874641245466542,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 0.6940874035989717,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.06402211127619716,
+      "confidence": 1.0,
+      "coverage": 0.06402211127619716,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 0.8632832729155878,
+      "tr_coverage": 0.5515566980862611
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.0638121648932734,
+      "confidence": 1.0,
+      "coverage": 0.0638121648932734,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.3771286019017318,
+      "tr_coverage": 0.877812688438224
+    },
+    {
+      "template": "RespondedExistence",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.05298262289938262,
+      "confidence": 0.996096291476903,
+      "coverage": 0.05319026217919731,
+      "tr_support": 0.4737693992192707,
+      "tr_confidence": 0.99500099980004,
+      "tr_coverage": 0.47614967152242216
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.10030822897536937,
+      "confidence": 1.0,
+      "coverage": 0.10030822897536937,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.7827603388141505,
+      "tr_coverage": 0.8280491288203371
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.048213840772971826,
+      "confidence": 1.0,
+      "coverage": 0.048213840772971826,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4976990701069536
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.15238416035289448,
+      "confidence": 1.0,
+      "coverage": 0.15238416035289448,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.09293703454194775,
+      "confidence": 1.0,
+      "coverage": 0.09293703454194775,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.8796977124183006,
+      "tr_coverage": 0.6215367037989146
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.12271020016426575,
+      "confidence": 0.9955452401452476,
+      "coverage": 0.12325929070422015,
+      "tr_support": 0.9973340950204703,
+      "tr_confidence": 0.9973340950204703,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.1078524561419699,
+      "confidence": 1.0,
+      "coverage": 0.1078524561419699,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.11907708908565806,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.024065392530522974,
+      "confidence": 1.0,
+      "coverage": 0.024065392530522974,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.3310482719223079
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.12612240566255387,
+      "confidence": 1.0,
+      "coverage": 0.12612240566255387,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.6940883872202028,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.16190788198706177,
+      "confidence": 1.0,
+      "coverage": 0.16190788198706177,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 0.6973407308207384,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.1078524561419699,
+      "confidence": 1.0,
+      "coverage": 0.1078524561419699,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.11907708908565806,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.05057862145975028,
+      "confidence": 1.0,
+      "coverage": 0.05057862145975028,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.17758258544968494,
+      "tr_coverage": 0.6648259227522295
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.07118335932669503,
+      "confidence": 1.0,
+      "coverage": 0.07118335932669503,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.44804776427129417,
+      "tr_coverage": 0.7388682598622616
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.0916081431511337,
+      "confidence": 1.0,
+      "coverage": 0.0916081431511337,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9854327335047129
+    },
+    {
+      "template": "ChainResponse",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.008582423565673998,
+      "confidence": 0.991207034372502,
+      "coverage": 0.008658557968272718,
+      "tr_support": 0.11802976927227142,
+      "tr_confidence": 0.9912046908315565,
+      "tr_coverage": 0.11907708908565806
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.09627771984385526,
+      "confidence": 0.9999520762945391,
+      "coverage": 0.09628233405007336,
+      "tr_support": 0.057126535275635534,
+      "tr_confidence": 0.05739429883298259,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.010831849096999843,
+      "confidence": 1.0,
+      "coverage": 0.010831849096999843,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.11806150623631344
+    },
+    {
+      "template": "Init",
+      "parameters": [
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 1.0,
+      "confidence": 1.0,
+      "coverage": 1.0,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.18858030103081366,
+      "confidence": 0.9991199227487746,
+      "coverage": 0.18874641245466542,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.1258847740423215,
+      "confidence": 1.0,
+      "coverage": 0.1258847740423215,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 0.47614967152242216,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.11567353568165668,
+      "confidence": 1.0,
+      "coverage": 0.11567353568165668,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.33369589558207235,
+      "tr_coverage": 0.9920657589894951
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.12929928664371867,
+      "confidence": 1.0,
+      "coverage": 0.12929928664371867,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.0638121648932734,
+      "confidence": 1.0,
+      "coverage": 0.0638121648932734,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.6228713980982682,
+      "tr_coverage": 0.877812688438224
+    },
+    {
+      "template": "NotRespondedExistence",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.04776626276981571,
+      "confidence": 0.9907168150062207,
+      "coverage": 0.048213840772971826,
+      "tr_support": 0.49252594496810437,
+      "tr_confidence": 0.9896059176125495,
+      "tr_coverage": 0.4976990701069536
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.1258847740423215,
+      "confidence": 1.0,
+      "coverage": 0.1258847740423215,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.05904568986997167,
+      "confidence": 1.0,
+      "coverage": 0.05904568986997167,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 0.8151151307240501,
+      "tr_coverage": 0.6105874512044178
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.14471073541218704,
+      "confidence": 0.997661879085747,
+      "coverage": 0.14504987956921772,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.01941427266267384,
+      "confidence": 0.99609375,
+      "coverage": 0.01949040706527256,
+      "tr_support": 0.11802976927227142,
+      "tr_confidence": 0.9912046908315565,
+      "tr_coverage": 0.11907708908565806
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.13135491551388415,
+      "confidence": 1.0,
+      "coverage": 0.13135491551388415,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9939180537772087,
+      "tr_coverage": 0.9914627566726967
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.13133645868901173,
+      "confidence": 0.9998594888908404,
+      "coverage": 0.13135491551388415,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9939180537772087,
+      "tr_coverage": 0.9914627566726967
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.07235536770609352,
+      "confidence": 0.9953346662858231,
+      "coverage": 0.07269451186312419,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.11210214006884396,
+      "confidence": 1.0,
+      "coverage": 0.11210214006884396,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.08101392567436624,
+      "confidence": 1.0,
+      "coverage": 0.08101392567436624,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.11949425140928055,
+      "tr_coverage": 0.9965089339553779
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.010769557313055435,
+      "confidence": 0.9942492012779552,
+      "coverage": 0.010831849096999843,
+      "tr_support": 0.11723634517122092,
+      "tr_confidence": 0.9930107526881721,
+      "tr_coverage": 0.11806150623631344
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.05319026217919731,
+      "confidence": 1.0,
+      "coverage": 0.05319026217919731,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.47614967152242216
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.14504987956921772,
+      "confidence": 1.0,
+      "coverage": 0.14504987956921772,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.05334945229372191,
+      "confidence": 0.9922334263033684,
+      "coverage": 0.05376703795646035,
+      "tr_support": 0.6851375797391221,
+      "tr_confidence": 0.9917309812568909,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.16324369468720296,
+      "confidence": 0.995609900237797,
+      "coverage": 0.16396351085722724,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9900516548689496,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.05057862145975028,
+      "confidence": 1.0,
+      "coverage": 0.05057862145975028,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.17758258544968494,
+      "tr_coverage": 0.6648259227522295
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.08352636096012403,
+      "confidence": 1.0,
+      "coverage": 0.08352636096012403,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.11806150623631344,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.14538902372624837,
+      "confidence": 1.0,
+      "coverage": 0.14538902372624837,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.048213840772971826,
+      "confidence": 1.0,
+      "coverage": 0.048213840772971826,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4976990701069536
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.14631186496986923,
+      "confidence": 1.0,
+      "coverage": 0.14631186496986923,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.6481640166301692,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.13894067053644762,
+      "confidence": 1.0,
+      "coverage": 0.13894067053644762,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5467644165159161,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.120908352636096,
+      "confidence": 1.0,
+      "coverage": 0.120908352636096,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 0.4976990701069536,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.11981247865929624,
+      "confidence": 1.0,
+      "coverage": 0.11981247865929624,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "RespondedExistence",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.04789546054392263,
+      "confidence": 0.9933964972724663,
+      "coverage": 0.048213840772971826,
+      "tr_support": 0.4937954235297851,
+      "tr_confidence": 0.9921566126769544,
+      "tr_coverage": 0.4976990701069536
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.1430057862145975,
+      "confidence": 0.9978107242317413,
+      "coverage": 0.1433195522374286,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.9953360768175583,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.008656250865163665,
+      "confidence": 0.9997335464961364,
+      "coverage": 0.008658557968272718,
+      "tr_support": 0.11904535212161604,
+      "tr_confidence": 0.9997334754797441,
+      "tr_coverage": 0.11907708908565806
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.12929928664371867,
+      "confidence": 1.0,
+      "coverage": 0.12929928664371867,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.7877457704618198,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.044420963261690094,
+      "confidence": 1.0,
+      "coverage": 0.044420963261690094,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.974269071990047,
+      "tr_coverage": 0.5612047351550351
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.10386808907263684,
+      "confidence": 1.0,
+      "coverage": 0.10386808907263684,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.147407738946669,
+      "confidence": 1.0,
+      "coverage": 0.147407738946669,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 0.4976990701069536,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.14538902372624837,
+      "confidence": 1.0,
+      "coverage": 0.14538902372624837,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotResponse",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.04777318407914286,
+      "confidence": 0.990860369413341,
+      "coverage": 0.048213840772971826,
+      "tr_support": 0.4933828429972389,
+      "tr_confidence": 0.9913276367810229,
+      "tr_coverage": 0.4976990701069536
+    },
+    {
+      "template": "AtMost2",
+      "parameters": [
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.07259299932632589,
+      "confidence": 0.9986035735821511,
+      "coverage": 0.07269451186312419,
+      "tr_support": 0.9986035735821511,
+      "tr_confidence": 0.9986035735821511,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.13894067053644762,
+      "confidence": 1.0,
+      "coverage": 0.13894067053644762,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.1366704810771403,
+      "confidence": 1.0,
+      "coverage": 0.1366704810771403,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.7052140883977901,
+      "tr_coverage": 0.9191024786568917
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.05179215769511171,
+      "confidence": 1.0,
+      "coverage": 0.05179215769511171,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.961353794012427,
+      "tr_coverage": 0.6742200641086674
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.05283727540351233,
+      "confidence": 0.9990403071017274,
+      "coverage": 0.05288803167191148,
+      "tr_support": 0.49763559617886954,
+      "tr_confidence": 0.9809196121363779,
+      "tr_coverage": 0.5073153702116856
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.032723950498795694,
+      "confidence": 1.0,
+      "coverage": 0.032723950498795694,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.2645420573926532,
+      "tr_coverage": 0.45012536100796596
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.07783243048698332,
+      "confidence": 1.0,
+      "coverage": 0.07783243048698332,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.333898847631242,
+      "tr_coverage": 0.9914627566726967
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.14537518110759406,
+      "confidence": 1.0,
+      "coverage": 0.14537518110759406,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.6962418039341116,
+      "tr_coverage": 0.9922561807737472
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.16324369468720296,
+      "confidence": 0.9935548191417659,
+      "coverage": 0.1643026550142579,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "ChainResponse",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.11002574727069703,
+      "confidence": 1.0,
+      "coverage": 0.11002574727069703,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.05319026217919731,
+      "confidence": 1.0,
+      "coverage": 0.05319026217919731,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.47614967152242216
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.07736870276206384,
+      "confidence": 1.0,
+      "coverage": 0.07736870276206384,
+      "tr_support": 0.057126535275635534,
+      "tr_confidence": 0.057126535275635534,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.0638121648932734,
+      "confidence": 1.0,
+      "coverage": 0.0638121648932734,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.3771286019017318,
+      "tr_coverage": 0.877812688438224
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.06459888705346019,
+      "confidence": 1.0,
+      "coverage": 0.06459888705346019,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.16936805682025133,
+      "tr_coverage": 0.6970706782189215
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.07269220476001513,
+      "confidence": 0.999968263035958,
+      "coverage": 0.07269451186312419,
+      "tr_support": 0.999968263035958,
+      "tr_confidence": 0.999968263035958,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.13135491551388415,
+      "confidence": 1.0,
+      "coverage": 0.13135491551388415,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.551472471190781,
+      "tr_coverage": 0.9914627566726967
+    },
+    {
+      "template": "NotChainPrecedence",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.09082834230027409,
+      "confidence": 0.9914876470143803,
+      "coverage": 0.0916081431511337,
+      "tr_support": 0.9748008505506364,
+      "tr_confidence": 0.9892109500805153,
+      "tr_coverage": 0.9854327335047129
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.07725565470972029,
+      "confidence": 1.0,
+      "coverage": 0.07725565470972029,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.4261203480534336,
+      "tr_coverage": 0.7768891427846012
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.09675990439364716,
+      "confidence": 1.0,
+      "coverage": 0.09675990439364716,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.3310482719223079,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.0579498158931719,
+      "confidence": 1.0,
+      "coverage": 0.0579498158931719,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.9514115345197056,
+      "tr_coverage": 0.6812656701259957
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.08318721680309336,
+      "confidence": 1.0,
+      "coverage": 0.08318721680309336,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.11851663055944947,
+      "tr_coverage": 0.9961598273509156
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.11210214006884396,
+      "confidence": 1.0,
+      "coverage": 0.11210214006884396,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5493272112747911,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.013309677836121851,
+      "confidence": 0.9982695968160581,
+      "coverage": 0.013332748867212373,
+      "tr_support": 0.056967850455425434,
+      "tr_confidence": 0.3308145963877626,
+      "tr_coverage": 0.17220476689199912
+    },
+    {
+      "template": "NotChainPrecedence",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.08875194950212716,
+      "confidence": 0.9910603874690849,
+      "coverage": 0.08955251428096825,
+      "tr_support": 0.6830746770763909,
+      "tr_confidence": 0.9841335162322816,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.09675990439364716,
+      "confidence": 1.0,
+      "coverage": 0.09675990439364716,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.3310482719223079,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.13872610994730578,
+      "confidence": 1.0,
+      "coverage": 0.13872610994730578,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9950966253244881,
+      "tr_coverage": 0.9902884890031419
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.11947333450226558,
+      "confidence": 1.0,
+      "coverage": 0.11947333450226558,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9967265215318608,
+      "tr_coverage": 0.9986035735821511
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.10243999224813355,
+      "confidence": 1.0,
+      "coverage": 0.10243999224813355,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.11962184063283812,
+      "tr_coverage": 0.9869561077787299
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.08955251428096825,
+      "confidence": 1.0,
+      "coverage": 0.08955251428096825,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.120908352636096,
+      "confidence": 1.0,
+      "coverage": 0.120908352636096,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.10134411827133379,
+      "confidence": 0.9994084590357882,
+      "coverage": 0.10140410295216915,
+      "tr_support": 0.4976038592148275,
+      "tr_confidence": 0.6157561952637159,
+      "tr_coverage": 0.8081183154019487
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.015506039995939499,
+      "confidence": 1.0,
+      "coverage": 0.015506039995939499,
+      "tr_support": 0.057126535275635534,
+      "tr_confidence": 0.3335804299481097,
+      "tr_coverage": 0.17125265797073852
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.10038436337796809,
+      "confidence": 1.0,
+      "coverage": 0.10038436337796809,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.16894500204368953,
+      "tr_coverage": 0.6988162112412326
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.05577652476444477,
+      "confidence": 1.0,
+      "coverage": 0.05577652476444477,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.9511013831323056,
+      "tr_coverage": 0.6814878288742899
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.08352636096012403,
+      "confidence": 1.0,
+      "coverage": 0.08352636096012403,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.11806150623631344,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.1430057862145975,
+      "confidence": 0.9978107242317413,
+      "coverage": 0.1433195522374286,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.9953360768175583,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.010831849096999843,
+      "confidence": 1.0,
+      "coverage": 0.010831849096999843,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.11806150623631344
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.14471073541218704,
+      "confidence": 0.997661879085747,
+      "coverage": 0.14504987956921772,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.0567201299360471,
+      "confidence": 0.9973226238286479,
+      "coverage": 0.05687239874124454,
+      "tr_support": 0.4969373829699451,
+      "tr_confidence": 0.8138676646395343,
+      "tr_coverage": 0.6105874512044178
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.058441228855400006,
+      "confidence": 1.0,
+      "coverage": 0.058441228855400006,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.9897694721047606,
+      "tr_coverage": 0.6979910501761402
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.09351381031921079,
+      "confidence": 1.0,
+      "coverage": 0.09351381031921079,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.7914369717015803,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.09293703454194775,
+      "confidence": 1.0,
+      "coverage": 0.09293703454194775,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 0.7660845588235294,
+      "tr_coverage": 0.6215367037989146
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.16224702614409242,
+      "confidence": 1.0,
+      "coverage": 0.16224702614409242,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 0.6940874035989717,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.18874641245466542,
+      "confidence": 1.0,
+      "coverage": 0.18874641245466542,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.15296093613015752,
+      "confidence": 1.0,
+      "coverage": 0.15296093613015752,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.12646154981958455,
+      "confidence": 1.0,
+      "coverage": 0.12646154981958455,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.6908502332666857,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.04840533033102316,
+      "confidence": 1.0,
+      "coverage": 0.04840533033102316,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.178836987607245,
+      "tr_coverage": 0.6658415056015742
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.05687239874124454,
+      "confidence": 1.0,
+      "coverage": 0.05687239874124454,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.19502053121264099,
+      "tr_coverage": 0.6105874512044178
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.02873958342946263,
+      "confidence": 1.0,
+      "coverage": 0.02873958342946263,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.8753041872954602,
+      "tr_coverage": 0.37820940048874924
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.04438404961194526,
+      "confidence": 0.9991690038433573,
+      "coverage": 0.044420963261690094,
+      "tr_support": 0.05690437652734139,
+      "tr_confidence": 0.10139682180625459,
+      "tr_coverage": 0.5612047351550351
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.010831849096999843,
+      "confidence": 1.0,
+      "coverage": 0.010831849096999843,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.11806150623631344
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.09351381031921079,
+      "confidence": 1.0,
+      "coverage": 0.09351381031921079,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.7914369717015803,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.09675990439364716,
+      "confidence": 1.0,
+      "coverage": 0.09675990439364716,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.08135306983139691,
+      "confidence": 1.0,
+      "coverage": 0.08135306983139691,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.11907708908565806,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.1008850047526324,
+      "confidence": 1.0,
+      "coverage": 0.1008850047526324,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.7065804040963188,
+      "tr_coverage": 0.9173252086705386
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.11361790681149123,
+      "confidence": 1.0,
+      "coverage": 0.11361790681149123,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.333397257646946,
+      "tr_coverage": 0.9929543939826716
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.11981247865929624,
+      "confidence": 1.0,
+      "coverage": 0.11981247865929624,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.12646154981958455,
+      "confidence": 1.0,
+      "coverage": 0.12646154981958455,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.6908502332666857,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.12929928664371867,
+      "confidence": 1.0,
+      "coverage": 0.12929928664371867,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.7877457704618198,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5467644165159161,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.010831849096999843,
+      "confidence": 1.0,
+      "coverage": 0.010831849096999843,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.11806150623631344
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.14504987956921772,
+      "confidence": 1.0,
+      "coverage": 0.14504987956921772,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.07235536770609352,
+      "confidence": 1.0,
+      "coverage": 0.07235536770609352,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.11981247865929624,
+      "confidence": 1.0,
+      "coverage": 0.11981247865929624,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.6481640166301692,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.019483485755945405,
+      "confidence": 0.9996448863636364,
+      "coverage": 0.01949040706527256,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.9914712153518124,
+      "tr_coverage": 0.11907708908565806
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.048213840772971826,
+      "confidence": 1.0,
+      "coverage": 0.048213840772971826,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.4976990701069536
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.008656250865163665,
+      "confidence": 0.9997335464961364,
+      "coverage": 0.008658557968272718,
+      "tr_support": 0.11904535212161604,
+      "tr_confidence": 0.9997334754797441,
+      "tr_coverage": 0.11907708908565806
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.0868647391589225,
+      "confidence": 1.0,
+      "coverage": 0.0868647391589225,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.740312466016602,
+      "tr_coverage": 0.8755276270271986
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.024065392530522974,
+      "confidence": 1.0,
+      "coverage": 0.024065392530522974,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.3310482719223079
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.120908352636096,
+      "confidence": 1.0,
+      "coverage": 0.120908352636096,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.07949354472550087,
+      "confidence": 1.0,
+      "coverage": 0.07949354472550087,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Pending"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5467644165159161,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.12325929070422015,
+      "confidence": 1.0,
+      "coverage": 0.12325929070422015,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.19838779634739437,
+      "confidence": 1.0,
+      "coverage": 0.19838779634739437,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.14538902372624837,
+      "confidence": 1.0,
+      "coverage": 0.14538902372624837,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5467644165159161,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.14471073541218704,
+      "confidence": 0.997661879085747,
+      "coverage": 0.14504987956921772,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.12056920847906534,
+      "confidence": 1.0,
+      "coverage": 0.12056920847906534,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 0.49807845005558204,
+      "tr_coverage": 0.9992383128629915
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5467644165159161,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "ChainResponse",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.047117966796172056,
+      "confidence": 1.0,
+      "coverage": 0.047117966796172056,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6481640166301692
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.019416579765782892,
+      "confidence": 0.9962121212121212,
+      "coverage": 0.01949040706527256,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.9914712153518124,
+      "tr_coverage": 0.11907708908565806
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.11981247865929624,
+      "confidence": 1.0,
+      "coverage": 0.11981247865929624,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.6481640166301692,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Returned"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.06459888705346019,
+      "confidence": 1.0,
+      "coverage": 0.06459888705346019,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 0.9910763066836642,
+      "tr_coverage": 0.6970706782189215
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.039746772362750434,
+      "confidence": 1.0,
+      "coverage": 0.039746772362750434,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.120908352636096,
+      "confidence": 1.0,
+      "coverage": 0.120908352636096,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 0.4976990701069536,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.11002574727069703,
+      "confidence": 1.0,
+      "coverage": 0.11002574727069703,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.1643026550142579,
+      "confidence": 1.0,
+      "coverage": 0.1643026550142579,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.07949354472550087,
+      "confidence": 1.0,
+      "coverage": 0.07949354472550087,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.5467644165159161
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.1908020413248309,
+      "confidence": 1.0,
+      "coverage": 0.1908020413248309,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.11244128422587463,
+      "confidence": 1.0,
+      "coverage": 0.11244128422587463,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5467644165159161,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.07118335932669503,
+      "confidence": 1.0,
+      "coverage": 0.07118335932669503,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.8772389502169151,
+      "tr_coverage": 0.7388682598622616
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.04688033517593968,
+      "confidence": 0.9949566665034519,
+      "coverage": 0.047117966796172056,
+      "tr_support": 0.6448951093338411,
+      "tr_confidence": 0.9949566665034519,
+      "tr_coverage": 0.6481640166301692
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.16377432840228495,
+      "confidence": 0.9988461917291647,
+      "coverage": 0.16396351085722724,
+      "tr_support": 0.9953029293217811,
+      "tr_confidence": 0.9999681142784261,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.14471073541218704,
+      "confidence": 0.997661879085747,
+      "coverage": 0.14504987956921772,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.11210214006884396,
+      "confidence": 1.0,
+      "coverage": 0.11210214006884396,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5493272112747911,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "ChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.19838779634739437,
+      "confidence": 1.0,
+      "coverage": 0.19838779634739437,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.18957927667703325,
+      "confidence": 0.9935914488162317,
+      "coverage": 0.1908020413248309,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9854327335047129,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.1366704810771403,
+      "confidence": 1.0,
+      "coverage": 0.1366704810771403,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 0.7551795580110497,
+      "tr_coverage": 0.9191024786568917
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.024065392530522974,
+      "confidence": 1.0,
+      "coverage": 0.024065392530522974,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.3310482719223079
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.14538902372624837,
+      "confidence": 1.0,
+      "coverage": 0.14538902372624837,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainResponse",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.052749605485368355,
+      "confidence": 0.9917154630232053,
+      "coverage": 0.05319026217919731,
+      "tr_support": 0.4700879113903964,
+      "tr_confidence": 0.9872692128241018,
+      "tr_coverage": 0.47614967152242216
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.08955251428096825,
+      "confidence": 1.0,
+      "coverage": 0.08955251428096825,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.015506039995939499,
+      "confidence": 1.0,
+      "coverage": 0.015506039995939499,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.6893995552260934,
+      "tr_coverage": 0.17125265797073852
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.13773405561041335,
+      "confidence": 0.9997655491174599,
+      "coverage": 0.13776635505394008,
+      "tr_support": 0.6940556666349297,
+      "tr_confidence": 0.6982439335887611,
+      "tr_coverage": 0.9940017137960583
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.04840533033102316,
+      "confidence": 1.0,
+      "coverage": 0.04840533033102316,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.821163012392755,
+      "tr_coverage": 0.6658415056015742
+    },
+    {
+      "template": "AtMost2",
+      "parameters": [
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.07236690322163879,
+      "confidence": 0.9954933511060332,
+      "coverage": 0.07269451186312419,
+      "tr_support": 0.9954933511060332,
+      "tr_confidence": 0.9954933511060332,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.13872610994730578,
+      "confidence": 1.0,
+      "coverage": 0.13872610994730578,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 0.6545203986796141,
+      "tr_coverage": 0.9902884890031419
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.1078524561419699,
+      "confidence": 1.0,
+      "coverage": 0.1078524561419699,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.008656250865163665,
+      "confidence": 0.9997335464961364,
+      "coverage": 0.008658557968272718,
+      "tr_support": 0.11904535212161604,
+      "tr_confidence": 0.9997334754797441,
+      "tr_coverage": 0.11907708908565806
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.05904568986997167,
+      "confidence": 1.0,
+      "coverage": 0.05904568986997167,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.19335724309995322,
+      "tr_coverage": 0.6105874512044178
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.1643026550142579,
+      "confidence": 1.0,
+      "coverage": 0.1643026550142579,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "O_Accepted"
+        ]
+      ],
+      "support": 0.08795599892950416,
+      "confidence": 0.9999475423595446,
+      "coverage": 0.08796061313572226,
+      "tr_support": 0.49766733314291156,
+      "tr_confidence": 0.5628499641062455,
+      "tr_coverage": 0.8841918182106699
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.05334945229372191,
+      "confidence": 0.9922334263033684,
+      "coverage": 0.05376703795646035,
+      "tr_support": 0.6851375797391221,
+      "tr_confidence": 0.9917309812568909,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.12554562988529083,
+      "confidence": 1.0,
+      "coverage": 0.12554562988529083,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 0.4783814807729099,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.10243999224813355,
+      "confidence": 1.0,
+      "coverage": 0.10243999224813355,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9984564923789311,
+      "tr_coverage": 0.9869561077787299
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "A_Submitted"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.047117966796172056,
+      "confidence": 1.0,
+      "coverage": 0.047117966796172056,
+      "tr_support": 0.6481640166301692,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6481640166301692
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.09422209097368979,
+      "confidence": 0.9999510308016257,
+      "coverage": 0.0942267051799079,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 0.9907583582495243,
+      "tr_coverage": 0.7005617442635438
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.08352636096012403,
+      "confidence": 1.0,
+      "coverage": 0.08352636096012403,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.08135306983139691,
+      "confidence": 1.0,
+      "coverage": 0.08135306983139691,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.11907708908565806,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.05319026217919731,
+      "confidence": 1.0,
+      "coverage": 0.05319026217919731,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.47614967152242216
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Create Offer"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.05577652476444477,
+      "confidence": 1.0,
+      "coverage": 0.05577652476444477,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.17473105760722768,
+      "tr_coverage": 0.6814878288742899
+    },
+    {
+      "template": "RespondedExistence",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.024065392530522974,
+      "confidence": 1.0,
+      "coverage": 0.024065392530522974,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.3310482719223079
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.18116065743210197,
+      "confidence": 1.0,
+      "coverage": 0.18116065743210197,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 0.6991911506122318,
+      "tr_coverage": 0.9927004982703355
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.09627771984385526,
+      "confidence": 0.9999520762945391,
+      "coverage": 0.09628233405007336,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9900516548689496,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.12325929070422015,
+      "confidence": 1.0,
+      "coverage": 0.12325929070422015,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.3310482719223079,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.05376703795646035,
+      "confidence": 1.0,
+      "coverage": 0.05376703795646035,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.1711685938667971,
+      "confidence": 0.9977809755638339,
+      "coverage": 0.1715492658797907,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainResponse",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "O_Cancelled"
+        ]
+      ],
+      "support": 0.09071529424793053,
+      "confidence": 0.9902536076762284,
+      "coverage": 0.0916081431511337,
+      "tr_support": 0.9734044241327875,
+      "tr_confidence": 0.9877938808373591,
+      "tr_coverage": 0.9854327335047129
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.11002574727069703,
+      "confidence": 1.0,
+      "coverage": 0.11002574727069703,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.11806150623631344,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.1711685938667971,
+      "confidence": 0.9977809755638339,
+      "coverage": 0.1715492658797907,
+      "tr_support": 0.9953346662858231,
+      "tr_confidence": 0.9953346662858231,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.120908352636096,
+      "confidence": 1.0,
+      "coverage": 0.120908352636096,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 0.4976990701069536,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "A_Pending"
+        ],
+        [
+          "A_Cancelled"
+        ]
+      ],
+      "support": 0.0638121648932734,
+      "confidence": 1.0,
+      "coverage": 0.0638121648932734,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.6228713980982682,
+      "tr_coverage": 0.877812688438224
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.08955251428096825,
+      "confidence": 1.0,
+      "coverage": 0.08955251428096825,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Refused"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.06402211127619716,
+      "confidence": 1.0,
+      "coverage": 0.06402211127619716,
+      "tr_support": 0.11806150623631344,
+      "tr_confidence": 0.21405144139478682,
+      "tr_coverage": 0.5515566980862611
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ]
+      ],
+      "support": 0.07229999723147627,
+      "confidence": 0.9945729791488146,
+      "coverage": 0.07269451186312419,
+      "tr_support": 0.9945729791488146,
+      "tr_confidence": 0.9945729791488146,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.12325929070422015,
+      "confidence": 1.0,
+      "coverage": 0.12325929070422015,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.3310482719223079,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Submitted"
+        ]
+      ],
+      "support": 0.14631186496986923,
+      "confidence": 1.0,
+      "coverage": 0.14631186496986923,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Cancelled"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.10195780769834166,
+      "confidence": 0.9997737710110174,
+      "coverage": 0.10198087872943218,
+      "tr_support": 0.4976990701069536,
+      "tr_confidence": 0.5014068295178411,
+      "tr_coverage": 0.9926052873782094
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.08051097719659286,
+      "confidence": 0.9937918268546205,
+      "coverage": 0.08101392567436624,
+      "tr_support": 0.9918753372052429,
+      "tr_confidence": 0.995350170387592,
+      "tr_coverage": 0.9965089339553779
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.16324369468720296,
+      "confidence": 0.995609900237797,
+      "coverage": 0.16396351085722724,
+      "tr_support": 0.9854327335047129,
+      "tr_confidence": 0.9900516548689496,
+      "tr_coverage": 0.9953346662858231
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "O_Sent (mail and online)"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.053236404241378356,
+      "confidence": 0.9901308732031753,
+      "coverage": 0.05376703795646035,
+      "tr_support": 0.6836142054651052,
+      "tr_confidence": 0.9895259095920618,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Incomplete"
+        ],
+        [
+          "A_Concept"
+        ]
+      ],
+      "support": 0.1258847740423215,
+      "confidence": 1.0,
+      "coverage": 0.1258847740423215,
+      "tr_support": 0.47614967152242216,
+      "tr_confidence": 0.47614967152242216,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.08135306983139691,
+      "confidence": 1.0,
+      "coverage": 0.08135306983139691,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.10315750131504878,
+      "confidence": 0.993158748139757,
+      "coverage": 0.10386808907263684,
+      "tr_support": 0.057126535275635534,
+      "tr_confidence": 0.057126535275635534,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.08135306983139691,
+      "confidence": 1.0,
+      "coverage": 0.08135306983139691,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.057762940541338674,
+      "confidence": 0.9982456839838922,
+      "coverage": 0.057864453078136965,
+      "tr_support": 0.05699958741946745,
+      "tr_confidence": 0.11671432284897322,
+      "tr_coverage": 0.48836840267859977
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Complete"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.08955251428096825,
+      "confidence": 1.0,
+      "coverage": 0.08955251428096825,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "A_Create Application"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Denied"
+        ],
+        [
+          "O_Sent (mail and online)"
+        ]
+      ],
+      "support": 0.10026670111940643,
+      "confidence": 1.0,
+      "coverage": 0.10026670111940643,
+      "tr_support": 0.11907708908565806,
+      "tr_confidence": 0.12060430729668917,
+      "tr_coverage": 0.9873369513472341
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Validating"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.05376703795646035,
+      "confidence": 1.0,
+      "coverage": 0.05376703795646035,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "O_Create Offer"
+        ]
+      ],
+      "support": 0.13894067053644762,
+      "confidence": 1.0,
+      "coverage": 0.13894067053644762,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.5467644165159161,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "A_Validating"
+        ]
+      ],
+      "support": 0.08955251428096825,
+      "confidence": 1.0,
+      "coverage": 0.08955251428096825,
+      "tr_support": 0.6940874035989717,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6940874035989717
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "A_Concept"
+        ],
+        [
+          "O_Returned"
+        ]
+      ],
+      "support": 0.05376703795646035,
+      "confidence": 1.0,
+      "coverage": 0.05376703795646035,
+      "tr_support": 0.6908502332666857,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.6908502332666857
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "O_Created"
+        ],
+        [
+          "A_Create Application"
+        ]
+      ],
+      "support": 0.17188841003682137,
+      "confidence": 1.0,
+      "coverage": 0.17188841003682137,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "O_Accepted"
+        ],
+        [
+          "A_Incomplete"
+        ]
+      ],
+      "support": 0.09293703454194775,
+      "confidence": 1.0,
+      "coverage": 0.09293703454194775,
+      "tr_support": 0.5467644165159161,
+      "tr_confidence": 0.8796977124183006,
+      "tr_coverage": 0.6215367037989146
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "A_Complete"
+        ]
+      ],
+      "support": 0.0964207602366165,
+      "confidence": 1.0,
+      "coverage": 0.0964207602366165,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.33143746822572445,
+      "tr_coverage": 0.9988257323304452
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "A_Accepted"
+        ]
+      ],
+      "support": 0.07269451186312419,
+      "confidence": 1.0,
+      "coverage": 0.07269451186312419,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "A_Accepted"
+        ],
+        [
+          "A_Denied"
+        ]
+      ],
+      "support": 0.008656250865163665,
+      "confidence": 0.9997335464961364,
+      "coverage": 0.008658557968272718,
+      "tr_support": 0.11904535212161604,
+      "tr_confidence": 0.9997334754797441,
+      "tr_coverage": 0.11907708908565806
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "O_Sent (online only)"
+        ],
+        [
+          "O_Created"
+        ]
+      ],
+      "support": 0.10386808907263684,
+      "confidence": 1.0,
+      "coverage": 0.10386808907263684,
+      "tr_support": 0.057126535275635534,
+      "tr_confidence": 0.057126535275635534,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "A_Cancelled"
+        ],
+        [
+          "O_Refused"
+        ]
+      ],
+      "support": 0.034897241627522814,
+      "confidence": 1.0,
+      "coverage": 0.034897241627522814,
+      "tr_support": 0.3310482719223079,
+      "tr_confidence": 0.737121051515794,
+      "tr_coverage": 0.44910977815862135
+    }
+  ]
+}

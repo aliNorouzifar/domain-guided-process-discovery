@@ -1,0 +1,4366 @@
+{
+  "name": "Process specification discovered from UWV.xes",
+  "tasks": [
+    "Accept Claim",
+    "Block Claim 3",
+    "Block Claim 1",
+    "Correct Claim",
+    "Reject Claim",
+    "Block Claim 2",
+    "Unblock Claim 3",
+    "Withdraw Claim",
+    "Receive Claim",
+    "Unblock Claim 1",
+    "Payment Order",
+    "Receive Objection 2",
+    "Repayment",
+    "Execute Payment",
+    "Receive Objection 1",
+    "Start Claim"
+  ],
+  "constraints": [
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.31839425098055385,
+      "confidence": 0.99971231783126,
+      "coverage": 0.31848587368740927,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9999927891028922,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.11678153863538668,
+      "confidence": 0.99988232909936,
+      "coverage": 0.116795282041415,
+      "tr_support": 0.04693639531816225,
+      "tr_confidence": 0.04693639531816225,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.008117008304834854,
+      "confidence": 0.9974666916869956,
+      "coverage": 0.008137623413877328,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.9951246952934558,
+      "tr_coverage": 0.03702289546394902
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.11109253206222099,
+      "confidence": 1.0,
+      "coverage": 0.11109253206222099,
+      "tr_support": 0.962685531010927,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.962685531010927
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.006219654750370117,
+      "confidence": 1.0,
+      "coverage": 0.006219654750370117,
+      "tr_support": 0.0096844063701873,
+      "tr_confidence": 0.17256308758040573,
+      "tr_coverage": 0.056120961359565694
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.3204977556254433,
+      "confidence": 0.9999904708813958,
+      "coverage": 0.32050080971567185,
+      "tr_support": 0.962727184371659,
+      "tr_confidence": 0.9631417379708856,
+      "tr_coverage": 0.9995695819391028
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.4264624701939882,
+      "confidence": 1.0,
+      "coverage": 0.4264624701939882,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.10832705336030095,
+      "confidence": 1.0,
+      "coverage": 0.10832705336030095,
+      "tr_support": 0.021090484983963455,
+      "tr_confidence": 0.021907811238029307,
+      "tr_coverage": 0.9626924732377158
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.11464520252054067,
+      "confidence": 0.9988292345455634,
+      "coverage": 0.1147795824905953,
+      "tr_support": 0.9995348708051595,
+      "tr_confidence": 0.9995348708051595,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.009159216595315484,
+      "confidence": 1.0,
+      "coverage": 0.009159216595315484,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.5576025341780594,
+      "tr_coverage": 0.08327895255682212
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.008845408824335602,
+      "confidence": 0.999309928405072,
+      "coverage": 0.008851517004792631,
+      "tr_support": 0.043111228357607986,
+      "tr_confidence": 0.5379883912327817,
+      "tr_coverage": 0.080134123821557
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.11513156638943163,
+      "confidence": 0.9998939034255931,
+      "coverage": 0.11514378275034569,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 0.04664482179303833,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Absence",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.1089172562969614,
+      "confidence": 0.9903155936298127,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9903155936298127,
+      "tr_confidence": 0.9903155936298127,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.005130108061347511,
+      "confidence": 1.0,
+      "coverage": 0.005130108061347511,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.04664482179303833
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.42641207770521766,
+      "confidence": 0.9998818360528945,
+      "coverage": 0.4264624701939882,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9627341265984477,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.0102144047692673,
+      "confidence": 0.9977625298329356,
+      "coverage": 0.010237310445981161,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.99553504985861,
+      "tr_coverage": 0.04664482179303833
+    },
+    {
+      "template": "ChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.22001360597196803,
+      "confidence": 0.9999375377376168,
+      "coverage": 0.22002734937799634,
+      "tr_support": 0.999937519958902,
+      "tr_confidence": 0.999937519958902,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.3186912612552769,
+      "confidence": 0.9931946242290414,
+      "coverage": 0.3208749357686649,
+      "tr_support": 0.03848770531635728,
+      "tr_confidence": 0.03997721356513964,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.00510720238463365,
+      "confidence": 1.0,
+      "coverage": 0.00510720238463365,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.04643655498937839
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.10914936715432852,
+      "confidence": 1.0,
+      "coverage": 0.10914936715432852,
+      "tr_support": 0.962685531010927,
+      "tr_confidence": 0.9999927887388946,
+      "tr_coverage": 0.9626924732377158
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.11002894514014075,
+      "confidence": 0.9996184847602003,
+      "coverage": 0.11007093888078283,
+      "tr_support": 0.9625050331144218,
+      "tr_confidence": 0.9629596188306547,
+      "tr_coverage": 0.9995279285783708
+    },
+    {
+      "template": "AtLeast1",
+      "parameters": [
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.1099823702641559,
+      "confidence": 1.0,
+      "coverage": 0.1099823702641559,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.11002894514014075,
+      "confidence": 0.9996184847602003,
+      "coverage": 0.11007093888078283,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.036859798024698215,
+      "tr_coverage": 0.9995279285783708
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.007887951537696255,
+      "confidence": 0.9992262307766708,
+      "coverage": 0.007894059718153284,
+      "tr_support": 0.0096844063701873,
+      "tr_confidence": 0.17196745562130178,
+      "tr_coverage": 0.05631534370964831
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.11409928389219368,
+      "confidence": 1.0,
+      "coverage": 0.11409928389219368,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Unblock Claim 3"
+        ]
+      ],
+      "support": 0.10958610205700613,
+      "confidence": 0.9922570118979308,
+      "coverage": 0.11044124732099023,
+      "tr_support": 0.9961123529983478,
+      "tr_confidence": 0.9961123529983478,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.10587843651958932,
+      "confidence": 0.9989914343964095,
+      "coverage": 0.10598532967758734,
+      "tr_support": 0.961713619260514,
+      "tr_confidence": 0.9989904161648795,
+      "tr_coverage": 0.962685531010927
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.3204977556254433,
+      "confidence": 0.9999904708813958,
+      "coverage": 0.32050080971567185,
+      "tr_support": 0.03683545534065507,
+      "tr_confidence": 0.03685131681297922,
+      "tr_coverage": 0.9995695819391028
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.10832705336030095,
+      "confidence": 1.0,
+      "coverage": 0.10832705336030095,
+      "tr_support": 0.962685531010927,
+      "tr_confidence": 0.9999927887388946,
+      "tr_coverage": 0.9626924732377158
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.3188729796238735,
+      "confidence": 0.9986370288184714,
+      "coverage": 0.31930818748143686,
+      "tr_support": 0.9627063576912931,
+      "tr_confidence": 0.9999639455144614,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.01189873553029314,
+      "confidence": 0.9989103262611371,
+      "coverage": 0.011911715413764326,
+      "tr_support": 0.046887799730641604,
+      "tr_confidence": 0.9801189957916122,
+      "tr_coverage": 0.047838884800688666
+    },
+    {
+      "template": "NotChainResponse",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.31359474818644306,
+      "confidence": 0.9919359513114041,
+      "coverage": 0.31614415000469565,
+      "tr_support": 0.9396234536189828,
+      "tr_confidence": 0.9759947504290515,
+      "tr_coverage": 0.9627341265984477
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.3201640962679781,
+      "confidence": 0.999794950537778,
+      "coverage": 0.32022975920789115,
+      "tr_support": 0.9625536287019424,
+      "tr_confidence": 0.9629614195923186,
+      "tr_coverage": 0.9995765241658915
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.00881792201227897,
+      "confidence": 1.0,
+      "coverage": 0.00881792201227897,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.4606370974741776,
+      "tr_coverage": 0.07998139483220638
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.32125135238932934,
+      "confidence": 1.0,
+      "coverage": 0.32125135238932934,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9999927891028922,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.005876833122219346,
+      "confidence": 0.9997402260033771,
+      "coverage": 0.005878360167333604,
+      "tr_support": 0.04313205503797398,
+      "tr_confidence": 0.8166403785488959,
+      "tr_coverage": 0.052816461408161285
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.22002734937799634,
+      "confidence": 1.0,
+      "coverage": 0.22002734937799634,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.11075123747918447,
+      "confidence": 1.0,
+      "coverage": 0.11075123747918447,
+      "tr_support": 0.04313899726476265,
+      "tr_confidence": 0.044788813608187976,
+      "tr_coverage": 0.963164544659345
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.006423515273123471,
+      "confidence": 0.9994060346875743,
+      "coverage": 0.006427332885909115,
+      "tr_support": 0.02107660053038613,
+      "tr_confidence": 0.362767355717529,
+      "tr_coverage": 0.05809949599433514
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.11676321409401559,
+      "confidence": 0.9997254345651734,
+      "coverage": 0.116795282041415,
+      "tr_support": 0.9999444621856907,
+      "tr_confidence": 0.9999444621856907,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.0067816073524168165,
+      "confidence": 1.0,
+      "coverage": 0.0067816073524168165,
+      "tr_support": 0.04693639531816225,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.04693639531816225
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.3228066478382004,
+      "confidence": 0.9996311550992808,
+      "coverage": 0.3229257573571125,
+      "tr_support": 0.04693639531816225,
+      "tr_confidence": 0.048706514613395195,
+      "tr_coverage": 0.9636574427613401
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.3201640962679781,
+      "confidence": 0.999794950537778,
+      "coverage": 0.32022975920789115,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.036858006042296075,
+      "tr_coverage": 0.9995765241658915
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.11273792317283325,
+      "confidence": 0.9997427095393824,
+      "coverage": 0.11276693703000415,
+      "tr_support": 0.046846146369909615,
+      "tr_confidence": 0.04861321230458901,
+      "tr_coverage": 0.9636505005345515
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.32155599788962363,
+      "confidence": 1.0,
+      "coverage": 0.32155599788962363,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9999927891028922,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.0055576806933395635,
+      "confidence": 1.0,
+      "coverage": 0.0055576806933395635,
+      "tr_support": 0.00388764700165225,
+      "tr_confidence": 0.08003430041446334,
+      "tr_coverage": 0.04857476084028713
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.10709778204332379,
+      "confidence": 1.0,
+      "coverage": 0.10709778204332379,
+      "tr_support": 0.962685531010927,
+      "tr_confidence": 0.9900404095212257,
+      "tr_coverage": 0.9723699373811143
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.11406568889968001,
+      "confidence": 1.0,
+      "coverage": 0.11406568889968001,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.03684239756744373,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.32045576188480124,
+      "confidence": 0.9997546509135085,
+      "coverage": 0.3205344047081855,
+      "tr_support": 0.9625536287019424,
+      "tr_confidence": 0.9629614195923186,
+      "tr_coverage": 0.9995765241658915
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Unblock Claim 3"
+        ]
+      ],
+      "support": 0.10958610205700613,
+      "confidence": 0.9922570118979308,
+      "coverage": 0.11044124732099023,
+      "tr_support": 0.9961123529983478,
+      "tr_confidence": 0.9961123529983478,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.31952579141021853,
+      "confidence": 0.9997276655924587,
+      "coverage": 0.3196128329817312,
+      "tr_support": 0.02828263193702012,
+      "tr_confidence": 0.02937719481680716,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.11512087707363182,
+      "confidence": 1.0,
+      "coverage": 0.11512087707363182,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.04643655498937839,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.00916685182088677,
+      "confidence": 0.9971760797342193,
+      "coverage": 0.009192811587829145,
+      "tr_support": 0.04631853713397109,
+      "tr_confidence": 0.5557684298209079,
+      "tr_coverage": 0.08334143259792011
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.008478154474356714,
+      "confidence": 1.0,
+      "coverage": 0.008478154474356714,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.487417340191036,
+      "tr_coverage": 0.0755869652749816
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.10995106583931362,
+      "confidence": 0.9997153687016648,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9997153687016648,
+      "tr_confidence": 0.9997153687016648,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.00881792201227897,
+      "confidence": 1.0,
+      "coverage": 0.00881792201227897,
+      "tr_support": 0.04313899726476265,
+      "tr_confidence": 0.5393629025258224,
+      "tr_coverage": 0.07998139483220638
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.11112612705473464,
+      "confidence": 1.0,
+      "coverage": 0.11112612705473464,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.007448926067347271,
+      "confidence": 1.0,
+      "coverage": 0.007448926067347271,
+      "tr_support": 0.021090484983963455,
+      "tr_confidence": 0.31642537235704615,
+      "tr_coverage": 0.06665231939797009
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.00994564482915801,
+      "confidence": 1.0,
+      "coverage": 0.00994564482915801,
+      "tr_support": 0.04693639531816225,
+      "tr_confidence": 0.634954921111946,
+      "tr_coverage": 0.07392083084570207
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.11235234428148327,
+      "confidence": 0.9999728175924542,
+      "coverage": 0.1123553983717118,
+      "tr_support": 0.021090484983963455,
+      "tr_confidence": 0.021090484983963455,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.009548613099451103,
+      "confidence": 0.9992010226909556,
+      "coverage": 0.00955624832502239,
+      "tr_support": 0.03871679880038321,
+      "tr_confidence": 0.4656424814227269,
+      "tr_coverage": 0.0831470502478375
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.32076193443020984,
+      "confidence": 0.999647833701363,
+      "coverage": 0.3208749357686649,
+      "tr_support": 0.962727184371659,
+      "tr_confidence": 0.9999855782057846,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.009536396738537045,
+      "confidence": 0.9979226589964845,
+      "coverage": 0.00955624832502239,
+      "tr_support": 0.046561515071574355,
+      "tr_confidence": 0.5599899807965266,
+      "tr_coverage": 0.0831470502478375
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.31974797647434294,
+      "confidence": 0.9963787942955303,
+      "coverage": 0.3209100578062928,
+      "tr_support": 0.04309040167724199,
+      "tr_confidence": 0.04473835952140695,
+      "tr_coverage": 0.963164544659345
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.011150483424307045,
+      "confidence": 0.9948906601267117,
+      "coverage": 0.011207747616091696,
+      "tr_support": 0.038605723171764576,
+      "tr_confidence": 0.4623763199467864,
+      "tr_coverage": 0.08349416158727073
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.00912180399001618,
+      "confidence": 0.9998326219767345,
+      "coverage": 0.009123331035130437,
+      "tr_support": 0.04693639531816225,
+      "tr_confidence": 0.6991726990692865,
+      "tr_coverage": 0.06713133304638796
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.31725660237043213,
+      "confidence": 1.0,
+      "coverage": 0.31725660237043213,
+      "tr_support": 0.0096844063701873,
+      "tr_confidence": 0.009959092758775781,
+      "tr_coverage": 0.972418532968635
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.4223447930433933,
+      "confidence": 0.9903445732312111,
+      "coverage": 0.4264624701939882,
+      "tr_support": 0.9625675131555198,
+      "tr_confidence": 0.9625675131555198,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.11409622980196515,
+      "confidence": 0.9999732330464808,
+      "coverage": 0.11409928389219368,
+      "tr_support": 0.9999861155464227,
+      "tr_confidence": 0.9999861155464227,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.006219654750370117,
+      "confidence": 1.0,
+      "coverage": 0.006219654750370117,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.8274369124195943,
+      "tr_coverage": 0.056120961359565694
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.11443217972710176,
+      "confidence": 0.9999332817378773,
+      "coverage": 0.11443981495267305,
+      "tr_support": 0.9999861155464227,
+      "tr_confidence": 0.9999861155464227,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Unblock Claim 3"
+        ]
+      ],
+      "support": 0.007143517044495804,
+      "confidence": 0.9908917602202924,
+      "coverage": 0.007209179984408869,
+      "tr_support": 0.046894741957430264,
+      "tr_confidence": 0.9610186370749751,
+      "tr_coverage": 0.0487969120975244
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.1100358168431549,
+      "confidence": 0.9999861224829654,
+      "coverage": 0.11003734388826916,
+      "tr_support": 0.9626785887841384,
+      "tr_confidence": 0.9631399459635914,
+      "tr_coverage": 0.9995209863515822
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.009182122272029344,
+      "confidence": 1.0,
+      "coverage": 0.009182122272029344,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.4412938632961916,
+      "tr_coverage": 0.08348721936048206
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.006423515273123471,
+      "confidence": 0.9994060346875743,
+      "coverage": 0.006427332885909115,
+      "tr_support": 0.037009011010371684,
+      "tr_confidence": 0.6369936671047914,
+      "tr_coverage": 0.05809949599433514
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.3184675491460382,
+      "confidence": 0.999942463566252,
+      "coverage": 0.31848587368740927,
+      "tr_support": 0.021090484983963455,
+      "tr_confidence": 0.02190670541322046,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.21596082823872906,
+      "confidence": 0.9998232578526536,
+      "coverage": 0.2159990043665855,
+      "tr_support": 0.962685531010927,
+      "tr_confidence": 0.962685531010927,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.3187737216914468,
+      "confidence": 0.9999473086705978,
+      "coverage": 0.3187905191877036,
+      "tr_support": 0.021090484983963455,
+      "tr_confidence": 0.02190670541322046,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.010777120893871128,
+      "confidence": 0.9917094077144664,
+      "coverage": 0.01086721655561231,
+      "tr_support": 0.046651764019827,
+      "tr_confidence": 0.562107904642409,
+      "tr_coverage": 0.08299432125848687
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.008294145538088705,
+      "confidence": 1.0,
+      "coverage": 0.008294145538088705,
+      "tr_support": 0.02828263193702012,
+      "tr_confidence": 0.38404977375565613,
+      "tr_coverage": 0.07364314177415549
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.10587843651958932,
+      "confidence": 0.9989914343964095,
+      "coverage": 0.10598532967758734,
+      "tr_support": 0.961713619260514,
+      "tr_confidence": 0.9989904161648795,
+      "tr_coverage": 0.962685531010927
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.010754215217157269,
+      "confidence": 0.992670378462189,
+      "coverage": 0.01083362156309865,
+      "tr_support": 0.03662024631020646,
+      "tr_confidence": 0.4417552968763085,
+      "tr_coverage": 0.08289713008344557
+    },
+    {
+      "template": "AtMost3",
+      "parameters": [
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.1099823702641559,
+      "confidence": 1.0,
+      "coverage": 0.1099823702641559,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.008294145538088705,
+      "confidence": 1.0,
+      "coverage": 0.008294145538088705,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 0.6333898944193062,
+      "tr_coverage": 0.07364314177415549
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.009181358749472216,
+      "confidence": 0.996271748135874,
+      "coverage": 0.009215717264543006,
+      "tr_support": 0.04649209280368771,
+      "tr_confidence": 0.5566916043225271,
+      "tr_coverage": 0.08351498826763673
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.007244302022036788,
+      "confidence": 0.9992627698788836,
+      "coverage": 0.007249646679936689,
+      "tr_support": 0.037002068783583024,
+      "tr_confidence": 0.5667800935772012,
+      "tr_coverage": 0.06528470072060313
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.10996099163255629,
+      "confidence": 0.9998056176499174,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9998056176499174,
+      "tr_confidence": 0.9998056176499174,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.11406568889968001,
+      "confidence": 1.0,
+      "coverage": 0.11406568889968001,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.1099823702641559,
+      "confidence": 1.0,
+      "coverage": 0.1099823702641559,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.005130108061347511,
+      "confidence": 1.0,
+      "coverage": 0.005130108061347511,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.04664482179303833
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.32121470330658713,
+      "confidence": 1.0,
+      "coverage": 0.32121470330658713,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9995531209456537,
+      "tr_coverage": 0.963164544659345
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.42211268218602616,
+      "confidence": 0.9999602077157239,
+      "coverage": 0.422129479682283,
+      "tr_support": 0.9626785887841384,
+      "tr_confidence": 0.9999351019260306,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.005129344538790381,
+      "confidence": 0.9998511683286203,
+      "coverage": 0.005130108061347511,
+      "tr_support": 0.04663787956624967,
+      "tr_confidence": 0.9998511683286203,
+      "tr_coverage": 0.04664482179303833
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.00912180399001618,
+      "confidence": 0.9998326219767345,
+      "coverage": 0.009123331035130437,
+      "tr_support": 0.021090484983963455,
+      "tr_confidence": 0.3141675284384695,
+      "tr_coverage": 0.06713133304638796
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.11512087707363182,
+      "confidence": 1.0,
+      "coverage": 0.11512087707363182,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.04643655498937839,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.3215468356189381,
+      "confidence": 0.9999715064537882,
+      "coverage": 0.32155599788962363,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.04823369075346664,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.32127425806604315,
+      "confidence": 1.0,
+      "coverage": 0.32127425806604315,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 0.04845001766669792,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "ChainResponse",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.005102621249290879,
+      "confidence": 0.9991030049334728,
+      "coverage": 0.00510720238463365,
+      "tr_support": 0.04639490162864641,
+      "tr_confidence": 0.9991030049334728,
+      "tr_coverage": 0.04643655498937839
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.10993732243328531,
+      "confidence": 0.9995904086194688,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9995904086194688,
+      "tr_confidence": 0.9995904086194688,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.009896015862944647,
+      "confidence": 1.0,
+      "coverage": 0.009896015862944647,
+      "tr_support": 0.04313899726476265,
+      "tr_confidence": 0.5042194092827004,
+      "tr_coverage": 0.08555600294350416
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.3175612478707265,
+      "confidence": 1.0,
+      "coverage": 0.3175612478707265,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9900409072412242,
+      "tr_coverage": 0.972418532968635
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.31517142226691375,
+      "confidence": 0.994619523443505,
+      "coverage": 0.31687636813698206,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9627341265984477
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.42236311758476436,
+      "confidence": 0.9903875419392494,
+      "coverage": 0.4264624701939882,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9627341265984477,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.42236311758476436,
+      "confidence": 0.9903875419392494,
+      "coverage": 0.4264624701939882,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9627341265984477,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.00953334264830853,
+      "confidence": 1.0,
+      "coverage": 0.00953334264830853,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.5596552878179384,
+      "tr_coverage": 0.08297349457812088
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.005129344538790381,
+      "confidence": 0.9998511683286203,
+      "coverage": 0.005130108061347511,
+      "tr_support": 0.04663787956624967,
+      "tr_confidence": 0.9998511683286203,
+      "tr_coverage": 0.04664482179303833
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.005495071843655013,
+      "confidence": 0.9980585217029538,
+      "coverage": 0.0055057611594548144,
+      "tr_support": 0.021090484983963455,
+      "tr_confidence": 0.7370208636584182,
+      "tr_coverage": 0.028615858822876025
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.1147765284003668,
+      "confidence": 0.9999733916942174,
+      "coverage": 0.1147795824905953,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.10984035506852997,
+      "confidence": 0.9987087458173084,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9987087458173084,
+      "tr_confidence": 0.9987087458173084,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.31490266232680447,
+      "confidence": 0.994727702474555,
+      "coverage": 0.3165717226366877,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 0.9627341265984477
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.006392210848281196,
+      "confidence": 0.9997611655123,
+      "coverage": 0.006393737893395453,
+      "tr_support": 0.021083542757174792,
+      "tr_confidence": 0.36397411313518696,
+      "tr_coverage": 0.05792594032461852
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.4264624701939882,
+      "confidence": 1.0,
+      "coverage": 0.4264624701939882,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.21596082823872906,
+      "confidence": 0.9998232578526536,
+      "coverage": 0.2159990043665855,
+      "tr_support": 0.962685531010927,
+      "tr_confidence": 0.962685531010927,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Unblock Claim 3"
+        ]
+      ],
+      "support": 0.005534775016625704,
+      "confidence": 1.0,
+      "coverage": 0.005534775016625704,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.9600976029855031,
+      "tr_coverage": 0.04836649403662719
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.005538592629411347,
+      "confidence": 1.0,
+      "coverage": 0.005538592629411347,
+      "tr_support": 0.03874456770753787,
+      "tr_confidence": 0.8000286697247706,
+      "tr_coverage": 0.04842897407772517
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.011545988108899695,
+      "confidence": 0.999867759851891,
+      "coverage": 0.011547515154013952,
+      "tr_support": 0.04693639531816225,
+      "tr_confidence": 0.5475380628441853,
+      "tr_coverage": 0.08572261638643211
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.4223447930433933,
+      "confidence": 0.9903445732312111,
+      "coverage": 0.4264624701939882,
+      "tr_support": 0.9625675131555198,
+      "tr_confidence": 0.9625675131555198,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "ChainSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.6320439727911101,
+      "confidence": 0.999132186467661,
+      "coverage": 0.6325929455096857,
+      "tr_support": 0.9601169070991211,
+      "tr_confidence": 0.9972814721873693,
+      "tr_coverage": 0.9627341265984477
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.0102144047692673,
+      "confidence": 0.9977625298329356,
+      "coverage": 0.010237310445981161,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.99553504985861,
+      "tr_coverage": 0.04664482179303833
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.3192226729550384,
+      "confidence": 0.9997321881187172,
+      "coverage": 0.31930818748143686,
+      "tr_support": 0.02828263193702012,
+      "tr_confidence": 0.02937719481680716,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.00747183174406113,
+      "confidence": 1.0,
+      "coverage": 0.00747183174406113,
+      "tr_support": 0.021090484983963455,
+      "tr_confidence": 0.315472481827622,
+      "tr_coverage": 0.06685364397484136
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.10709778204332379,
+      "confidence": 1.0,
+      "coverage": 0.10709778204332379,
+      "tr_support": 0.0096844063701873,
+      "tr_confidence": 0.009959590478774292,
+      "tr_coverage": 0.9723699373811143
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.009873110186230787,
+      "confidence": 1.0,
+      "coverage": 0.009873110186230787,
+      "tr_support": 0.04313899726476265,
+      "tr_confidence": 0.50544981291687,
+      "tr_coverage": 0.08534773613984421
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.01083362156309865,
+      "confidence": 1.0,
+      "coverage": 0.01083362156309865,
+      "tr_support": 0.04693639531816225,
+      "tr_confidence": 0.5662004857214639,
+      "tr_coverage": 0.08289713008344557
+    },
+    {
+      "template": "AlternateSuccession",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.008104028421363667,
+      "confidence": 0.9958716457121412,
+      "coverage": 0.008137623413877328,
+      "tr_support": 0.03672437971203643,
+      "tr_confidence": 0.9919369960622539,
+      "tr_coverage": 0.03702289546394902
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.320015209369338,
+      "confidence": 0.9962657564398468,
+      "coverage": 0.32121470330658713,
+      "tr_support": 0.04309040167724199,
+      "tr_confidence": 0.04473835952140695,
+      "tr_coverage": 0.963164544659345
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.11040994289614796,
+      "confidence": 0.999986169506528,
+      "coverage": 0.1104114699412622,
+      "tr_support": 0.9626785887841384,
+      "tr_confidence": 0.999992788686892,
+      "tr_coverage": 0.962685531010927
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.009182122272029344,
+      "confidence": 1.0,
+      "coverage": 0.009182122272029344,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 0.5587061367038084,
+      "tr_coverage": 0.08348721936048206
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.42205847208447,
+      "confidence": 0.990380670325201,
+      "coverage": 0.42615782469369384,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9627341265984477,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ]
+      ],
+      "support": 0.1099823702641559,
+      "confidence": 1.0,
+      "coverage": 0.1099823702641559,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.11679070090607221,
+      "confidence": 0.9999607763664533,
+      "coverage": 0.116795282041415,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.31725660237043213,
+      "confidence": 1.0,
+      "coverage": 0.31725660237043213,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9900409072412242,
+      "tr_coverage": 0.972418532968635
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.1123553983717118,
+      "confidence": 1.0,
+      "coverage": 0.1123553983717118,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.00747183174406113,
+      "confidence": 1.0,
+      "coverage": 0.00747183174406113,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 0.6977154724818276,
+      "tr_coverage": 0.06685364397484136
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.009941063693815238,
+      "confidence": 0.9995393827729157,
+      "coverage": 0.00994564482915801,
+      "tr_support": 0.02828263193702012,
+      "tr_confidence": 0.3826070623591285,
+      "tr_coverage": 0.07392083084570207
+    },
+    {
+      "template": "Precedence",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.0067816073524168165,
+      "confidence": 1.0,
+      "coverage": 0.0067816073524168165,
+      "tr_support": 0.04693639531816225,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.04693639531816225
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.42241580064120626,
+      "confidence": 0.9999566215410197,
+      "coverage": 0.42243412518257734,
+      "tr_support": 0.9626785887841384,
+      "tr_confidence": 0.9999351019260306,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.11109100501710673,
+      "confidence": 0.9997801140658283,
+      "coverage": 0.11111543773893484,
+      "tr_support": 0.04658234175194035,
+      "tr_confidence": 0.048387910954705744,
+      "tr_coverage": 0.962685531010927
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.42211268218602616,
+      "confidence": 0.9999602077157239,
+      "coverage": 0.422129479682283,
+      "tr_support": 0.9626785887841384,
+      "tr_confidence": 0.9999351019260306,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.11514378275034569,
+      "confidence": 1.0,
+      "coverage": 0.11514378275034569,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.11247832550340951,
+      "confidence": 0.9974406369970141,
+      "coverage": 0.11276693703000415,
+      "tr_support": 0.9620399039195813,
+      "tr_confidence": 0.9983286506735826,
+      "tr_coverage": 0.9636505005345515
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.007244302022036788,
+      "confidence": 0.9992627698788836,
+      "coverage": 0.007249646679936689,
+      "tr_support": 0.028261805256654126,
+      "tr_confidence": 0.43290089323692044,
+      "tr_coverage": 0.06528470072060313
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Unblock Claim 3"
+        ]
+      ],
+      "support": 0.0055576806933395635,
+      "confidence": 1.0,
+      "coverage": 0.0055576806933395635,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 0.9602686865799629,
+      "tr_coverage": 0.04857476084028713
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.009495930043009226,
+      "confidence": 0.9960756046772385,
+      "coverage": 0.00953334264830853,
+      "tr_support": 0.03859183871818725,
+      "tr_confidence": 0.4651104417670683,
+      "tr_coverage": 0.08297349457812088
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.42204014754309893,
+      "confidence": 0.9903376709003183,
+      "coverage": 0.42615782469369384,
+      "tr_support": 0.9625675131555198,
+      "tr_confidence": 0.9625675131555198,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.11317771216573937,
+      "confidence": 1.0,
+      "coverage": 0.11317771216573937,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.42205847208447,
+      "confidence": 0.990380670325201,
+      "coverage": 0.42615782469369384,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9627341265984477,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.008478154474356714,
+      "confidence": 1.0,
+      "coverage": 0.008478154474356714,
+      "tr_support": 0.03874456770753787,
+      "tr_confidence": 0.512582659808964,
+      "tr_coverage": 0.0755869652749816
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.11512087707363182,
+      "confidence": 1.0,
+      "coverage": 0.11512087707363182,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.008271239861374844,
+      "confidence": 1.0,
+      "coverage": 0.008271239861374844,
+      "tr_support": 0.02828263193702012,
+      "tr_confidence": 0.3850661625708885,
+      "tr_coverage": 0.07344875942407286
+    },
+    {
+      "template": "Absence",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ]
+      ],
+      "support": 0.10955479763216384,
+      "confidence": 0.9961123529983478,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9961123529983478,
+      "tr_confidence": 0.9961123529983478,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.005538592629411347,
+      "confidence": 1.0,
+      "coverage": 0.005538592629411347,
+      "tr_support": 0.0096844063701873,
+      "tr_confidence": 0.19997133027522937,
+      "tr_coverage": 0.04842897407772517
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.42615782469369384,
+      "confidence": 1.0,
+      "coverage": 0.42615782469369384,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.006746485314788897,
+      "confidence": 0.996841155234657,
+      "coverage": 0.0067678639463885,
+      "tr_support": 0.03870291434680588,
+      "tr_confidence": 0.9592222986923606,
+      "tr_coverage": 0.04034822209571942
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.320193110125149,
+      "confidence": 0.9999904618150689,
+      "coverage": 0.3201961642153775,
+      "tr_support": 0.03683545534065507,
+      "tr_confidence": 0.03685131681297922,
+      "tr_coverage": 0.9995695819391028
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.009159216595315484,
+      "confidence": 1.0,
+      "coverage": 0.009159216595315484,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.44239746582194067,
+      "tr_coverage": 0.08327895255682212
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.10987547710615789,
+      "confidence": 0.9990280882495869,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9990280882495869,
+      "tr_confidence": 0.9990280882495869,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.011433750293001782,
+      "confidence": 0.990148108965882,
+      "coverage": 0.011547515154013952,
+      "tr_support": 0.043034863862932676,
+      "tr_confidence": 0.5020246193715582,
+      "tr_coverage": 0.08572261638643211
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.31831942576995526,
+      "confidence": 0.9929785617484048,
+      "coverage": 0.32057029026837053,
+      "tr_support": 0.038473820862779944,
+      "tr_confidence": 0.03996279177092422,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.008494188448056415,
+      "confidence": 0.9979368496591317,
+      "coverage": 0.008511749466870375,
+      "tr_support": 0.03695347319606237,
+      "tr_confidence": 0.4881694790902421,
+      "tr_coverage": 0.07569804090360024
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.10958610205700613,
+      "confidence": 0.9922570118979308,
+      "coverage": 0.11044124732099023,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.32316168582726523,
+      "confidence": 0.9997874054249412,
+      "coverage": 0.32323040285740684,
+      "tr_support": 0.04693639531816225,
+      "tr_confidence": 0.048706514613395195,
+      "tr_coverage": 0.9636574427613401
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.10587767299703219,
+      "confidence": 0.9989842303563838,
+      "coverage": 0.10598532967758734,
+      "tr_support": 0.9617066770337254,
+      "tr_confidence": 0.9989832048517715,
+      "tr_coverage": 0.962685531010927
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.11074971043407021,
+      "confidence": 0.9999862119363268,
+      "coverage": 0.11075123747918447,
+      "tr_support": 0.9626785887841384,
+      "tr_confidence": 0.9994954591321897,
+      "tr_coverage": 0.963164544659345
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Unblock Claim 3"
+        ]
+      ],
+      "support": 0.31490266232680447,
+      "confidence": 0.994727702474555,
+      "coverage": 0.3165717226366877,
+      "tr_support": 0.9588464795967955,
+      "tr_confidence": 0.9959618685011321,
+      "tr_coverage": 0.9627341265984477
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.42615782469369384,
+      "confidence": 1.0,
+      "coverage": 0.42615782469369384,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.11409928389219368,
+      "confidence": 1.0,
+      "coverage": 0.11409928389219368,
+      "tr_support": 0.03702289546394902,
+      "tr_confidence": 0.03702289546394902,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.2199647405283118,
+      "confidence": 0.9997154496935879,
+      "coverage": 0.22002734937799634,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.2159990043665855,
+      "confidence": 1.0,
+      "coverage": 0.2159990043665855,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.1099823702641559,
+      "confidence": 1.0,
+      "coverage": 0.1099823702641559,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.32278068807125804,
+      "confidence": 0.9986086866143369,
+      "coverage": 0.32323040285740684,
+      "tr_support": 0.9621370950946225,
+      "tr_confidence": 0.9984223152343834,
+      "tr_coverage": 0.9636574427613401
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.009873110186230787,
+      "confidence": 1.0,
+      "coverage": 0.009873110186230787,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.5440865462827396,
+      "tr_coverage": 0.08534773613984421
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.3215789035663375,
+      "confidence": 1.0,
+      "coverage": 0.3215789035663375,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9999927891028922,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.42641207770521766,
+      "confidence": 0.9998818360528945,
+      "coverage": 0.4264624701939882,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9627341265984477,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "ChainPrecedence",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.005125526926004738,
+      "confidence": 0.999107009971722,
+      "coverage": 0.005130108061347511,
+      "tr_support": 0.046603168432306344,
+      "tr_confidence": 0.999107009971722,
+      "tr_coverage": 0.04664482179303833
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.11317160398528234,
+      "confidence": 0.9999460301826204,
+      "coverage": 0.11317771216573937,
+      "tr_support": 0.02828263193702012,
+      "tr_confidence": 0.02828263193702012,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.00721452464230877,
+      "confidence": 0.9997883821817797,
+      "coverage": 0.007216051687423028,
+      "tr_support": 0.028275689710231453,
+      "tr_confidence": 0.43422174840085287,
+      "tr_coverage": 0.0651180872776752
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.10995106583931362,
+      "confidence": 0.9997153687016648,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9997153687016648,
+      "tr_confidence": 0.9997153687016648,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.11235234428148327,
+      "confidence": 0.9999728175924542,
+      "coverage": 0.1123553983717118,
+      "tr_support": 0.021090484983963455,
+      "tr_confidence": 0.021090484983963455,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.005106438862076522,
+      "confidence": 0.9998505008222455,
+      "coverage": 0.00510720238463365,
+      "tr_support": 0.04642961276258973,
+      "tr_confidence": 0.9998505008222455,
+      "tr_coverage": 0.04643655498937839
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.11112460000962038,
+      "confidence": 0.9999862584510526,
+      "coverage": 0.11112612705473464,
+      "tr_support": 0.009677464143398637,
+      "tr_confidence": 0.009677464143398637,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.008137623413877328,
+      "confidence": 1.0,
+      "coverage": 0.008137623413877328,
+      "tr_support": 0.03702289546394902,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.03702289546394902
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.322537124375534,
+      "confidence": 0.998796525291884,
+      "coverage": 0.3229257573571125,
+      "tr_support": 0.9626647043305611,
+      "tr_confidence": 0.9989698222763326,
+      "tr_coverage": 0.9636574427613401
+    },
+    {
+      "template": "ChainResponse",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.1058723283391323,
+      "confidence": 0.9989338020762043,
+      "coverage": 0.10598532967758734,
+      "tr_support": 0.9616580814462047,
+      "tr_confidence": 0.9989327256600155,
+      "tr_coverage": 0.962685531010927
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.007182456694909366,
+      "confidence": 0.9962931582291887,
+      "coverage": 0.007209179984408869,
+      "tr_support": 0.003866820321286256,
+      "tr_confidence": 0.07924313558116375,
+      "tr_coverage": 0.0487969120975244
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.11513156638943163,
+      "confidence": 0.9998939034255931,
+      "coverage": 0.11514378275034569,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 0.04664482179303833,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.10914936715432852,
+      "confidence": 1.0,
+      "coverage": 0.10914936715432852,
+      "tr_support": 0.02828263193702012,
+      "tr_confidence": 0.029378677743163724,
+      "tr_coverage": 0.9626924732377158
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.1099823702641559,
+      "confidence": 1.0,
+      "coverage": 0.1099823702641559,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotRespondedExistence",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.10894856072180369,
+      "confidence": 0.9903183493306128,
+      "coverage": 0.11001367468899817,
+      "tr_support": 0.9903155936298127,
+      "tr_confidence": 0.9903155936298127,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.10556844636139508,
+      "confidence": 0.9920643462413271,
+      "coverage": 0.10641290230957938,
+      "tr_support": 4.8595587520653125E-5,
+      "tr_confidence": 5.047664373584851E-5,
+      "tr_coverage": 0.9627341265984477
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.42204014754309893,
+      "confidence": 0.9903376709003183,
+      "coverage": 0.42615782469369384,
+      "tr_support": 0.9625675131555198,
+      "tr_confidence": 0.9625675131555198,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.11317771216573937,
+      "confidence": 1.0,
+      "coverage": 0.11317771216573937,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.10958610205700613,
+      "confidence": 0.9922570118979308,
+      "coverage": 0.11044124732099023,
+      "tr_support": 0.0,
+      "tr_confidence": 0.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.006242560427083978,
+      "confidence": 1.0,
+      "coverage": 0.006242560427083978,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 0.8280749322159231,
+      "tr_coverage": 0.056329228163225636
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.32127425806604315,
+      "confidence": 1.0,
+      "coverage": 0.32127425806604315,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9999927891028922,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotRespondedExistence",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.006732741908760581,
+      "confidence": 0.9927944156721459,
+      "coverage": 0.0067816073524168165,
+      "tr_support": 0.046630937339461005,
+      "tr_confidence": 0.9934920869693832,
+      "tr_coverage": 0.04693639531816225
+    },
+    {
+      "template": "AtMost3",
+      "parameters": [
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.1099823702641559,
+      "confidence": 1.0,
+      "coverage": 0.1099823702641559,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.011888809737050466,
+      "confidence": 1.0,
+      "coverage": 0.011888809737050466,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.9735118614466599,
+      "tr_coverage": 0.04770004026491537
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.1100358168431549,
+      "confidence": 0.9999861224829654,
+      "coverage": 0.11003734388826916,
+      "tr_support": 0.03683545534065507,
+      "tr_confidence": 0.03685310848260486,
+      "tr_coverage": 0.9995209863515822
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.11409928389219368,
+      "confidence": 1.0,
+      "coverage": 0.11409928389219368,
+      "tr_support": 0.03702289546394902,
+      "tr_confidence": 0.03702289546394902,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.1123553983717118,
+      "confidence": 1.0,
+      "coverage": 0.1123553983717118,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.42241580064120626,
+      "confidence": 0.9999566215410197,
+      "coverage": 0.42243412518257734,
+      "tr_support": 0.9626924732377158,
+      "tr_confidence": 0.999949523720246,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotRespondedExistence",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.10894856072180369,
+      "confidence": 0.9903183493306128,
+      "coverage": 0.11001367468899817,
+      "tr_support": 0.9903155936298127,
+      "tr_confidence": 0.9903155936298127,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.005162939531304043,
+      "confidence": 0.9997043169722057,
+      "coverage": 0.005164466576418301,
+      "tr_support": 0.009677464143398637,
+      "tr_confidence": 0.2626224566691786,
+      "tr_coverage": 0.0368493397942324
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.005164466576418301,
+      "confidence": 1.0,
+      "coverage": 0.005164466576418301,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.9998116051243406,
+      "tr_coverage": 0.0368493397942324
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.009181358749472216,
+      "confidence": 0.996271748135874,
+      "coverage": 0.009215717264543006,
+      "tr_support": 0.03687016647459839,
+      "tr_confidence": 0.441479634247714,
+      "tr_coverage": 0.08351498826763673
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Unblock Claim 3"
+        ]
+      ],
+      "support": 0.31517142226691375,
+      "confidence": 0.994619523443505,
+      "coverage": 0.31687636813698206,
+      "tr_support": 0.9588464795967955,
+      "tr_confidence": 0.9959618685011321,
+      "tr_coverage": 0.9627341265984477
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.11477347431013828,
+      "confidence": 0.9999467833884347,
+      "coverage": 0.1147795824905953,
+      "tr_support": 0.04313899726476265,
+      "tr_confidence": 0.04313899726476265,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.005534775016625704,
+      "confidence": 1.0,
+      "coverage": 0.005534775016625704,
+      "tr_support": 0.00388764700165225,
+      "tr_confidence": 0.08037892923783552,
+      "tr_coverage": 0.04836649403662719
+    },
+    {
+      "template": "Init",
+      "parameters": [
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.10997778912881313,
+      "confidence": 0.999958346639268,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.999958346639268,
+      "tr_confidence": 0.999958346639268,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.11112460000962038,
+      "confidence": 0.9999862584510526,
+      "coverage": 0.11112612705473464,
+      "tr_support": 0.009677464143398637,
+      "tr_confidence": 0.009677464143398637,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.3215789035663375,
+      "confidence": 1.0,
+      "coverage": 0.3215789035663375,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 0.04845001766669792,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "AtMost2",
+      "parameters": [
+        [
+          "Correct Claim"
+        ]
+      ],
+      "support": 0.10990754505355729,
+      "confidence": 0.9993196617747109,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9993196617747109,
+      "tr_confidence": 0.9993196617747109,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.11406568889968001,
+      "confidence": 1.0,
+      "coverage": 0.11406568889968001,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.03684239756744373,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.11317160398528234,
+      "confidence": 0.9999460301826204,
+      "coverage": 0.11317771216573937,
+      "tr_support": 0.02828263193702012,
+      "tr_confidence": 0.02828263193702012,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.11440163882481662,
+      "confidence": 0.9996664086893865,
+      "coverage": 0.11443981495267305,
+      "tr_support": 0.03870985657359455,
+      "tr_confidence": 0.03870985657359455,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.31960977889150266,
+      "confidence": 0.9999904444067529,
+      "coverage": 0.3196128329817312,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9999927891028922,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 3"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.0051507231703899845,
+      "confidence": 0.9917671273154954,
+      "coverage": 0.00519348043358919,
+      "tr_support": 0.00388764700165225,
+      "tr_confidence": 0.09011908593498552,
+      "tr_coverage": 0.04313899726476265
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Block Claim 1"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.009896015862944647,
+      "confidence": 1.0,
+      "coverage": 0.009896015862944647,
+      "tr_support": 0.04664482179303833,
+      "tr_confidence": 0.5451963648166179,
+      "tr_coverage": 0.08555600294350416
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.10996862685812758,
+      "confidence": 0.999875039917804,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.999875039917804,
+      "tr_confidence": 0.999875039917804,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.42610743220492336,
+      "confidence": 0.9998817515815726,
+      "coverage": 0.42615782469369384,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9627341265984477,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "Succession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.42239747609983513,
+      "confidence": 0.9999132430820395,
+      "coverage": 0.42243412518257734,
+      "tr_support": 0.9626369354234064,
+      "tr_confidence": 0.9998918365433843,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.006242560427083978,
+      "confidence": 1.0,
+      "coverage": 0.006242560427083978,
+      "tr_support": 0.0096844063701873,
+      "tr_confidence": 0.1719250677840769,
+      "tr_coverage": 0.056329228163225636
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.42610743220492336,
+      "confidence": 0.9998817515815726,
+      "coverage": 0.42615782469369384,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9627341265984477,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.1167769575000439,
+      "confidence": 0.9998431054658133,
+      "coverage": 0.116795282041415,
+      "tr_support": 0.04693639531816225,
+      "tr_confidence": 0.04693639531816225,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.10996022810999917,
+      "confidence": 0.9997986754231287,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9997986754231287,
+      "tr_confidence": 0.9997986754231287,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Block Claim 2"
+        ]
+      ],
+      "support": 0.320193110125149,
+      "confidence": 0.9999904618150689,
+      "coverage": 0.3201961642153775,
+      "tr_support": 0.962727184371659,
+      "tr_confidence": 0.9631417379708856,
+      "tr_coverage": 0.9995695819391028
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.11512087707363182,
+      "confidence": 1.0,
+      "coverage": 0.11512087707363182,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.42212031741159745,
+      "confidence": 0.9999782951176676,
+      "coverage": 0.422129479682283,
+      "tr_support": 0.9626438776501951,
+      "tr_confidence": 0.9998990474404921,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "AlternatePrecedence",
+      "parameters": [
+        [
+          "Start Claim"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.00510720238463365,
+      "confidence": 1.0,
+      "coverage": 0.00510720238463365,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.04643655498937839
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.3175612478707265,
+      "confidence": 1.0,
+      "coverage": 0.3175612478707265,
+      "tr_support": 0.0096844063701873,
+      "tr_confidence": 0.009959092758775781,
+      "tr_coverage": 0.972418532968635
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.11443370677221602,
+      "confidence": 0.9999466253903019,
+      "coverage": 0.11443981495267305,
+      "tr_support": 0.999979173319634,
+      "tr_confidence": 0.999979173319634,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.008494188448056415,
+      "confidence": 0.9979368496591317,
+      "coverage": 0.008511749466870375,
+      "tr_support": 0.03867514543965122,
+      "tr_confidence": 0.5109134262655907,
+      "tr_coverage": 0.07569804090360024
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Start Claim"
+        ]
+      ],
+      "support": 0.11439553064435959,
+      "confidence": 0.9996130340796883,
+      "coverage": 0.11443981495267305,
+      "tr_support": 0.03868902989322855,
+      "tr_confidence": 0.03868902989322855,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.007448926067347271,
+      "confidence": 1.0,
+      "coverage": 0.007448926067347271,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.6966982605978543,
+      "tr_coverage": 0.06665231939797009
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.008845408824335602,
+      "confidence": 0.999309928405072,
+      "coverage": 0.008851517004792631,
+      "tr_support": 0.03699512655679436,
+      "tr_confidence": 0.46166507840249504,
+      "tr_coverage": 0.080134123821557
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Reject Claim"
+        ]
+      ],
+      "support": 0.005195007478703447,
+      "confidence": 0.999412455934195,
+      "coverage": 0.005198061568931962,
+      "tr_support": 0.009677464143398637,
+      "tr_confidence": 0.26139133695855993,
+      "tr_coverage": 0.03702289546394902
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.32045576188480124,
+      "confidence": 0.9997546509135085,
+      "coverage": 0.3205344047081855,
+      "tr_support": 0.03684239756744373,
+      "tr_confidence": 0.036858006042296075,
+      "tr_coverage": 0.9995765241658915
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.008271239861374844,
+      "confidence": 1.0,
+      "coverage": 0.008271239861374844,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.6322306238185256,
+      "tr_coverage": 0.07344875942407286
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.422129479682283,
+      "confidence": 1.0,
+      "coverage": 0.422129479682283,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9999927891028922,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Reject Claim"
+        ],
+        [
+          "Unblock Claim 1"
+        ]
+      ],
+      "support": 0.00916685182088677,
+      "confidence": 0.9971760797342193,
+      "coverage": 0.009192811587829145,
+      "tr_support": 0.03690487760854171,
+      "tr_confidence": 0.4428154935443565,
+      "tr_coverage": 0.08334143259792011
+    },
+    {
+      "template": "AtMost1",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.10992892368515689,
+      "confidence": 0.9995140441247935,
+      "coverage": 0.1099823702641559,
+      "tr_support": 0.9995140441247935,
+      "tr_confidence": 0.9995140441247935,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "CoExistence",
+      "parameters": [
+        [
+          "Execute Payment"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.6325929455096857,
+      "confidence": 1.0,
+      "coverage": 0.6325929455096857,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.9627341265984477
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Payment Order"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.3187889921425894,
+      "confidence": 0.9999952098791453,
+      "coverage": 0.3187905191877036,
+      "tr_support": 0.9627341265984477,
+      "tr_confidence": 0.9999927891028922,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.01120011239052041,
+      "confidence": 0.9993187546835616,
+      "coverage": 0.011207747616091696,
+      "tr_support": 0.04692945309137359,
+      "tr_confidence": 0.5620686788060197,
+      "tr_coverage": 0.08349416158727073
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Receive Objection 1"
+        ],
+        [
+          "Accept Claim"
+        ]
+      ],
+      "support": 0.11034962461413479,
+      "confidence": 0.9994398650143838,
+      "coverage": 0.1104114699412622,
+      "tr_support": 0.038501589769934605,
+      "tr_confidence": 0.039993942496989274,
+      "tr_coverage": 0.962685531010927
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Unblock Claim 3"
+        ]
+      ],
+      "support": 0.10556844636139508,
+      "confidence": 0.9920643462413271,
+      "coverage": 0.10641290230957938,
+      "tr_support": 0.9588464795967955,
+      "tr_confidence": 0.9959618685011321,
+      "tr_coverage": 0.9627341265984477
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Execute Payment"
+        ]
+      ],
+      "support": 0.32125135238932934,
+      "confidence": 1.0,
+      "coverage": 0.32125135238932934,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.04823369075346664,
+      "tr_coverage": 0.9627410688252364
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Repayment"
+        ]
+      ],
+      "support": 0.006392210848281196,
+      "confidence": 0.9997611655123,
+      "coverage": 0.006393737893395453,
+      "tr_support": 0.03683545534065507,
+      "tr_confidence": 0.6359060402684564,
+      "tr_coverage": 0.05792594032461852
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Block Claim 3"
+        ],
+        [
+          "Receive Claim"
+        ]
+      ],
+      "support": 0.1147765284003668,
+      "confidence": 0.9999733916942174,
+      "coverage": 0.1147795824905953,
+      "tr_support": 0.04313899726476265,
+      "tr_confidence": 0.04313899726476265,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.010237310445981161,
+      "confidence": 1.0,
+      "coverage": 0.010237310445981161,
+      "tr_support": 0.04643655498937839,
+      "tr_confidence": 0.99553504985861,
+      "tr_coverage": 0.04664482179303833
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Accept Claim"
+        ],
+        [
+          "Block Claim 1"
+        ]
+      ],
+      "support": 0.11111543773893484,
+      "confidence": 1.0,
+      "coverage": 0.11111543773893484,
+      "tr_support": 0.962685531010927,
+      "tr_confidence": 1.0,
+      "tr_coverage": 0.962685531010927
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Withdraw Claim"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.007516879574931722,
+      "confidence": 0.9903430238406599,
+      "coverage": 0.007590177740416074,
+      "tr_support": 0.02826874748344279,
+      "tr_confidence": 0.6978577549271636,
+      "tr_coverage": 0.04050789331185871
+    },
+    {
+      "template": "NotSuccession",
+      "parameters": [
+        [
+          "Repayment"
+        ],
+        [
+          "Receive Objection 1"
+        ]
+      ],
+      "support": 0.006751829972688798,
+      "confidence": 0.9976308664259927,
+      "coverage": 0.0067678639463885,
+      "tr_support": 0.021090484983963455,
+      "tr_confidence": 0.5227116311080523,
+      "tr_coverage": 0.04034822209571942
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Receive Claim"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.11112612705473464,
+      "confidence": 1.0,
+      "coverage": 0.11112612705473464,
+      "tr_support": 1.0,
+      "tr_confidence": 1.0,
+      "tr_coverage": 1.0
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Block Claim 2"
+        ],
+        [
+          "Withdraw Claim"
+        ]
+      ],
+      "support": 0.00721452464230877,
+      "confidence": 0.9997883821817797,
+      "coverage": 0.007216051687423028,
+      "tr_support": 0.03683545534065507,
+      "tr_confidence": 0.5656716417910448,
+      "tr_coverage": 0.0651180872776752
+    },
+    {
+      "template": "NotChainSuccession",
+      "parameters": [
+        [
+          "Correct Claim"
+        ],
+        [
+          "Receive Objection 2"
+        ]
+      ],
+      "support": 0.007846721319611305,
+      "confidence": 0.9940032885191992,
+      "coverage": 0.007894059718153284,
+      "tr_support": 0.04683226191633228,
+      "tr_confidence": 0.8316074950690335,
+      "tr_coverage": 0.05631534370964831
+    },
+    {
+      "template": "AlternateResponse",
+      "parameters": [
+        [
+          "Unblock Claim 1"
+        ],
+        [
+          "Payment Order"
+        ]
+      ],
+      "support": 0.005106438862076522,
+      "confidence": 0.9998505008222455,
+      "coverage": 0.00510720238463365,
+      "tr_support": 0.04642961276258973,
+      "tr_confidence": 0.9998505008222455,
+      "tr_coverage": 0.04643655498937839
+    },
+    {
+      "template": "NotCoExistence",
+      "parameters": [
+        [
+          "Receive Objection 2"
+        ],
+        [
+          "Block Claim 3"
+        ]
+      ],
+      "support": 0.005876833122219346,
+      "confidence": 0.9997402260033771,
+      "coverage": 0.005878360167333604,
+      "tr_support": 0.009677464143398637,
+      "tr_confidence": 0.18322818086225026,
+      "tr_coverage": 0.052816461408161285
+    }
+  ]
+}

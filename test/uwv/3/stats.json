@@ -1,0 +1,90 @@
+{
+    "time": 25.495779752731323,
+    "N.rules": 26,
+    "N.dev": 9,
+    "support_cost": 0.35,
+    "confidence_cost": 0,
+    "dev_list": [
+        [
+            "Response",
+            [
+                "Block Claim 1",
+                "Correct Claim"
+            ],
+            1,
+            1
+        ],
+        [
+            "Precedence",
+            [
+                "Block Claim 1",
+                "Correct Claim"
+            ],
+            1,
+            1
+        ],
+        [
+            "Precedence",
+            [
+                "Block Claim 1",
+                "Unblock Claim 1"
+            ],
+            1,
+            1
+        ],
+        [
+            "Precedence",
+            [
+                "Block Claim 3",
+                "Unblock Claim 3"
+            ],
+            1,
+            1
+        ],
+        [
+            "Response",
+            [
+                "Correct Claim",
+                "Unblock Claim 1"
+            ],
+            1,
+            1
+        ],
+        [
+            "Precedence",
+            [
+                "Correct Claim",
+                "Unblock Claim 1"
+            ],
+            1,
+            1
+        ],
+        [
+            "Response",
+            [
+                "Receive Objection 1",
+                "Withdraw Claim"
+            ],
+            1,
+            1
+        ],
+        [
+            "Response",
+            [
+                "Withdraw Claim",
+                "Repayment"
+            ],
+            1,
+            1
+        ],
+        [
+            "Precedence",
+            [
+                "Withdraw Claim",
+                "Repayment"
+            ],
+            1,
+            1
+        ]
+    ]
+}
