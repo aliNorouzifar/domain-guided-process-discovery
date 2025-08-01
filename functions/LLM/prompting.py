@@ -1,5 +1,5 @@
 import google.generativeai as genai
-
+import os
 import re
 import json
 import requests
@@ -14,7 +14,7 @@ def configure_Gemini(api_key):
     return model
 
 def task_description():
-    with open(r"functions\LLM\task_description_fewshot3_q.txt", "r", encoding="utf-8") as f:
+    with open(os.path.join("functions", "LLM", "task_description_fewshot3_q.txt"), "r", encoding="utf-8") as f:
         task_prompt = f.read()
     return task_prompt
 

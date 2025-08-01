@@ -16,7 +16,7 @@ from enum import Enum
 import dash
 from functions.subprocess_calls import measurement_extraction
 from openai import OpenAI
-
+import os
 
 UPLOAD_FOLDER = "event_logs"
 OUTPUT_FOLDER = "output_files"
@@ -220,7 +220,7 @@ def register_callbacks(app):
                 else:
                     rules = {}
 
-                rule_path = r"E:\PADS\Projects\IMr-LLM-extension\output_files\rules_llm.json"
+                rule_path = os.path.join("output_files", "rules_llm.json")
                 rules_no_atmost1 = {'tasks':rules['tasks'],'constraints':[r for r in rules['constraints'] if (r['template']!="AtMost1" and r['template']!="AtLeast1")]}
                 rules_atmost1 = [r for r in rules['constraints'] if r['template'] == "AtMost1"]
                 rules_least1 = [r for r in rules['constraints'] if r['template'] == "AtLeast1"]
@@ -228,7 +228,7 @@ def register_callbacks(app):
                     with open(rule_path, "w", encoding="utf-8") as f:
                         json.dump(rules_no_atmost1, f, indent=2)
 
-                    meas_path = r"E:\PADS\Projects\IMr-LLM-extension\output_files\meas_rules_llm.json"
+                    meas_path = os.path.join("output_files", "meas_rules_llm.json")
                     measurement_extraction(str(log_path), rule_path, meas_path)
 
                     data = read_json_file(meas_path.removesuffix(".json") + "[eventsEvaluation].json")
@@ -346,7 +346,7 @@ def register_callbacks(app):
             from pm4py.visualization.bpmn import visualizer as bpmn_visualizer
             import os
 
-            path = r"E:\PADS\Projects\IMr-LLM-extension\output_files"
+            path = r"\output_files"
 
             net, initial_marking, final_marking = pm4py.read_pnml(os.path.join(path, "model.pnml"))
             bpmn = pm4py.objects.conversion.wf_net.variants.to_bpmn.apply(net, initial_marking, final_marking)
