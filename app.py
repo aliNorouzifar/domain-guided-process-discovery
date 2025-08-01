@@ -4,7 +4,6 @@ import dash_bootstrap_components as dbc
 from callbacks import register_callbacks
 import pages.start_page as start_page
 import pages.about_me as about_me
-import pages.main_page as main_page
 import pages.LLM as LLM_page
 import os
 from prolysis.util.redis_connection import redis_client
@@ -13,7 +12,6 @@ from prolysis.util.redis_connection import redis_client
 redis_client.flushall()
 
 UPLOAD_FOLDER = "event_logs"
-# List of directories to check/create
 directories = ["event_logs", "output_files"]
 
 for directory in directories:
@@ -44,8 +42,6 @@ app.layout = html.Div([
 def display_page(pathname):
     if pathname == '/':
         return start_page.layout
-    elif pathname == '/main':
-        return main_page.create_layout()
     elif pathname == '/LLM':
         return LLM_page.create_layout()
     elif pathname == '/about_me':

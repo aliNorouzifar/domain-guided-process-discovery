@@ -1,4 +1,0 @@
-not-co-existence(cancel application, accept application)
-not-co-existence(cancel application, reject application)
-not-co-existence(accept application, reject application)
-response(check documents, check history)

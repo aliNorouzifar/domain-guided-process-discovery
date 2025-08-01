@@ -10,7 +10,6 @@ layout = dbc.Container(
             className="nav-links",
             children=[
                 dcc.Link("Introduction", href="/", className="nav-link"),
-                dcc.Link("IMr", href="/main", className="nav-link"),
                 dcc.Link("LLM", href="/LLM", className="nav-link"),
                 dcc.Link("About Me", href="/about_me", className="nav-link"),
             ],

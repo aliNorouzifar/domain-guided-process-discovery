@@ -2,11 +2,9 @@ from dash import html, dcc, dash_table
 import dash_bootstrap_components as dbc
 import dash_uploader as du
 import json
-import pandas as pd
 import dash_interactive_graphviz
 from prolysis.util.redis_connection import redis_client
 import dash_ag_grid as dag
-from dash_chat import ChatComponent
 from enum import Enum
 
 
@@ -20,23 +18,12 @@ class AIProviders(Enum):
     GOOGLE = "Google"
     OPENAI = "OpenAI"
     DEEPSEEK = "DeepSeek"
-    # ANTHROPIC = "Anthropic"
-    # DEEPINFRA = "Deepinfra"
-    # MISTRAL_AI = "Mistral AI"
-    # OPENROUTER = "OpenRouter"
-    # COHERE = "Cohere"
-    # GROK = "Grok"
+
 
 AI_MODEL_DEFAULTS = {
     AIProviders.GOOGLE.value: "gemini-2.5-flash",
     AIProviders.OPENAI.value: "gpt-4.1",
     AIProviders.DEEPSEEK.value: "deepseek-reasoner",
-    # AIProviders.ANTHROPIC.value: "claude-3-7-sonnet-latest",
-    # AIProviders.DEEPINFRA.value: "meta-llama/Llama-3.2-90B-Vision-Instruct",
-    # AIProviders.MISTRAL_AI.value: "mistral-large-latest",
-    # AIProviders.OPENROUTER.value: "mistralai/devstral-small:free",
-    # AIProviders.COHERE.value: "command-r-plus",
-    # AIProviders.GROK.value: "grok-3",
 }
 
 
@@ -53,7 +40,6 @@ def create_layout():
                 className="nav-links",
                 children=[
                     dcc.Link("Introduction", href="/", className="nav-link"),
-                    dcc.Link("IMr", href="/main", className="nav-link"),
                     dcc.Link("LLM", href="/LLM", className="nav-link"),
                     dcc.Link("About Me", href="/about_me", className="nav-link"),
                 ],
@@ -347,108 +333,6 @@ def get_upload_component(id):
             text="Upload your event log here!",
         default_style={"height": "40px"}
         )
-
-
-# def show_petri_net_LLM(gviz):
-#     return html.Div(
-#                         className="visualization-wrapper",
-#                         children=[
-#                             # Graph and slider container
-#                             html.Div(
-#                                 className="graph-slider-container",
-#                                 style={"display": "flex", "alignItems": "center"},
-#                                 children=[
-#                                     # Zoom slider on the left
-#                                     html.Div(
-#                                         className="slider-container",
-#                                         style={"width": "10%", "marginRight": "10px"},
-#                                         children=[
-#                                             dcc.Slider(
-#                                                 id="zoom-slider",
-#                                                 min=1.0,  # Minimum zoom level
-#                                                 max=3.0,  # Maximum zoom level
-#                                                 step=0.1,  # Increment steps
-#                                                 value=1.0,  # Default zoom level
-#                                                 marks={i: f"{i:.1f}" for i in [1.0, 1.5, 2.0,2.5,3.0]},
-#                                                 vertical=True,  # Make it vertical
-#                                             ),
-#                                         ],
-#                                     ),
-#                                     # Graph visualization on the right
-#                                     html.Div(
-#                                         className="graph-container",
-#                                         style={
-#                                             "width": "100%",
-#                                             # "flexGrow": 1,
-#                                             "border": "1px solid #ddd",
-#                                             # "height": "500px",
-#                                             # "position": "relative",
-#                                             "overflow": "hidden",
-#                                         },
-#                                         children=[
-#                                             dash_interactive_graphviz.DashInteractiveGraphviz(
-#                                                 id="gv",
-#                                                 style={"transform": "scale(1)", "transformOrigin": "0 0"},
-#                                                 dot_source=str(gviz),
-#                                                  engine = "dot"
-#                                             ),
-#                                         ],
-#                                     ),
-#                                 ],
-#                             ),])
-
-# def show_petri_net_LLM(gviz):
-#     return html.Div(
-#         # className="graph-slider-container",
-#         style={"display": "flex", "alignItems": "stretch", "width": "100%", "height": "100%"},
-#         children=[
-#             html.Div(
-#                 # className="slider-container",
-#                 style={"width": "50px", "marginRight": "10px"},
-#                 children=[
-#                     dcc.Slider(
-#                         id="zoom-slider",
-#                         min=1.0,
-#                         max=3.0,
-#                         step=0.1,
-#                         value=1.0,
-#                         marks={i: f"{i:.1f}" for i in [1.0, 1.5, 2.0, 2.5, 3.0]},
-#                         vertical=True,
-#                         tooltip={"placement": "right"},
-#                     )
-#                 ],
-#             ),
-#             html.Div(
-#                 # className="graph-container",
-#                 style={
-#                     "flex": "1",
-#                     "border": "1px solid #ddd",
-#                     "height": "100%",  # Fit parent height (250px)
-#                     "overflow": "auto",
-#                     "position": "relative",
-#                     "backgroundColor": "#fff"
-#                 },
-#                 children=[
-#                     html.Div(
-#                         id="graph-wrapper",
-#                         style={
-#                             "transform": "scale(1)",
-#                             "transformOrigin": "0 0",
-#                             "width": "max-content",
-#                         },
-#                         children=[
-#                             dash_interactive_graphviz.DashInteractiveGraphviz(
-#                                 id="gv",
-#                                 dot_source=str(gviz),
-#                                 engine="dot",
-#                                 style={"width": "100%", "height": "100%"},
-#                             )
-#                         ]
-#                     )
-#                 ]
-#             )
-#         ]
-#     )
 
 
 def show_petri_net_LLM(gviz):

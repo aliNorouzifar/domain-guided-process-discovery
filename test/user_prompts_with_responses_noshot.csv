@@ -1,4 +1,0 @@
-log,template,act1,act2,User,text,response,match,size,resolution_counter,resolution_counter_run,failure_counter
-BPIC17,AtLeast1,O_Create Offer,,user1,"In all applications, the bank is required to create at least one offer.","('AtLeast1', 'O_Create Offer')",True,1,0,0,0
-BPIC18,AtLeast1,decide,,user1,Making a decision is a mandatory action in this process.,"('AtLeast1', 'decide')",True,1,0,0,0
-UWV,AtLeast1,Receive Claim,,user1,We cannot have any application without a receive claim event.,"('AtLeast1', 'Receive Claim')",True,1,0,0,0
