@@ -28,6 +28,6 @@ EXPOSE 8002 6379
 
 CMD ["bash", "-c", "service redis-server start && python app.py"]
 
-LABEL org.opencontainers.image.source="https://github.com/aliNorouzifar/rule_guided_process_discovery"
+LABEL org.opencontainers.image.source="https://github.com/aliNorouzifar/domain-guided-process-discovery"
 
 ENV PATH="/usr/lib/jvm/java-11-openjdk-amd64/bin:$PATH"
