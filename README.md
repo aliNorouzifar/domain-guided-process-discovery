@@ -1,25 +1,31 @@
 # IMr + LLM
 ### General Information
-This repository is associated with the paper accepted for presentation at the AI4BPM Workshop at the BPM 2024 Conference. This is an initial version, with planned updates and improvements to follow.
+This repository is associated with the paper accepted for presentation at the AI4BPM Workshop at the BPM 2024 Conference. This code is related to the extended version of this paper that is currently under review.
 
 ```bibtex
-@article{DBLP:journals/corr/abs-2408-17316,
+@inproceedings{DBLP:conf/bpm/NorouzifarKDA24,
   author       = {Ali Norouzifar and
                   Humam Kourani and
                   Marcus Dees and
                   Wil M. P. van der Aalst},
+  editor       = {Katarzyna Gdowska and
+                  Mar{\'{\i}}a Teresa G{\'{o}}mez{-}L{\'{o}}pez and
+                  Jana{-}Rebecca Rehse},
   title        = {Bridging Domain Knowledge and Process Discovery Using Large Language
                   Models},
-  journal      = {CoRR},
-  volume       = {abs/2408.17316},
+  booktitle    = {Business Process Management Workshops - {BPM} 2024 International Workshops,
+                  Krakow, Poland, September 1-6, 2024, Revised Selected Papers},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {534},
+  pages        = {44--56},
+  publisher    = {Springer},
   year         = {2024},
-  url          = {https://doi.org/10.48550/arXiv.2408.17316},
-  doi          = {10.48550/ARXIV.2408.17316},
-  eprinttype    = {arXiv},
-  eprint       = {2408.17316},
-  timestamp    = {Sat, 28 Sep 2024 20:40:16 +0200},
-  biburl       = {https://dblp.org/rec/journals/corr/abs-2408-17316.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}}
+  url          = {https://doi.org/10.1007/978-3-031-78666-2\_4},
+  doi          = {10.1007/978-3-031-78666-2\_4},
+  timestamp    = {Fri, 07 Mar 2025 18:29:52 +0100},
+  biburl       = {https://dblp.org/rec/conf/bpm/NorouzifarKDA24.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+}
 ```
 
 ### Installation
@@ -92,28 +98,4 @@ Upon running the code, a simple GUI will open, prompting you to enter three inpu
 2. **Event Log**:
    - Upload an event log file in **XES format**.
 
-3. **Rules File**:
-   - Provide a text file containing declarative constraints, as outlined in the referenced paper.
-   - Currently, our setup does not support API calls, so you will need to manually run prompts with your LLM tool and paste the generated rules into a text file.
-   - **Format**: Each line in the file should contain one rule, chosen from the following set of declarative constraints:
-     - `{existence, responded_existence, response, precedence, coexistence, noncoexistence, nonsuccession, atmost1}`
-   - See the "motivating example" files for a template and examples. Another example from the paper:
-```text
-not-co-existence(Block Claim 2, Block Claim 1)
-not-co-existence(Block Claim 2, Block Claim 3)
-co-existence(Block Claim 1, Unblock Claim 1)
-co-existence(Block Claim 2, Unblock Claim 2)
-co-existence(Block Claim 3, Unblock Claim 3)
-precedence(Block Claim 1, Unblock Claim 1)
-precedence(Block Claim 2, Unblock Claim 2)
-precedence(Block Claim 3, Unblock Claim 3)
-not-co-existence(Receive Objection 1, Receive Objection 2)
-precedence(Reject Claim, Receive Objection 2)
-precedence(Payment Order, Receive Objection 1)
-at-most(Correct Claim)
-precedence(Block Claim 1, Correct Claim)
-precedence(Correct Claim, Unblock Claim 1)
-response(Withdraw Claim, Repayment)
-responded-existence(Accept Claim, Payment Order)
-responded-existence(Payment Order, Execute Payment)
 ```
