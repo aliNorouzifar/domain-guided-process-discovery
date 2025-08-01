@@ -1,9 +1,7 @@
 from dash import Input, Output, State, html
-# from pages.main_page import rule_src_selection,show_rule_uploder,show_Minerful_params, IMr_params_show, rule_related_statistics_show,conformance_related_statistics_show,show_petri_net,IMr_no_rules_params_show
 from pages.LLM import show_petri_net_LLM
 import os
 import shutil
-from prolysis.calls.minerful_calls import discover_declare
 from pathlib import Path
 from prolysis.discovery.discovery import run_IMr
 import json

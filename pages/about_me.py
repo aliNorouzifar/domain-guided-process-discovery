@@ -18,11 +18,7 @@ layout = dbc.Container(
         html.Div(
             className="tool-name-container",
             children=[
-                html.H1("Rule-guided Process Discovery", className="tool-name"),
-                html.P(
-                    "A cutting-edge tool for discovering process models from event logs considering rules as input.",
-                    className="tool-subtitle",
-                ),
+                html.H1("LLM-Guided Process Discovery with Domain Knowledge", className="tool-name"),
             ],
         ),
         # About Me Section

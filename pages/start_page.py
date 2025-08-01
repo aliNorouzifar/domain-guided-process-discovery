@@ -18,78 +18,66 @@ layout = dbc.Container(
         html.Div(
             className="tool-name-container",
             children=[
-                html.H1("Rule-guided Process Discovery", className="tool-name"),
-                html.P(
-                    "A cutting-edge tool for discovering process models from event logs considering rules as input.",
-                    className="tool-subtitle",
-                ),
+                html.H1("LLM-Guided Process Discovery with Domain Knowledge", className="tool-name"),
             ],
         ),
         # Introduction Section
-        html.Div(
-            className="intro-section",
-            children=[
-                html.H2("Welcome to IMr!", className="section-title"),
-                html.P(
-                    "IMr enhances process discovery by integrating domain knowledge and process rules, allowing for the creation of high-quality process models that align with both event data and expert knowledge.",
-                    className="content",
-                ),
-                dcc.Link(
-                    "Get Started",
-                    href="/main",
-                    className="cta-link"
-                ),
-            ],
-        ),
+        # html.Div(
+        #     className="intro-section",
+        #     children=[
+        #         html.H2("Welcome to IMr!", className="section-title"),
+        #         html.P(
+        #             "IMr enhances process discovery by integrating domain knowledge and process rules, allowing for the creation of high-quality process models that align with both event data and expert knowledge.",
+        #             className="content",
+        #         ),
+        #         dcc.Link(
+        #             "Get Started",
+        #             href="/main",
+        #             className="cta-link"
+        #         ),
+        #     ],
+        # ),
         # Background and Context Section
         html.Div(
             className="context-section",
-            children=[
-                html.H2("Background and Context", className="section-title"),
-                html.P(
-                    "This tool is based on a novel framework introduced in a recent study that focuses on improving process discovery by leveraging rules alongside event logs. These rules, which define relationships between activities, can be discovered automatically or provided by domain experts, and IMr uses them to guide the process discovery workflow.",
-                    className="content",
-                ),
-                html.Ul(
-                    children=[
-                        html.Li("Integrates discovered or user-defined rules into the process discovery workflow."),
-                        html.Li(
-                            "Employs a divide-and-conquer strategy, using rules to guide the selection of process structures."),
-                        html.Li(
-                            "Discovers high-quality imperative process models, such as BPMN models and Petri nets."),
-                    ],
-                    className="feature-list",
-                ),
-                html.P(
-                    "The IMr framework has been evaluated on several real-world event logs, demonstrating that the discovered models better align with the provided rules without compromising their conformance to the event log.",
-                    className="content",
-                ),
-                html.P(
-                    "Furthermore, the evaluation shows that high-quality rules can improve model quality across well-known conformance metrics, highlighting the importance of integrating domain knowledge into process discovery.",
-                    className="content",
-                ),
-                html.P(
-                    "IMr is implemented as an open-source tool to enable broader applicability in real-world scenarios.",
-                    className="content",
-                ),
+            children=[html.Div([
+    html.H1("Welcome to the LLM-Assisted Process Discovery Tool"),
+
+    html.P(
+        "Traditional process discovery techniques rely solely on event logs extracted from "
+        "information systems to derive process models. While these models are useful for tasks "
+        "such as conformance checking and process improvement, they often overlook valuable domain "
+        "knowledge expressed in natural language. As a result, the discovered models may not fully "
+        "reflect the true process as understood by experts."
+    ),
+
+    html.P(
+        "This tool is designed to bridge that gap by enabling domain experts to incorporate their "
+        "knowledge into the discovery process alongside the event log. The underlying discovery technique "
+        "builds on the principles of Inductive Mining and is extended to support declarative rules "
+        "extracted from textual inputs. These rules guide the discovery algorithm in constructing "
+        "process models that are better aligned with both observed behavior and domain expertise."
+    ),
+
+    html.P(
+        "Domain experts can provide textual input either before the discovery process begins or after an "
+        "initial model has been generated and reviewed. In both cases, users can initiate a chat with a "
+        "selected Large Language Model (LLM), which collaborates with backend services to extract declarative "
+        "constraints from the provided descriptions. When ambiguities arise, the LLM is encouraged to engage "
+        "in clarification dialogues, ensuring the extracted rules are accurate and meaningful."
+    ),
+
+    html.P(
+        "Proceed to the next page to upload your own event log and start interacting with the tool to discover "
+        "process models guided by both data and expert insight."
+    )
+])
             ],
         ),
-        # Example Section
-        html.Div(
-            className="example-section",
-            children=[
-                html.H2("Try the Tool with an Example", className="section-title"),
-                html.P(
-                    "Download the BPI challenge 2012 event log using the link below and try the tool.",
-                    className="content",
+dcc.Link(
+                    "Get Started",
+                    href="/LLM",
+                    className="cta-link"
                 ),
-                html.A(
-                    "Download Sample File",
-                    href="/assets/BPI_Challenge_2012_AO.xes",
-                    download="BPI_Challenge_2012_AO.xes",
-                    className="download-link",
-                ),
-            ],
-        ),
     ],
 )

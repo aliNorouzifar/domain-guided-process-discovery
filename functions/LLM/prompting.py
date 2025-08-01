@@ -16,13 +16,6 @@ def configure_Gemini(api_key):
 def task_description():
     with open(r"functions\LLM\task_description_fewshot3_q.txt", "r", encoding="utf-8") as f:
         task_prompt = f.read()
-    # task_prompt += (
-    #         "\n\nThe list of activities used in this process are the following. "
-    #         "Please only use these activities to generate constraints:\n"
-    #         + ", ".join(activities)
-    # )
-    # chat = model.start_chat(history=[
-    #     {"role": "user", "parts": [task_prompt]}])
     return task_prompt
 
 
