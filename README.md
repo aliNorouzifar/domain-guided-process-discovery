@@ -1,4 +1,5 @@
-# IMr + LLM
+# Domain-Guided Process Discovery
+
 ### General Information
 This repository is associated with the paper accepted for presentation at the AI4BPM Workshop at the BPM 2024 Conference. This code is related to the extended version of this paper that is currently under review.
 
@@ -95,7 +96,79 @@ Upon running the code, a simple GUI will open, prompting you to enter three inpu
     ```
 
 
-2. **Event Log**:
-   - Upload an event log file in **XES format**.
 
+
+---
+
+## 🔧 Features
+
+- Web-based GUI for interactive process discovery
+- Integration with LLMs (OpenAI, Google, DeepSeek)
+- Automatic rule extraction, validation, and quality assessment
+- Seamless interaction between domain expert and backend reasoning services
+- Plug-and-play Docker deployment
+
+---
+
+## 🚀 Quick Start
+
+### Option 1: Run with Docker (recommended)
+
+No need to install dependencies. Just run:
+
+```bash
+docker pull ghcr.io/alinorouzifar/domain-guided-process-discovery:latest
+docker run -p 8002:8002 ghcr.io/alinorouzifar/domain-guided-process-discovery:latest
 ```
+
+Then open your browser at: [http://localhost:8002](http://localhost:8002)
+
+---
+
+### Option 2: Clone and Run Locally
+
+```bash
+git clone https://github.com/aliNorouzifar/domain-guided-process-discovery.git
+cd domain-guided-process-discovery
+pip install -r requirements.txt
+python app.py
+```
+
+> Make sure Redis is installed and running locally.
+
+---
+
+## 🖼 Interface Overview
+
+![Screenshot of the interactive tool](assets/screenshot.PNG)
+
+### 🧩 Left Panel
+
+- Upload an event log
+- Set `sup` parameter for IMr discovery
+- Inspect LLM-extracted rules
+- Validate rules via Janus service ([Janus on GitHub](https://github.com/Oneiroe/Janus))
+- Select/deselect rules before discovery
+- View the resulting model in the bottom panel
+
+### 🤖 Right Panel
+
+- Choose LLM provider and model
+- Enter API key
+- Start multi-turn chat interface with LLM
+- Automatically validate rule syntax and correctness
+- View `support` and `confidence` metrics
+- Finalize rule selection and trigger discovery
+
+---
+
+## 🔍 Architecture
+
+All services described in the framework (see paper Section *Framework*) are implemented as internal backend services. Only the **process discovery service** is user-visible and configurable via the interface.
+
+---
+
+## 📬 Contact
+
+For questions or collaboration, feel free to open an issue or contact [Ali Norouzifar](https://github.com/aliNorouzifar).
+
