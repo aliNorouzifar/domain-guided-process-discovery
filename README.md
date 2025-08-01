@@ -100,7 +100,7 @@ Upon running the code, a simple GUI will open, prompting you to enter three inpu
 
 ---
 
-## 🔧 Features
+## 🔧 Features:
 
 - Web-based GUI for interactive process discovery
 - Integration with LLMs (OpenAI, Google, DeepSeek)
